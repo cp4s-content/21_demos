@@ -1,0 +1,678 @@
+{
+    "report": {
+        "_key": "Report1",
+        "type": "QRadar API",
+        "created": 1597707126.125459,
+        "parameters": "",
+        "value": "",
+        "description": "QRadar Imports"
+    },
+    "source": {
+        "_key": "Source1",
+        "description": "reports coming from source Source1",
+        "product_link": "",
+        "name": "stable-tor01-vm-sa-dataexplorer.qradar.ibmcloud-dev.com"
+    },
+    "account": [
+        {
+            "external_id": "account_10051",
+            "name": "Luis Mandela",
+            "created": 1597707126.125459,
+            "active": true,
+            "compliance_status": true,
+            "modified": 1597707126.125459,
+            "first_occurrence": 1597707126.125459,
+            "last_occurrence": 1597707126.125459
+        },
+         {
+            "external_id": "account_10052",
+            "name": "Daniel Jones",
+            "created": 1597707126.125459,
+            "active": true,
+            "compliance_status": true,
+            "modified": 1597707126.125459,
+            "first_occurrence": 1597707126.125459,
+            "last_occurrence": 1597707126.125459
+        },
+        {
+            "external_id": "account_10053",
+            "name": "Mike Person",
+            "created": 1597707126.125459,
+            "active": true,
+            "compliance_status": true,
+            "modified": 1597707126.125459,
+            "first_occurrence": 1597707126.125459,
+            "last_occurrence": 1597707126.125459
+        },
+        {
+            "external_id": "account_10054",
+            "name": "Gil Smith",
+            "created": 1597707126.125459,
+            "active": true,
+            "compliance_status": true,
+            "modified": 1597707126.125459,
+            "first_occurrence": 1597707126.125459,
+            "last_occurrence": 1597707126.125459
+        }
+        ],
+        "user": [
+        {
+            "fullname": "Mandela, Luis",
+            "job_title": "Database Admin",
+            "email": "Luis@powerplant.com",
+            "description": "Database Admin",
+            "family_name": "Mandela",
+            "given_name": "Luis",
+            "title": "Database Admin",
+            "employee_id": "10051",
+            "active": true,
+            "department": "IT",
+            "modified": 1597707126.125459,
+            "first_occurrence": 1597707126.125459,
+            "last_occurrence": 1597707126.125459,
+            "external_id": "user_10051",
+            "name": "Luis Mandela"
+        },
+        {
+            "fullname": "Jones, Daniel",
+            "job_title": "HR User",
+            "email": "DanielJ@housing.com",
+            "description": "HR",
+            "family_name": "Jones",
+            "given_name": "Daniel",
+            "title": " HR Controller",
+            "employee_id": "10052",
+            "active": true,
+            "department": "HR",
+            "modified": 1597707126.125459,
+            "first_occurrence": 1597707126.125459,
+            "last_occurrence": 1597707126.125459,
+            "external_id": "user_10052",
+            "name": "Daniel Jones"
+        },
+        {
+            "fullname": "Person, Mike",
+            "job_title": "Administrator",
+            "email": "MikeP@powerplant.com",
+            "description": " Administrator ",
+            "family_name": "Person",
+            "given_name": "Mike",
+            "title": " Administrator ",
+            "employee_id": "10053",
+            "active": true,
+            "department": "IT",
+            "modified": 1597707126.125459,
+            "first_occurrence": 1597707126.125459,
+            "last_occurrence": 1597707126.125459,
+            "external_id": "user_10053",
+            "name": "Mike Person"
+        },
+        {
+            "fullname": "Smith, Gil",
+            "job_title": "Data Scientist",
+            "email": "GilSmithP@chemicalX.com",
+            "description": "Data Scientist",
+            "family_name": "Smith",
+            "given_name": "Gil",
+            "title": "Data Scientist",
+            "employee_id": "10054",
+            "active": true,
+            "department": "AT",
+            "modified": 1597707126.125459,
+            "first_occurrence": 1597707126.125459,
+            "last_occurrence": 1597707126.125459,
+            "external_id": "user_10054",
+            "name": "Gil Smith"
+         }
+         ],
+         "user_account": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "user_10051",
+            "_to_external_id": "account_10051"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "user_10052",
+            "_to_external_id": "account_10052"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "user_10053",
+            "_to_external_id": "account_10053"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "user_10054",
+            "_to_external_id": "account_10054"
+        }
+        ],
+        "asset": [
+        {
+            "name": "Luis_laptop_192",
+            "external_id": "Luis_laptop_192",
+            "business_value": 50,
+            "risk": 2.0,
+            "description": "",
+            "asset_type": "Laptop"
+        },
+        {
+            "name": "Daniel_Jones_laptop",
+            "external_id": "Daniel_Jones_laptop",
+            "business_value": 50,
+            "risk": 2.0,
+            "description": "",
+            "asset_type": "Laptop"
+        },
+        {
+            "name": "Mike_Person_laptop",
+            "external_id": "Mike_Person_laptop",
+            "business_value": 30,
+            "risk": 3.0,
+            "description": "",
+            "asset_type": "Laptop"
+        },
+        {
+            "name": "Gil_Smith_desktop",
+            "external_id": "Gil_Smith_desktop",
+            "business_value": 40,
+            "risk": 9.0,
+            "description": "",
+            "asset_type": "Desktop"
+        }
+        ],
+        "vulnerability":[
+        {
+         "name":"Linux Kernel namespace privilege escalation",
+        "external_id":"vul1234",
+        "base_score":6
+           },
+        {
+        "name":"CVE-2014-9114 - util-linux - Command Injection Issue",
+        "external_id":"vul5678",
+        "base_score":6
+        },
+        {
+        "name":"CVE-2020-1472 - Microsoft Netlogon Vulnerability CVE-2020-1472 Potential Exploit ",
+        "external_id":"vul1472",
+        "base_score":6
+        },
+        {
+        "name":"CVE-2021-24111- .NET Framework Denial of Service Vulnerability",
+        "external_id":"vul1474",
+        "base_score":6
+        },
+        {
+        "name":"CVE-2020-9862 - A command injection issue existed in Web Inspector ",
+        "external_id":"vul1473",
+        "base_score":6
+        },
+        {
+     "name":"CVE-2020-9862 - A command injection issue existed in Web Inspector ",
+     "external_id":"vul1475",
+    "base_score":6
+    }
+    ],
+    "ipaddress_vulnerability":[
+    {
+    "_from": "ipaddress/192.168.0.10",
+    "_to_external_id":"vul1234",
+    "timestamp": 1597707126.125459,
+    "active": true,
+    "report": "Report1",
+    "source": "Source1"
+    },
+    {
+    "_from": "ipaddress/192.168.0.8",
+    "_to_external_id":"vul1474",
+    "timestamp": 1597707126.125459,
+    "active": true,
+    "report": "Report1",
+    "source": "Source1"
+    },
+    {
+    "_from": "ipaddress/192.168.0.10",
+    "_to_external_id":"vul5678",
+    "timestamp": 1597707126.125459,
+    "active": true,
+    "report": "Report1",
+    "source": "Source1"
+    },
+    {
+    "_from": "ipaddress/10.10.9.56",
+    "_to_external_id":"vul1472",
+    "timestamp": 1597707126.125459,
+    "active": true,
+    "report": "Report1",
+    "source": "Source1"
+    },
+    {
+    "_from": "ipaddress/10.10.9.56",
+    "_to_external_id":"vul1473",
+    "timestamp": 1597707126.125459,
+    "active": true,
+    "report": "Report1",
+    "source": "Source1"
+    },
+    {
+    "_from": "ipaddress/192.168.1.114",
+    "_to_external_id":"vul1475",
+    "timestamp": 1597707126.125459,
+    "active": true,
+    "report": "Report1",
+    "source": "Source1"
+    }
+    ],
+    "asset_vulnerability":[
+    {
+    "_from_external_id":"Luis_laptop_192",
+    "_to_external_id":"vul1472",
+     "timestamp": 1597707126.125459,
+   "active": true,
+   "report": "Report1",
+   "source": "Source1"
+    },
+    {
+    "_from_external_id":"Daniel_Jones_laptop",
+    "_to_external_id":"vul1474",
+    "timestamp": 1597707126.125459,
+   "active": true,
+   "report": "Report1",
+   "source": "Source1"
+    },
+     {
+     "_from_external_id":"Mike_Person_laptop",
+      "_to_external_id":"vul5678",
+     "timestamp": 1597707126.125459,
+      "active": true,
+     "report": "Report1",
+     "source": "Source1"
+         },
+         {
+          "_from_external_id":"Gil_Smith_desktop ",
+         "_to_external_id":"vul1475",
+         "timestamp": 1597707126.125459,
+         "active": true,
+         "report": "Report1",
+          "source": "Source1"
+        }
+         ],
+         "asset_account": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Luis_laptop_192",
+            "_to_external_id": "account_10051"
+        },
+                {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Daniel_Jones_laptop",
+            "_to_external_id": "account_10052"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Mike_Person_laptop",
+            "_to_external_id": "account_10053"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Gil_Smith_desktop",
+            "_to_external_id": "account_10054"
+        }
+        ],
+          "hostname": [
+        {
+            "_key": "Luis_laptop_192.example.org"
+        },
+                {
+            "_key": "Daniel_Jones_laptop.housing.com" 
+        },
+        {
+            "_key": "Mike_Person_laptop.nucplant.org"
+        },
+        {
+            "_key": "Gil_Smith_desktop.chemicalX.org"
+        }
+        ],
+          "account_hostname": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10051",
+            "_to": "hostname/Luis_laptop_192.example.org"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10052",
+            "_to": "hostname/Daniel_Jones_laptop.housing.com"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10053",
+            "_to": "hostname/Mike_Person_laptop.nucplant.org"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10054",
+            "_to": "hostname/Gil_Smith_desktop.chemicalX.org "
+        }
+        ],
+         "ipaddress": [
+        {
+            "_key": "10.10.9.56"
+        },
+        {
+            "_key": "192.168.0.8"
+        },
+        {
+            "_key": "192.168.0.10"
+        },
+        {
+            "_key": "192.168.1.114"
+        }
+        ],
+         "account_ipaddress": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10051",
+            "_to": "ipaddress/10.10.9.56"
+        },
+                {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10052",
+            "_to": "ipaddress/192.168.0.8"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10053",
+            "_to": "ipaddress/192.168.0.10"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10054",
+            "_to": "ipaddress/192.168.1.114"
+        }
+        ],
+          "asset_ipaddress": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Luis_laptop_192",
+            "_to": "ipaddress/10.10.9.56"
+        },
+               {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Daniel_Jones_laptop",
+            "_to": "ipaddress/192.168.0.8"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Mike_Person_laptop",
+            "_to": "ipaddress/192.168.0.10"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Gil_Smith_desktop",
+            "_to": "ipaddress/192.168.1.114"
+        }
+        ],
+          "macaddress": [
+        {
+            "_key": "c0:00:00:00:27:43"
+        },
+        {
+            "_key": "c0:00:F4:00:52:E3"
+        },
+        {
+            "_key": "D1:5F:57:1C:37:41"
+        },
+         {
+            "_key": "A5:DE:24:C1:47:21"
+        }
+        ],
+          "asset_macaddress": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Luis_laptop_192",
+            "_to": "macaddress/c0:00:00:00:27:43"
+        },
+                {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Daniel_Jones_laptop",
+            "_to": "macaddress/c0:00:F4:00:52:E3"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Mike_Person_laptop",
+            "_to": "macaddress/D1:5F:57:1C:37:41"
+        },
+         {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Gil_Smith_desktop",
+            "_to": "macaddress/A5:DE:24:C1:47:21"
+        }
+        ],
+         "ipaddress_macaddress": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from": "ipaddress/10.10.9.56",
+            "_to": "macaddress/c0:00:00:00:27:43"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from": "ipaddress/192.168.0.8",
+            "_to": "macaddress/c0:00:F4:00:52:E3"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from": "ipaddress/191.168.0.10",
+            "_to": "macaddress/D1:5F:57:1C:37:41"
+        },
+         {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from": "ipaddress/191.168.1.114",
+            "_to": "macaddress/A5:DE:24:C1:47:21"
+        }
+        ],
+         "application": [
+        {
+            "name": "cust-svc",
+            "external_id": "cust-svc",
+            "description": "Application cust-svc",
+            "cpe": "CPE",
+            "is_os": true,
+            "app_type": "Customer Serice"
+        }
+        ],
+         "port": [
+        {
+            "port_number": 443,
+            "protocol": "https",
+            "external_id": "https",
+            "status": "up",
+            "description": "Hypertext Transfer Protocol (Secure)"
+        }
+        ],
+         "container": [
+        {
+            "name": "container1",
+            "external_id": "container1",
+            "image": "artifactory:container1_image"
+        }
+        ],
+        "database": [
+        {
+            "name": "SALESDB",
+            "external_id": "SALESDB",
+            "description": "Operations OracleSQL instance",
+            "type": "PostgreSQL",
+            "protocol": "PostgreSQL",
+            "port": "postgresql",
+            "datasource_name": "ops_Oracle",
+            "modified": 0
+        }
+        ],
+         "asset_application": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "asset1",
+            "_to_external_id": "cust-svc"
+        }
+        ],
+           "application_port": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "cust-svc",
+            "_to_external_id": "https"
+        }
+        ],
+         "ipaddress_port": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from": "ipaddress/9.9.21.22",
+            "_to_external_id": "https"
+        }
+        ],
+           "ipaddress_hostname": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from": "ipaddress/9.9.21.22",
+            "_to": "hostname/custsvcapp.example.org"
+        }
+        ],
+          "asset_container": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "asset1",
+            "_to_external_id": "container1"
+        }
+         ],
+        "ipaddress_container": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from": "ipaddress/9.9.21.22",
+            "_to_external_id": "container1"
+        }
+         ],
+        "account_application": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "cust-svc",
+            "_to_external_id": "account_10051",
+            "user_id": "Luis Mandela"
+        }
+        ],
+          "account_database": [
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10051",
+            "_to_external_id": "db1",
+            "user_id": " Luis Mandela "
+        }
+        ]
+        }

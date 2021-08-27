@@ -1,0 +1,56 @@
+{
+    "type": "bundle",
+    "id": "bundle--258c4b63-6b04-4a0e-985d-f64a3a8c8ec7",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--33fa3e56-6511-40de-bc69-c5ffeb3838f9",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "name": "threat demo",
+            "identity_class": "program"
+        },
+        {
+            "type": "observed-data",
+            "id": "observed-data--ed82dd61-cc41-485b-b608-d278469e6259",
+            "created_by_ref": "identity--33fa3e56-6511-40de-bc69-c5ffeb3838f9",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "68.109.83.22"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.0.12"
+                },
+                "2": {
+                    "type": "url",
+                    "value": "onedrivefiles.digital"
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "is_active": false,
+                    "src_ref": "0",
+                    "dst_ref": "1",
+                    "src_port": 58767,
+                    "dst_port": 443,
+                    "protocols": [
+                        "ip",
+                        "tcp",
+                        "tls"
+                    ],
+                    "src_byte_count": 125194360,
+                    "dst_byte_count": 122956560
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,403 @@
+{
+    "pii": {
+       "gdpr_harm_risk": null, 
+       "data_contained": null, 
+       "data_compromised": null, 
+       "singapore_risk_assessment": null, 
+       "exposure": 0, 
+       "determined_date": 1619188477408, 
+       "assessment": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<assessment>\n    <rollups/>\n    <optional>There are 1 required and 0 optional tasks from 1 regulators.</optional>\n</assessment>\n", 
+       "ny_impact_likely": null, 
+       "data_source_ids": [], 
+       "data_format": null, 
+       "alberta_health_risk_assessment": null, 
+       "wa_impact_likely": null, 
+       "new_zealand_risk_assessment": null, 
+       "or_impact_likely": null, 
+       "harmstatus_id": 2, 
+       "gdpr_lawful_data_processing_categories": [], 
+       "dc_impact_likely": null, 
+       "impact_likely": null, 
+       "data_encrypted": null
+    }, 
+    "tasks": null, 
+    "create_date": 1619190575110, 
+    "exposure_vendor_id": null, 
+    "creator": null, 
+    "inc_last_modified_date": 1621889465554, 
+    "actions": [
+       {
+          "enabled": true, 
+          "name": "Example: Get Incident Contact Info", 
+          "id": 132
+       }, 
+       {
+          "enabled": true, 
+          "name": "Example: Timer Epoch", 
+          "id": 139
+       }, 
+       {
+          "enabled": true, 
+          "name": "Example: Timers in Parallel", 
+          "id": 140
+       }, 
+       {
+          "enabled": true, 
+          "name": "Example: AWS IAM: List Users", 
+          "id": 99
+       }, 
+       {
+          "enabled": true, 
+          "name": "Example: AWS IAM: List Access Keys", 
+          "id": 98
+       }, 
+       {
+          "enabled": true, 
+          "name": "Example: QRadar - Get all Reference Tables", 
+          "id": 33
+       }, 
+       {
+          "enabled": true, 
+          "name": "Search QRadar for offense id", 
+          "id": 40
+       }, 
+       {
+          "enabled": false, 
+          "name": "SNOW: Close Record [Incident]", 
+          "id": 42
+       }, 
+       {
+          "enabled": true, 
+          "name": "SNOW: Create Record [Incident]", 
+          "id": 45
+       }, 
+       {
+          "enabled": true, 
+          "name": "Example: Close Incident", 
+          "id": 120
+       }, 
+       {
+          "enabled": true, 
+          "name": "Example: Create Incident", 
+          "id": 121
+       }, 
+       {
+          "enabled": true, 
+          "name": "Example: Search Incidents", 
+          "id": 122
+       }, 
+       {
+          "enabled": false, 
+          "name": "Example: Exchange Online Delete Messages from Query Results", 
+          "id": 67
+       }, 
+       {
+          "enabled": false, 
+          "name": "Example: Exchange Online Query Messages", 
+          "id": 70
+       }, 
+       {
+          "enabled": false, 
+          "name": "Example: Exchange Online Send Message", 
+          "id": 72
+       }, 
+       {
+          "enabled": false, 
+          "name": "Example: Exchange Online Create Meeting", 
+          "id": 65
+       }
+    ], 
+    "admin_id": null, 
+    "incident_type_ids": [
+       3114,
+       19
+    ], 
+    "dtm": {}, 
+    "resolution_summary": null, 
+    "exposure_type_id": 1, 
+    "task_changes": {
+       "removed": [], 
+       "added": []
+    }, 
+    "plan_status": "A", 
+    "exposure_dept_id": null, 
+    "addr": null, 
+    "zip": null, 
+    "artifacts": [
+      {
+        "type": {
+          "name": "Malware MD5 Hash"
+        },
+        "value": "6242E3D67787CCBF4E06AD2982853144",
+        "description": {
+          "format": "text",
+          "content": ""
+        }
+      },
+      {
+        "type": {
+          "name": "File Name"
+        },
+        "value": "Critical AWS bill.docx",
+        "description": {
+          "format": "text",
+          "content": "Suspicious file attachment"
+        }
+      },
+      {
+        "type": {
+          "name": "Email Recipient"
+        },
+        "value": "userD@example.com",
+        "description": {
+          "format": "text",
+          "content": ""
+        }
+      },
+      {
+        "type": {
+          "name": "Email Sender"
+        },
+        "value": "admin.AWS.console.management.aws.amazon.com@yoyobadh.date",
+        "description": {
+          "format": "text",
+          "content": ""
+        }
+      },
+      {
+        "type": {
+          "name": "User Account"
+        },
+        "value": "userD",
+        "description": {
+          "format": "text",
+          "content": ""
+        }
+      },
+      {
+        "type": {
+          "name": "IP Address"
+        },
+        "value": "192.168.0.17",
+        "description": {
+          "format": "text",
+          "content": ""
+        },
+        "properties": [
+          {
+            "name": "destination",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "type": {
+          "name": "IP Address"
+        },
+        "value": "192.168.0.15",
+        "description": {
+          "format": "text",
+          "content": ""
+        },
+        "properties": [
+          {
+            "name": "destination",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "type": {
+          "name": "IP Address"
+        },
+        "value": "192.168.0.15",
+        "description": {
+          "format": "text",
+          "content": ""
+        },
+        "properties": [
+          {
+            "name": "source",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "type": {
+          "name": "IP Address"
+        },
+        "value": "193.184.16.214",
+        "description": {
+          "format": "text",
+          "content": ""
+        },
+        "properties": [
+          {
+            "name": "source",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "type": {
+          "name": "IP Address"
+        },
+        "value": "89.223.26.52",
+        "description": {
+          "format": "text",
+          "content": ""
+        },
+        "properties": [
+          {
+            "name": "source",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "type": {
+          "name": "IP Address"
+        },
+        "value": "169.254.3.7",
+        "description": {
+          "format": "text",
+          "content": ""
+        },
+        "properties": [
+          {
+            "name": "source",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "type": {
+          "name": "IP Address"
+        },
+        "value": "169.254.3.2",
+        "description": {
+          "format": "text",
+          "content": ""
+        },
+        "properties": [
+          {
+            "name": "source",
+            "value": "true"
+          }
+        ]
+      }
+    ], 
+    "employee_involved": null, 
+    "comments": null, 
+    "confirmed": false, 
+    "perms": {
+       "comment": true, 
+       "create_artifacts": true, 
+       "read": true, 
+       "create_milestones": true, 
+       "list_artifacts": true, 
+       "change_workspace": false, 
+       "attach_file": true, 
+       "close": true, 
+       "list_milestones": true, 
+       "read_attachments": true, 
+       "change_members": false, 
+       "write": true, 
+       "delete_attachments": true, 
+       "assign": false, 
+       "delete": false
+    }, 
+    "state": null, 
+    "resolution_id": null, 
+    "draft": false, 
+    "is_scenario": false, 
+    "regulator_risk": {}, 
+    "creator_principal": {
+       "display_name": "QRadar Skytap", 
+       "type": "apikey", 
+       "name": "fd287ec4-3ecc-468e-9433-715b6cd4c58b", 
+       "id": 8
+    }, 
+    "assessment": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<assessment>\n    <rollups/>\n    <optional>There are 1 required and 0 optional tasks from 1 regulators.</optional>\n</assessment>\n", 
+    "city": null, 
+    "timer_field_summarized_incident_data": [], 
+    "due_date": null, 
+    "vers": 34, 
+    "description": "6794 events in 12 categories: Detected A Successful Login From Different Geographies For the Same Username - AWSCloud (Exp Center)  preceded by An AWS API Has Been Invoked From Kali - AWSCloud (Exp Center)  preceded by Microsoft Word Launc  preceded by Detected a Massive Creation of EC2 Instances - AWSCloud (Exp Center)  containing Mail Server Info Message ", 
+    "end_date": null, 
+    "jurisdiction_reg_id": null, 
+    "org_handle": 201, 
+    "jurisdiction_name": null, 
+    "inc_training": false, 
+    "regulators": {
+       "ids": [
+          149
+       ]
+    }, 
+    "exposure_individual_name": null, 
+    "cm": {
+       "total": 0, 
+       "geo_counts": {}, 
+       "unassigneds": []
+    }, 
+    "hard_liability": 0, 
+    "members": [], 
+    "negative_pr_likely": null, 
+    "data_compromised": null, 
+    "hipaa": {
+       "hipaa_acquired_comment": null, 
+       "hipaa_adverse_comment": null, 
+       "hipaa_acquired": null, 
+       "hipaa_additional_misuse": null, 
+       "hipaa_misused_comment": null, 
+       "hipaa_additional_misuse_comment": null, 
+       "hipaa_misused": null, 
+       "hipaa_breach_comment": null, 
+       "hipaa_breach": null, 
+       "hipaa_adverse": null
+    }, 
+    "properties": {
+       "qr_severity": "<a href=\"https://184.170.232.54:14500/console/ui/offenses/18\" target=\"_blank\">10</a>", 
+       "qr_offense_index_value": "userD", 
+       "qradar_id": "18", 
+       "qr_relevance": "<a href=\"https://184.170.232.54:14500/console/ui/offenses/18\" target=\"_blank\">5</a>", 
+       "qr_offense_source": "userD", 
+       "qr_offense_index_type": "Username", 
+       "qr_flow_count": "<a href=\"https://184.170.232.54:14500/console/ui/offenses/18\" target=\"_blank\">0</a>", 
+       "qr_source_ip_count": "<a href=\"https://184.170.232.54:14500/console/ui/offenses/18\" target=\"_blank\">5</a>", 
+       "qr_credibility": "<a href=\"https://184.170.232.54:14500/console/ui/offenses/18\" target=\"_blank\">4</a>", 
+       "qr_magnitude": "<a href=\"https://184.170.232.54:14500/console/ui/offenses/18\" target=\"_blank\">6</a>", 
+       "qr_destination_ip_count": "<a href=\"https://184.170.232.54:14500/console/ui/offenses/18\" target=\"_blank\">4</a>", 
+       "internal_customizations_field": null, 
+       "qr_event_count": "<a href=\"https://184.170.232.54:14500/console/ui/offenses/18/events?page=1&amp;pagesize=10\" target=\"_blank\">6768</a>", 
+       "qr_assigned": "Unassigned"
+    }, 
+    "reporter": null, 
+    "exposure": 0, 
+    "discovered_date": 1619188477408, 
+    "nist_attack_vectors": [], 
+    "name": "QRadar ID 18 , Detected A Successful Login From Different Geographies For the Same Username - AWSCloud (Exp Center)  preceded by An AWS API Has Been Invoked From Kali - AWSCloud (Exp Center)  preceded by Microsoft Word Launc  preceded by Detected a Massive Creation of EC2 Instances - AWSCloud (Exp Center)  containing Mail Server Info Message  - userD", 
+    "crimestatus_id": 1, 
+    "inc_start": 1619188477408, 
+    "country": null, 
+    "org_id": 201, 
+    "start_date": 1619188477408, 
+    "creator_id": 8, 
+    "sequence_code": "F44D-59", 
+    "gdpr": {
+       "gdpr_breach_type_comment": null, 
+       "gdpr_breach_circumstances": [], 
+       "gdpr_subsequent_notification": null, 
+       "gdpr_breach_type": null, 
+       "gdpr_final_assessment": null, 
+       "gdpr_final_assessment_comment": null, 
+       "gdpr_personal_data": null, 
+       "gdpr_consequences": null, 
+       "gdpr_consequences_comment": null, 
+       "gdpr_personal_data_comment": null, 
+       "gdpr_identification": null, 
+       "gdpr_identification_comment": null
+    }, 
+    "phase_id": 1006
+ }
+ 

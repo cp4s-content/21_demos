@@ -1,0 +1,264 @@
+{
+   "pii": {
+      "gdpr_harm_risk": null, 
+      "data_contained": null, 
+      "data_compromised": true, 
+      "singapore_risk_assessment": null, 
+      "exposure": 0, 
+      "determined_date": 1619638172074, 
+      "assessment": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<assessment>\n    <rollups>\n        <rollup>\n            <rollups>\n                <rollup label=\"Under jurisdictional regulatory requirements\">\n                    <rollups>\n                        <rollup>\n                            <tasks>\n                                <task>Notify 1 state attorney general</task>\n                            </tasks>\n                        </rollup>\n                        <rollup>\n                            <tasks>\n                                <task>Notify 50,000 consumers in 1 jurisdiction</task>\n                            </tasks>\n                        </rollup>\n                    </rollups>\n                    <tasks/>\n                </rollup>\n            </rollups>\n            <tasks/>\n        </rollup>\n    </rollups>\n    <optional></optional>\n</assessment>\n", 
+      "ny_impact_likely": null, 
+      "data_source_ids": [], 
+      "data_format": 0, 
+      "alberta_health_risk_assessment": null, 
+      "wa_impact_likely": null, 
+      "new_zealand_risk_assessment": null, 
+      "or_impact_likely": null, 
+      "harmstatus_id": 2, 
+      "gdpr_lawful_data_processing_categories": [], 
+      "dc_impact_likely": null, 
+      "impact_likely": null, 
+      "data_encrypted": null
+   }, 
+   "tasks": null, 
+   "create_date": 1619638173145, 
+   "exposure_vendor_id": null, 
+   "creator": {
+      "lname": "", 
+      "ui_theme": "verydarkmode", 
+      "password_changed": false, 
+      "display_name": "analyst", 
+      "is_external": false, 
+      "fname": "analyst", 
+      "locked": false, 
+      "status": "A", 
+      "id": 1, 
+      "email": "analyst@local.io"
+   }, 
+   "inc_last_modified_date": 1622125127890, 
+   "actions": [
+      {
+         "enabled": true, 
+         "name": "Example: Get Incident Contact Info", 
+         "id": 132
+      }, 
+      {
+         "enabled": true, 
+         "name": "Example: Timer Epoch", 
+         "id": 139
+      }, 
+      {
+         "enabled": true, 
+         "name": "Example: Timers in Parallel", 
+         "id": 140
+      }, 
+      {
+         "enabled": true, 
+         "name": "Example: AWS IAM: List Users", 
+         "id": 99
+      }, 
+      {
+         "enabled": true, 
+         "name": "Example: AWS IAM: List Access Keys", 
+         "id": 98
+      }, 
+      {
+         "enabled": true, 
+         "name": "Example: QRadar - Get all Reference Tables", 
+         "id": 33
+      }, 
+      {
+         "enabled": false, 
+         "name": "Search QRadar for offense id", 
+         "id": 40
+      }, 
+      {
+         "enabled": false, 
+         "name": "SNOW: Close Record [Incident]", 
+         "id": 42
+      }, 
+      {
+         "enabled": true, 
+         "name": "SNOW: Create Record [Incident]", 
+         "id": 45
+      }, 
+      {
+         "enabled": true, 
+         "name": "Example: Close Incident", 
+         "id": 120
+      }, 
+      {
+         "enabled": true, 
+         "name": "Example: Create Incident", 
+         "id": 121
+      }, 
+      {
+         "enabled": true, 
+         "name": "Example: Search Incidents", 
+         "id": 122
+      }, 
+      {
+         "enabled": false, 
+         "name": "Example: Exchange Online Delete Messages from Query Results", 
+         "id": 67
+      }, 
+      {
+         "enabled": false, 
+         "name": "Example: Exchange Online Query Messages", 
+         "id": 70
+      }, 
+      {
+         "enabled": false, 
+         "name": "Example: Exchange Online Send Message", 
+         "id": 72
+      }, 
+      {
+         "enabled": false, 
+         "name": "Example: Exchange Online Create Meeting", 
+         "id": 65
+      }
+   ], 
+   "admin_id": null, 
+   "incident_type_ids": [
+      18
+   ], 
+   "dtm": {
+      "19": true, 
+      "20": true, 
+      "75": true, 
+      "74": true, 
+      "5": true
+   }, 
+   "resolution_summary": null, 
+   "exposure_type_id": 1, 
+   "task_changes": {
+      "removed": [], 
+      "added": []
+   }, 
+   "plan_status": "A", 
+   "severity_code": null, 
+   "exposure_dept_id": null, 
+   "addr": null, 
+   "zip": null, 
+   "artifacts": null, 
+   "employee_involved": null, 
+   "comments": null, 
+   "confirmed": false, 
+   "perms": {
+      "comment": true, 
+      "create_artifacts": true, 
+      "read": true, 
+      "create_milestones": true, 
+      "list_artifacts": true, 
+      "change_workspace": false, 
+      "attach_file": true, 
+      "close": true, 
+      "list_milestones": true, 
+      "read_attachments": true, 
+      "change_members": false, 
+      "write": true, 
+      "delete_attachments": true, 
+      "assign": false, 
+      "delete": false
+   }, 
+   "state": null, 
+   "resolution_id": null, 
+   "draft": false, 
+   "is_scenario": false, 
+   "regulator_risk": {}, 
+   "creator_principal": {
+      "display_name": "analyst", 
+      "type": "user", 
+      "name": "analyst@local.io", 
+      "id": 0
+   }, 
+   "assessment": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<assessment>\n    <rollups>\n        <rollup>\n            <rollups>\n                <rollup label=\"Under jurisdictional regulatory requirements\">\n                    <rollups>\n                        <rollup>\n                            <tasks>\n                                <task>Notify 1 state attorney general</task>\n                            </tasks>\n                        </rollup>\n                        <rollup>\n                            <tasks>\n                                <task>Notify 50,000 consumers in 1 jurisdiction</task>\n                            </tasks>\n                        </rollup>\n                    </rollups>\n                    <tasks/>\n                </rollup>\n            </rollups>\n            <tasks/>\n        </rollup>\n    </rollups>\n    <optional></optional>\n</assessment>\n", 
+   "city": null, 
+   "timer_field_summarized_incident_data": [], 
+   "due_date": 1619897372074, 
+   "vers": 34, 
+   "description": "id : 604265d9136481f4cb9cc044\nsummary : A HIGH-level data extraction violation was triggered by Finance_JOE on Mar 20, 2021 20:35:00, which violates normal extraction levels on asset FinanceDB.\nstate : normal\nstatus : ACTIVE\nconfidence_level : 91\n", 
+   "end_date": null, 
+   "jurisdiction_reg_id": null, 
+   "org_handle": 201, 
+   "jurisdiction_name": null, 
+   "inc_training": false, 
+   "regulators": {
+      "ids": [
+         150, 
+         6, 
+         149
+      ]
+   }, 
+   "exposure_individual_name": null, 
+   "cm": {
+      "total": 80000, 
+      "geo_counts": {
+         "1031": 30000, 
+         "6": 50000
+      }, 
+      "unassigneds": []
+   }, 
+   "hard_liability": 0, 
+   "members": [
+      15, 
+      14
+   ], 
+   "negative_pr_likely": null, 
+   "data_compromised": true, 
+   "hipaa": {
+      "hipaa_acquired_comment": "", 
+      "hipaa_adverse_comment": "", 
+      "hipaa_acquired": null, 
+      "hipaa_additional_misuse": null, 
+      "hipaa_misused_comment": "", 
+      "hipaa_additional_misuse_comment": "", 
+      "hipaa_misused": null, 
+      "hipaa_breach_comment": "", 
+      "hipaa_breach": null, 
+      "hipaa_adverse": null
+   }, 
+   "properties": {
+      "qr_severity": null, 
+      "qr_offense_index_value": null, 
+      "qradar_id": null, 
+      "qr_relevance": null, 
+      "qr_offense_source": null, 
+      "qr_offense_index_type": null, 
+      "qr_flow_count": null, 
+      "qr_source_ip_count": null, 
+      "qr_credibility": null, 
+      "qr_magnitude": null, 
+      "qr_destination_ip_count": null, 
+      "internal_customizations_field": null, 
+      "qr_event_count": null, 
+      "qr_assigned": null
+   }, 
+   "reporter": "1f9a8809704552a5b20daba531e863ce", 
+   "exposure": 0, 
+   "discovered_date": 1619638172074, 
+   "nist_attack_vectors": [], 
+   "name": "IBM Guardium Insights anomaly: IBM Guardium Insights anomaly: A HIGH-level data extraction violation was triggered by Finance_JOE on Mar 20, 2021 20:35:00, which violates normal extraction levels on asset FinanceDB.", 
+   "crimestatus_id": 1, 
+   "inc_start": null, 
+   "country": null, 
+   "org_id": 201, 
+   "start_date": null, 
+   "creator_id":0, 
+   "sequence_code": "F44D-61", 
+   "gdpr": {
+      "gdpr_breach_type_comment": null, 
+      "gdpr_breach_circumstances": [], 
+      "gdpr_subsequent_notification": null, 
+      "gdpr_breach_type": null, 
+      "gdpr_final_assessment": 2, 
+      "gdpr_final_assessment_comment": null, 
+      "gdpr_personal_data": null, 
+      "gdpr_consequences": null, 
+      "gdpr_consequences_comment": null, 
+      "gdpr_personal_data_comment": null, 
+      "gdpr_identification": null, 
+      "gdpr_identification_comment": null
+   }, 
+   "phase_id": 1002
+}

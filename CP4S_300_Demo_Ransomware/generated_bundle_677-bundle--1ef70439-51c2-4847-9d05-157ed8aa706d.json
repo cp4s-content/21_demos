@@ -1,0 +1,775 @@
+{
+    "id": "bundle--1ef70439-51c2-4847-9d05-157ed8aa706d",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "name": "Elastic Search",
+            "identity_class": "events",
+            "type": "identity",
+            "id": "identity--f164b947-004b-4560-8094-217af08ec1b3",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z"
+        },
+        {
+            "id": "observed-data--75a31696-5b8a-4dc7-a369-489b36e4d358",
+            "number_observed": 1,
+            "first_observed": "2021-02-18T09:42:18.202464Z",
+            "last_observed": "2021-02-18T09:42:18.202464Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.49",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ramm-wetlan.dz",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:96:f2:3a",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://ca.xn--y9a3aq/BLrrUUF/andemoniu-extende-traito.ctf",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "liene",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "nsnar.mrb",
+                    "hashes": {
+                        "SHA3-224": "2C2aAe4977adEC7A1c00E55AfaBADDf6a53A0d9CEC3e3cb52eCCcDAb"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--2dcd81e9-0fe5-478c-876b-9169484b811f",
+            "number_observed": 1,
+            "first_observed": "2021-03-14T08:35:50.052133Z",
+            "last_observed": "2021-03-14T08:35:50.052133Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.121",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "espectabl-ventin-inordinat.philips",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:82:8c:e0",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://ronomina-gulp.download/D9u1nv/hake-blueberr-sublime.txt",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "nedite-duffe.ped",
+                    "hashes": {
+                        "TLSH": "67bb57B25fc18CdDc3FeA31bC9Ac8fBb7C19F4eae85ee4f87998dad5b09B5cd7dDa9db"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--5db92b08-3606-47b9-8f6f-a913dc1b8cfa",
+            "number_observed": 1,
+            "first_observed": "2021-02-15T02:27:54.366808Z",
+            "last_observed": "2021-02-15T02:27:54.366808Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.175",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "armin.yt",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:84:f7:d8",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://utobiographicall-scram-magnificentl.like/p9cXaBPBPX/72736X3980SgN/ormalisabl-kilobyte-authores.skm",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "ewcome-furtherin",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "amper.b5t",
+                    "hashes": {
+                        "SHA3-384": "e7e4F0bc38cDB7f1d123c8538fA25Af5c9b25527d3903BF2EbecBDE0b0Bee725d9cCfCacA7A308B35dc984ef86B8dbEd"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--e8600553-c514-42a4-a64c-7d7529411f1a",
+            "number_observed": 1,
+            "first_observed": "2021-01-18T22:25:06.918902Z",
+            "last_observed": "2021-01-18T22:25:06.918902Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.52",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ealou-sprightlies-eccentricitie.kerryhotels",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:29:04:cc",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://onopolisatio-shamme-cutthroa.citi/aP4Z2/u8BAkzpYXZu6GCXOw6/pholste.lbg",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "issur",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "autiousl.par",
+                    "hashes": {
+                        "SHA-256": "0a10fd8cD2b1648eab64F01f5EAa3b0Bb0cEAcA6eFaA4D14e165A6Cf2968B3Dc"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--6110ed21-e443-47da-8dd0-2d7b7e64040c",
+            "number_observed": 1,
+            "first_observed": "2021-02-20T18:22:28.752205Z",
+            "last_observed": "2021-02-20T18:22:28.752205Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.118",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "habbil.bargains",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:4e:e0:a0",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://nterne-blowin-probe.clinique/2U9An/aHCUBPP19/i46dTNY3/avial.ek5",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "ediscoverie-creditabl",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "ullove-lumpines.tv9",
+                    "hashes": {
+                        "SHA-384": "423e1affa4A2cdab12DF47Ba7977cD1242c3FB00EC89fF96e96A5CFc74f488be8D1187103fDfdfAEF252Fac565bE61ba"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--b5feaade-3906-4c6c-a382-802be1da0936",
+            "number_observed": 1,
+            "first_observed": "2021-02-02T01:22:34.845338Z",
+            "last_observed": "2021-02-02T01:22:34.845338Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.97",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "culler-dictatin.xn--nqv7f",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:55:32:1b",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://ilkil-sojourn-marc.staples/5OMLB5M5Q9oX39N5HyT8/F32W2vdRcesE4XJ/tinkin.hht",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "ieldworker-epigram",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "ine.trg",
+                    "hashes": {
+                        "ssdeep": "vqTRl42svUpEuc:iwt/6a/mSHKcjTswfL0fOiCl+fVlfWYL/Or4R8oYk0pCY61mwwa0rL4hTOSmD1aSKI4Hjy.PuuoQhrxne"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--b80ffd0f-2c03-4644-b53b-9896a26eed42",
+            "number_observed": 1,
+            "first_observed": "2021-01-28T16:27:30.522508Z",
+            "last_observed": "2021-01-28T16:27:30.522508Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.193",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "elle-carbonat-blur.zm",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:81:84:1e",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://ualifier.clubmed/1qgi0bkVVt/WGM8KkycToq7Z1j/C44Y/troller-separatis-overacte.pbm",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "abo-subfamil-sobere",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "nrolmen-spirited.tfh",
+                    "hashes": {
+                        "SHA-1": "DBA54bf7FCdF6ef34ac0b0ac691C4c62fEEA8Bc5"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--2af0f8e3-185d-4844-ae93-c6722e7b3350",
+            "number_observed": 1,
+            "first_observed": "2021-01-11T09:38:47.041221Z",
+            "last_observed": "2021-01-11T09:38:47.041221Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.118",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ontracto-craf.bn",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:c4:2b:2e",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://rumbl-grainie.hisamitsu/c1IboZ94C15/2Xo75zL/ope-pointlessnes.kp2",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "evis",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "ilkie.de",
+                    "hashes": {
+                        "RIPEMD-160": "BF669E400A46eDd1Fd5799f74CA2708F9a1ea6e5"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--c848ab84-3604-449e-a841-18c899325d02",
+            "number_observed": 1,
+            "first_observed": "2021-02-15T02:57:38.381066Z",
+            "last_observed": "2021-02-15T02:57:38.381066Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.189",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ubur-wheelin-verbosel.contractors",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:e5:cd:e5",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://ediator.tools/jp2c77PGrzeZTT9W/F/JGAGCk4Uf7r05rJxBJqL/eafes-clif.sik",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "hape",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "quid-animist-ni.acs2",
+                    "hashes": {
+                        "SHA3-384": "8C5DDFB3fd302baB13eC8db3E08A5b4dd4BBC2efC74FBFFd0c8f23BD1E0ffAcC44FCeA0EA2b50f4eD4C09A61d0bA57D6"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--d3ef490e-26fd-431a-82e8-03862fb4648d",
+            "number_observed": 1,
+            "first_observed": "2021-03-20T20:12:28.800811Z",
+            "last_observed": "2021-03-20T20:12:28.800811Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.110",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "xchange-romance-earldo.fj",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:6d:63:9d",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://nawin-pra.dish/4bnqie0ND2882ztCr/lighte-seare.fxs",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "oilet",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "ignes.old",
+                    "hashes": {
+                        "ssdeep": "vUoJUhPjJhqdi3W.xKPJ:s"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--f8c3f4c6-398c-49d4-9414-6357cd895a1a",
+            "number_observed": 1,
+            "first_observed": "2021-03-08T20:43:51.904671Z",
+            "last_observed": "2021-03-08T20:43:51.904671Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.99",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "airpin.xn--qxa6a",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:74:29:5a",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://atitudina.dhl/3k/qq52/k0E67U0A509GmS82Lo/lac-bootles-spectacular.tps",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "nthe-hears-cravat",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "lange.gbl",
+                    "hashes": {
+                        "SHA-256": "BE441cc2D3Bbf7e8E0aa2eBA08C9D76224bb1167b6Fab74bD7a8Cc478AcE20ce"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--bb564f25-92ea-4b71-b8ef-3f5e4530029f",
+            "number_observed": 1,
+            "first_observed": "2021-01-22T04:06:15.460463Z",
+            "last_observed": "2021-01-22T04:06:15.460463Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.10",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "mp-ye.fm",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:dc:35:22",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://ishonou.my/77EnqnCE1ks8495B2MlD/UX115u7e5j/ousebuildin-overthro-scalabl.bk4",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "ombustio",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "rrat-null-revelle.ek6",
+                    "hashes": {
+                        "SHA-256": "f0adCB7F0EA4dd2e85602BdF5b0C327C3aE6b9598d05ccd9817c4ECbE07DdC73"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--be028128-d90b-4609-9d21-76093ca274df",
+            "number_observed": 1,
+            "first_observed": "2021-01-13T02:46:04.766823Z",
+            "last_observed": "2021-01-13T02:46:04.766823Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.42",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ntagonisin-buttonhole.passagens",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:2a:bc:da",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://ackin-porphyriti-mercenarie.dubai/rp62GhhmGj43hx446Ub/yvN36UdjauXw/ominate-adulteratio-crinklin.dx",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "hartist",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "elie-breath.doc",
+                    "hashes": {
+                        "TLSH": "Bcc96df7CA3d3FA52d7E9aB387BBABE838E6E6902E99C26777cacAF1432f13b6eC00a0"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--61317ed3-153b-4eac-bf69-962a8698f1f8",
+            "number_observed": 1,
+            "first_observed": "2021-01-07T22:10:18.281434Z",
+            "last_observed": "2021-01-07T22:10:18.281434Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.170",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "erification.taipei",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:93:d0:60",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://reamin-corpse-gratefu.samsung/61Birx8AXfFtoX2Gig5R/ccult.__a",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "ro-paranorma",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "te-recession.img",
+                    "hashes": {
+                        "SHA3-224": "D2Ac0Ca3fA5d033f4a82b7e4f270Ae53D30Df020dDeD54c58DcEb43d"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--bd046be7-84ad-4b67-a285-a039b18569df",
+            "number_observed": 1,
+            "first_observed": "2021-03-09T06:01:28.121846Z",
+            "last_observed": "2021-03-09T06:01:28.121846Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.82",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "romatherap.dubai",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:de:35:1e",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://istene-concedin.sap/Zogo6ve3/r4l2O7wNG88u6/urfing-hog.bz2",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "ompensato-hundredt-implemente",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "enewabl-aerofoi-intak.pwd",
+                    "hashes": {
+                        "SHA-224": "a0f36Ea1E9A94aCfA2e0fFB7b133771DC4fb6771E73A834D4014cE60"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--86313a0c-bc0b-4156-bef8-ab7c09c2f37d",
+            "number_observed": 1,
+            "first_observed": "2021-01-26T02:07:00.735297Z",
+            "last_observed": "2021-01-26T02:07:00.735297Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.100",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ashe-sinne.to",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:68:23:77",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "http://arm.kosher/fnEP8D2F979Mk/ymposiu.albm",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "ieteti-upturne",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "ate-franchisin.zdct",
+                    "hashes": {
+                        "MD5": "Ddca5D3CDA70a1Eb05bD03FBF44fD950"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--b0f77921-e7b6-434a-a175-27e0a97c9e96",
+            "number_observed": 1,
+            "first_observed": "2021-02-24T22:02:12.213336Z",
+            "last_observed": "2021-02-24T22:02:12.213336Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.131",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "hickl-scrubber.coffee",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:77:47:69",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://arrowin.xn--mxtq1m/22/tching.usr",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "hisel-rattlesnak-absor",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "ryuk-bin.exe",
+                    "hashes": {
+                        "MD5": "5ac0f050f93f86e69026faea1fbb4450"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--2ed3573f-9dbf-4466-972c-2e336deb60a8",
+            "number_observed": 1,
+            "first_observed": "2021-03-05T15:11:28.934112Z",
+            "last_observed": "2021-03-05T15:11:28.934112Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.244",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "nmanne-cob-foundationa.network",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:3a:05:03",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://aingloriou-disloya-menac.town/MY12tV/pO8btC/reshe-bia.tbh",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "etchin-immunosuppressiv",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "owshed-prospect.zl",
+                    "hashes": {
+                        "SHA-224": "db4ED1e205e32bc74B9Bdfc67a4f31F02dA3db82e0ae4CCDA21Faf24"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--fe0168e2-bac8-4954-aad5-cabbf2e09b94",
+            "number_observed": 1,
+            "first_observed": "2021-01-22T22:13:14.671787Z",
+            "last_observed": "2021-01-22T22:13:14.671787Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.59",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ajest.cool",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:f0:23:24",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://ontextuall-percale-eccentricall.rocks/uiI8TFy43v38Fwu6/iwe150/oil.tal",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "hinne-fuchsia-int",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "nergise.hsi",
+                    "hashes": {
+                        "TLSH": "baa3fC92FF6f4FeBB8FBd8D7A7cC76edcceA0018A3eDDD88a5EcB2Fdefc8fc07c0B0A7"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--7e9fa4bc-0d7c-4be2-a0a1-971fe361a537",
+            "number_observed": 1,
+            "first_observed": "2021-01-22T08:51:55.269061Z",
+            "last_observed": "2021-01-22T08:51:55.269061Z",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.50",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "value": "ontrac-bruise.abbott",
+                    "type": "domain-name"
+                },
+                "2": {
+                    "value": "CC:46:D6:26:11:54",
+                    "type": "mac-addr"
+                },
+                "3": {
+                    "value": "https://estarte.insurance/5ltDxoFdbl9s9/o25Q6Cn38R0N0C6v5MD/hivere.ndx",
+                    "type": "url"
+                },
+                "4": {
+                    "user_id": "igurine-defunc",
+                    "type": "user-account"
+                },
+                "5": {
+                    "name": "ryuk-bin.exe",
+                    "hashes": {
+                        "SHA-1": "834d876b47ae8e595ae417a370cd47cc8e061131"
+                    },
+                    "type": "file"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+    "type": "bundle"
+}

@@ -1,0 +1,2005 @@
+{
+    "id": "bundle--366b285d-cc46-4781-8df5-2440157037cb",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "identity_class": "system",
+            "name": "qradar",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z"
+        },
+        {
+            "id": "observed-data--19565536-4335-482e-89d3-2294d1d3c7ef",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::HELO",
+                    "qid": 26750033,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2R",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 5,
+                    "relevance": 1,
+                    "cre_event_list": [
+                        "100101",
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 2,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:NetworkDefinition: Honeypot like Addresses",
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "ip"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDozMiBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1uY05DU0EJQWdlbnRMb2dGb3JtYXQ9TkNTQQlSZW1vdGVIb3N0PTUuMi42OS4xNAlSZW1vdGVMb2c9LQlVc2VybmFtZT1BUEkJVGltZXN0YW1wPTIyL0phbi8yMDIxOjExOjEwOjMyCUdNVE9mZnNldD0tMDYwMAlNZXRob2Q9SEVMTwlSZXNvdXJjZT0tPytBUEkJUHJvdG9jb2w9U01UUAlTZXJ2aWNlU3RhdHVzPTI1MAlCeXRlc1NlbnQ9NDgK"
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--27995522-f90f-4e7a-b639-e24835109fcc",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::DATA",
+                    "qid": 26750028,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2L",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 10,
+                    "relevance": 8,
+                    "cre_event_list": [
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100218",
+                        "100217",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 6,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "Destination Asset Exists",
+                        "Context is Remote to Local",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.10",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDozOCBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1leFczQwlBZ2VudExvZ0Zvcm1hdD1XM0MgZGF0ZT0yMDIxLTAxLTIyCXRpbWU9MTE6MTA6MzgJYy1pcD01LjIuNjkuMTQJY3MtdXNlcm5hbWU9QVBJCXMtc2l0ZW5hbWU9WEJBTktTVkMJcy1jb21wdXRlcm5hbWU9ZXhjaGFuZ2UueGJhbmsuY29tCXMtaXA9MTkyLjE2OC4xLjEwCXMtcG9ydD0wCWNzLW1ldGhvZD1EQVRBCWNzLXVyaS1zdGVtPS0JY3MtdXJpLXF1ZXJ5PWx1Y2l1cy5saW5kQHlhaG9vLmNvbQlzYy1zdGF0dXM9MjUwCXNjLXdpbjMyLXN0YXR1cz0wCXNjLWJ5dGVzPTEzMgljcy1ieXRlcz0yNDEzCXRpbWUtdGFrZW49NTMxCWNzLXZlcnNpb249U01UUAljcy1ob3N0PS0JY3MoVXNlci1BZ2VudCk9LQljcyhDb29raWUpPS0JY3MoUmVmZXJlcik9LQo="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--4f723ed0-e993-4212-b42f-7be7620b55c6",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::DATA",
+                    "qid": 26750028,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2L",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 10,
+                    "relevance": 8,
+                    "cre_event_list": [
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100218",
+                        "100217",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 6,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "Destination Asset Exists",
+                        "Context is Remote to Local",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.10",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDo0MiBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1leFczQwlBZ2VudExvZ0Zvcm1hdD1XM0MgZGF0ZT0yMDIxLTAxLTIyCXRpbWU9MTE6MTA6NDIJYy1pcD01LjIuNjkuMTQJY3MtdXNlcm5hbWU9QVBJCXMtc2l0ZW5hbWU9WEJBTktTVkMJcy1jb21wdXRlcm5hbWU9ZXhjaGFuZ2UueGJhbmsuY29tCXMtaXA9MTkyLjE2OC4xLjEwCXMtcG9ydD0wCWNzLW1ldGhvZD1EQVRBCWNzLXVyaS1zdGVtPS0JY3MtdXJpLXF1ZXJ5PWphZGVuNTJAZW1hcmQubmV0CXNjLXN0YXR1cz0yNTAJc2Mtd2luMzItc3RhdHVzPTAJc2MtYnl0ZXM9MTMyCWNzLWJ5dGVzPTI0MTMJdGltZS10YWtlbj01MzEJY3MtdmVyc2lvbj1TTVRQCWNzLWhvc3Q9LQljcyhVc2VyLUFnZW50KT0tCWNzKENvb2tpZSk9LQljcyhSZWZlcmVyKT0tCg=="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--24132460-bb49-4a06-ae95-de8a93a8e69b",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::DATA",
+                    "qid": 26750028,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2L",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 10,
+                    "relevance": 8,
+                    "cre_event_list": [
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100218",
+                        "100217",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 6,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "Destination Asset Exists",
+                        "Context is Remote to Local",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.10",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDo0MCBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1leFczQwlBZ2VudExvZ0Zvcm1hdD1XM0MgZGF0ZT0yMDIxLTAxLTIyCXRpbWU9MTE6MTA6NDAJYy1pcD01LjIuNjkuMTQJY3MtdXNlcm5hbWU9QVBJCXMtc2l0ZW5hbWU9WEJBTktTVkMJcy1jb21wdXRlcm5hbWU9ZXhjaGFuZ2UueGJhbmsuY29tCXMtaXA9MTkyLjE2OC4xLjEwCXMtcG9ydD0wCWNzLW1ldGhvZD1EQVRBCWNzLXVyaS1zdGVtPS0JY3MtdXJpLXF1ZXJ5PXdpemEub3J2aWxsZUBzY2h1bHR6LmNvbQlzYy1zdGF0dXM9MjUwCXNjLXdpbjMyLXN0YXR1cz0wCXNjLWJ5dGVzPTEzMgljcy1ieXRlcz0yNDEzCXRpbWUtdGFrZW49NTMxCWNzLXZlcnNpb249U01UUAljcy1ob3N0PS0JY3MoVXNlci1BZ2VudCk9LQljcyhDb29raWUpPS0JY3MoUmVmZXJlcik9LQo="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--e9c052d9-5444-4b85-ade0-f0b81917a510",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::DATA",
+                    "qid": 26750028,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2L",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 10,
+                    "relevance": 8,
+                    "cre_event_list": [
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100218",
+                        "100217",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 4,
+                    "finding_type": "event",
+                    "magnitude": 6,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "Destination Asset Exists",
+                        "Context is Remote to Local",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.10",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDo1MCBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1leFczQwlBZ2VudExvZ0Zvcm1hdD1XM0MgZGF0ZT0yMDIxLTAxLTIyCXRpbWU9MTE6MTA6NTAJYy1pcD01LjIuNjkuMTQJY3MtdXNlcm5hbWU9QVBJCXMtc2l0ZW5hbWU9WEJBTktTVkMJcy1jb21wdXRlcm5hbWU9ZXhjaGFuZ2UueGJhbmsuY29tCXMtaXA9MTkyLjE2OC4xLjEwCXMtcG9ydD0wCWNzLW1ldGhvZD1EQVRBCWNzLXVyaS1zdGVtPS0JY3MtdXJpLXF1ZXJ5PWRheWFuYTA4QGdtYWlsLmNvbQlzYy1zdGF0dXM9MjUwCXNjLXdpbjMyLXN0YXR1cz0wCXNjLWJ5dGVzPTEzMgljcy1ieXRlcz0yNDEzCXRpbWUtdGFrZW49NTMxCWNzLXZlcnNpb249U01UUAljcy1ob3N0PS0JY3MoVXNlci1BZ2VudCk9LQljcyhDb29raWUpPS0JY3MoUmVmZXJlcik9LQ=="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 4
+        },
+        {
+            "id": "observed-data--4e73a389-96f3-4461-a8bb-e5ca4663f064",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::HELO",
+                    "qid": 26750033,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2R",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 5,
+                    "relevance": 1,
+                    "cre_event_list": [
+                        "100101",
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 2,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:NetworkDefinition: Honeypot like Addresses",
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "ip"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDozMiBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1uY05DU0EJQWdlbnRMb2dGb3JtYXQ9TkNTQQlSZW1vdGVIb3N0PTUuMi42OS4xNAlSZW1vdGVMb2c9LQlVc2VybmFtZT1BUEkJVGltZXN0YW1wPTIyL0phbi8yMDIxOjExOjEwOjMyCUdNVE9mZnNldD0tMDYwMAlNZXRob2Q9SEVMTwlSZXNvdXJjZT0tPytBUEkJUHJvdG9jb2w9U01UUAlTZXJ2aWNlU3RhdHVzPTI1MAlCeXRlc1NlbnQ9NDgK"
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--fc17c4e5-823b-4482-9221-9753f2d12767",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::HELO",
+                    "qid": 26750033,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2R",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 5,
+                    "relevance": 1,
+                    "cre_event_list": [
+                        "100101",
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 2,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:NetworkDefinition: Honeypot like Addresses",
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "ip"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDozMiBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1uY05DU0EJQWdlbnRMb2dGb3JtYXQ9TkNTQQlSZW1vdGVIb3N0PTUuMi42OS4xNAlSZW1vdGVMb2c9LQlVc2VybmFtZT1BUEkJVGltZXN0YW1wPTIyL0phbi8yMDIxOjExOjEwOjMyCUdNVE9mZnNldD0tMDYwMAlNZXRob2Q9SEVMTwlSZXNvdXJjZT0tPytBUEkJUHJvdG9jb2w9U01UUAlTZXJ2aWNlU3RhdHVzPTI1MAlCeXRlc1NlbnQ9NDgK"
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--0d655440-32b0-4af3-aa66-7ddcfffd0093",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::HELO",
+                    "qid": 26750033,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2R",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 5,
+                    "relevance": 1,
+                    "cre_event_list": [
+                        "100101",
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 2,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:NetworkDefinition: Honeypot like Addresses",
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "ip"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDozMiBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1uY05DU0EJQWdlbnRMb2dGb3JtYXQ9TkNTQQlSZW1vdGVIb3N0PTUuMi42OS4xNAlSZW1vdGVMb2c9LQlVc2VybmFtZT1BUEkJVGltZXN0YW1wPTIyL0phbi8yMDIxOjExOjEwOjMyCUdNVE9mZnNldD0tMDYwMAlNZXRob2Q9SEVMTwlSZXNvdXJjZT0tPytBUEkJUHJvdG9jb2w9U01UUAlTZXJ2aWNlU3RhdHVzPTI1MAlCeXRlc1NlbnQ9NDgK"
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--37c7914d-7dbe-4db8-bb35-f797fb57d716",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::HELO",
+                    "qid": 26750033,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2R",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 5,
+                    "relevance": 1,
+                    "cre_event_list": [
+                        "100101",
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 2,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:NetworkDefinition: Honeypot like Addresses",
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "ip"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDozMiBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1uY05DU0EJQWdlbnRMb2dGb3JtYXQ9TkNTQQlSZW1vdGVIb3N0PTUuMi42OS4xNAlSZW1vdGVMb2c9LQlVc2VybmFtZT1BUEkJVGltZXN0YW1wPTIyL0phbi8yMDIxOjExOjEwOjMyCUdNVE9mZnNldD0tMDYwMAlNZXRob2Q9SEVMTwlSZXNvdXJjZT0tPytBUEkJUHJvdG9jb2w9U01UUAlTZXJ2aWNlU3RhdHVzPTI1MAlCeXRlc1NlbnQ9NDgK"
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--e3de76df-1156-45f5-8e97-c356251baeb1",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::HELO",
+                    "qid": 26750033,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2R",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 5,
+                    "relevance": 1,
+                    "cre_event_list": [
+                        "100101",
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100535",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 3,
+                    "severity": 4,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:NetworkDefinition: Honeypot like Addresses",
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "UBA : User Geography Map",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "ip"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDozMiBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1uY05DU0EJQWdlbnRMb2dGb3JtYXQ9TkNTQQlSZW1vdGVIb3N0PTUuMi42OS4xNAlSZW1vdGVMb2c9LQlVc2VybmFtZT1BUEkJVGltZXN0YW1wPTIyL0phbi8yMDIxOjExOjEwOjMyCUdNVE9mZnNldD0tMDYwMAlNZXRob2Q9SEVMTwlSZXNvdXJjZT0tPytBUEkJUHJvdG9jb2w9U01UUAlTZXJ2aWNlU3RhdHVzPTI1MAlCeXRlc1NlbnQ9NDgK"
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--37fbfd8c-d53b-4ed8-b5fe-c1f4b29ea427",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::HELO",
+                    "qid": 26750033,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2R",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 5,
+                    "relevance": 1,
+                    "cre_event_list": [
+                        "100101",
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 2,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:NetworkDefinition: Honeypot like Addresses",
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "ip"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDozMiBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1uY05DU0EJQWdlbnRMb2dGb3JtYXQ9TkNTQQlSZW1vdGVIb3N0PTUuMi42OS4xNAlSZW1vdGVMb2c9LQlVc2VybmFtZT1BUEkJVGltZXN0YW1wPTIyL0phbi8yMDIxOjExOjEwOjMyCUdNVE9mZnNldD0tMDYwMAlNZXRob2Q9SEVMTwlSZXNvdXJjZT0tPytBUEkJUHJvdG9jb2w9U01UUAlTZXJ2aWNlU3RhdHVzPTI1MAlCeXRlc1NlbnQ9NDgK"
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--a68e7cb8-526f-490c-8c1f-92e931b2f14a",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::DATA",
+                    "qid": 26750028,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2L",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 10,
+                    "relevance": 8,
+                    "cre_event_list": [
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100218",
+                        "100217",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 6,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "Destination Asset Exists",
+                        "Context is Remote to Local",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.10",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDozOCBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1leFczQwlBZ2VudExvZ0Zvcm1hdD1XM0MgZGF0ZT0yMDIxLTAxLTIyCXRpbWU9MTE6MTA6MzgJYy1pcD01LjIuNjkuMTQJY3MtdXNlcm5hbWU9QVBJCXMtc2l0ZW5hbWU9WEJBTktTVkMJcy1jb21wdXRlcm5hbWU9ZXhjaGFuZ2UueGJhbmsuY29tCXMtaXA9MTkyLjE2OC4xLjEwCXMtcG9ydD0wCWNzLW1ldGhvZD1EQVRBCWNzLXVyaS1zdGVtPS0JY3MtdXJpLXF1ZXJ5PWx1Y2l1cy5saW5kQHlhaG9vLmNvbQlzYy1zdGF0dXM9MjUwCXNjLXdpbjMyLXN0YXR1cz0wCXNjLWJ5dGVzPTEzMgljcy1ieXRlcz0yNDEzCXRpbWUtdGFrZW49NTMxCWNzLXZlcnNpb249U01UUAljcy1ob3N0PS0JY3MoVXNlci1BZ2VudCk9LQljcyhDb29raWUpPS0JY3MoUmVmZXJlcik9LQo="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--81b8d4aa-0706-4bbd-8c42-233fc82a9cd1",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::DATA",
+                    "qid": 26750028,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2L",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 10,
+                    "relevance": 8,
+                    "cre_event_list": [
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100218",
+                        "100217",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 6,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "Destination Asset Exists",
+                        "Context is Remote to Local",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.10",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDo0MCBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1leFczQwlBZ2VudExvZ0Zvcm1hdD1XM0MgZGF0ZT0yMDIxLTAxLTIyCXRpbWU9MTE6MTA6NDAJYy1pcD01LjIuNjkuMTQJY3MtdXNlcm5hbWU9QVBJCXMtc2l0ZW5hbWU9WEJBTktTVkMJcy1jb21wdXRlcm5hbWU9ZXhjaGFuZ2UueGJhbmsuY29tCXMtaXA9MTkyLjE2OC4xLjEwCXMtcG9ydD0wCWNzLW1ldGhvZD1EQVRBCWNzLXVyaS1zdGVtPS0JY3MtdXJpLXF1ZXJ5PXdpemEub3J2aWxsZUBzY2h1bHR6LmNvbQlzYy1zdGF0dXM9MjUwCXNjLXdpbjMyLXN0YXR1cz0wCXNjLWJ5dGVzPTEzMgljcy1ieXRlcz0yNDEzCXRpbWUtdGFrZW49NTMxCWNzLXZlcnNpb249U01UUAljcy1ob3N0PS0JY3MoVXNlci1BZ2VudCk9LQljcyhDb29raWUpPS0JY3MoUmVmZXJlcik9LQo="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--89cd1afe-8eec-4795-81a5-adf5d531e36a",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::DATA",
+                    "qid": 26750028,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2L",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 10,
+                    "relevance": 8,
+                    "cre_event_list": [
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100218",
+                        "100217",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 6,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "Destination Asset Exists",
+                        "Context is Remote to Local",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.10",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDo0MiBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1leFczQwlBZ2VudExvZ0Zvcm1hdD1XM0MgZGF0ZT0yMDIxLTAxLTIyCXRpbWU9MTE6MTA6NDIJYy1pcD01LjIuNjkuMTQJY3MtdXNlcm5hbWU9QVBJCXMtc2l0ZW5hbWU9WEJBTktTVkMJcy1jb21wdXRlcm5hbWU9ZXhjaGFuZ2UueGJhbmsuY29tCXMtaXA9MTkyLjE2OC4xLjEwCXMtcG9ydD0wCWNzLW1ldGhvZD1EQVRBCWNzLXVyaS1zdGVtPS0JY3MtdXJpLXF1ZXJ5PWphZGVuNTJAZW1hcmQubmV0CXNjLXN0YXR1cz0yNTAJc2Mtd2luMzItc3RhdHVzPTAJc2MtYnl0ZXM9MTMyCWNzLWJ5dGVzPTI0MTMJdGltZS10YWtlbj01MzEJY3MtdmVyc2lvbj1TTVRQCWNzLWhvc3Q9LQljcyhVc2VyLUFnZW50KT0tCWNzKENvb2tpZSk9LQljcyhSZWZlcmVyKT0tCg=="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--8f710171-ccb2-4c18-87e3-9ea1f4cf1117",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::DATA",
+                    "qid": 26750028,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2L",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 10,
+                    "relevance": 8,
+                    "cre_event_list": [
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100218",
+                        "100217",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 4,
+                    "finding_type": "event",
+                    "magnitude": 6,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "Destination Asset Exists",
+                        "Context is Remote to Local",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.10",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDo1MCBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1leFczQwlBZ2VudExvZ0Zvcm1hdD1XM0MgZGF0ZT0yMDIxLTAxLTIyCXRpbWU9MTE6MTA6NTAJYy1pcD01LjIuNjkuMTQJY3MtdXNlcm5hbWU9QVBJCXMtc2l0ZW5hbWU9WEJBTktTVkMJcy1jb21wdXRlcm5hbWU9ZXhjaGFuZ2UueGJhbmsuY29tCXMtaXA9MTkyLjE2OC4xLjEwCXMtcG9ydD0wCWNzLW1ldGhvZD1EQVRBCWNzLXVyaS1zdGVtPS0JY3MtdXJpLXF1ZXJ5PWRheWFuYTA4QGdtYWlsLmNvbQlzYy1zdGF0dXM9MjUwCXNjLXdpbjMyLXN0YXR1cz0wCXNjLWJ5dGVzPTEzMgljcy1ieXRlcz0yNDEzCXRpbWUtdGFrZW49NTMxCWNzLXZlcnNpb249U01UUAljcy1ob3N0PS0JY3MoVXNlci1BZ2VudCk9LQljcyhDb29raWUpPS0JY3MoUmVmZXJlcik9LQ=="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 4
+        },
+        {
+            "id": "observed-data--63bd97b6-fbe6-4718-b447-e042db82d6a0",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::HELO",
+                    "qid": 26750033,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2R",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 5,
+                    "relevance": 1,
+                    "cre_event_list": [
+                        "100101",
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 2,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:NetworkDefinition: Honeypot like Addresses",
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "ip"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "127.0.0.1",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDozMiBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1uY05DU0EJQWdlbnRMb2dGb3JtYXQ9TkNTQQlSZW1vdGVIb3N0PTUuMi42OS4xNAlSZW1vdGVMb2c9LQlVc2VybmFtZT1BUEkJVGltZXN0YW1wPTIyL0phbi8yMDIxOjExOjEwOjMyCUdNVE9mZnNldD0tMDYwMAlNZXRob2Q9SEVMTwlSZXNvdXJjZT0tPytBUEkJUHJvdG9jb2w9U01UUAlTZXJ2aWNlU3RhdHVzPTI1MAlCeXRlc1NlbnQ9NDgK"
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--1a04006c-68c0-4c09-9af7-dac8caed40cf",
+            "type": "observed-data",
+            "created_by_ref": "identity--18fa1f32-26a9-475c-a819-86a62663b96f",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-qradar",
+                    "qid_name": "SMTP::DATA",
+                    "qid": 26750028,
+                    "category_name": "Misc System Event",
+                    "category_id": 8008,
+                    "high_level_category_name": "System",
+                    "high_level_category_id": 8000,
+                    "log_source_id": 2602,
+                    "device_type": 19,
+                    "log_source_type_name": "TippingPoint Intrusion Prevention System (IPS)",
+                    "log_source_name": "Exchange @ exchange.xbank.com",
+                    "device_time": "2031-08-27T15:49:50.000Z",
+                    "direction": "R2L",
+                    "identity_ip": "0.0.0.0",
+                    "credibility": 10,
+                    "relevance": 8,
+                    "cre_event_list": [
+                        "100341",
+                        "100340",
+                        "100530",
+                        "100221",
+                        "100218",
+                        "100217",
+                        "100565",
+                        "100380",
+                        "100267",
+                        "100277",
+                        "100272",
+                        "100356",
+                        "100227",
+                        "100223"
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "1": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "2",
+                    "dst_ip_ref": "5",
+                    "src_application_user_ref": "7",
+                    "event_count": 7,
+                    "finding_type": "event",
+                    "magnitude": 6,
+                    "severity": 2,
+                    "src_geolocation": "Europe.Netherlands",
+                    "dst_geolocation": "other",
+                    "rule_names": [
+                        "BB:UBA : Common Log Source Filters",
+                        "BB:UBA : Common Event Filters",
+                        "BB:UBA : Excluded Geographic Locations",
+                        "Destination Asset Weight is Low",
+                        "Destination Asset Exists",
+                        "Context is Remote to Local",
+                        "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                        "BB:UBA : Unusual Times, Evening",
+                        "BB:DeviceDefinition: Mail",
+                        "BB:NetworkDefinition: Darknet Addresses",
+                        "Load Basic Building Blocks",
+                        "BB:CategoryDefinition: Countries/Regions with Restricted Access",
+                        "Source Asset Weight is Low",
+                        "Source Address is a Bogon IP"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "86.105.18.116",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "src_ref": "2",
+                    "src_port": 0,
+                    "dst_ref": "5",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.10",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "user-account",
+                    "user_id": "API"
+                },
+                "8": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPkphbiAyMiAxMToxMDo1MCBleGNoYW5nZS54YmFuay5jb20gQWdlbnREZXZpY2U9V2luZG93c0V4Y2hhbmdlCUFnZW50TG9nRmlsZT1leFczQwlBZ2VudExvZ0Zvcm1hdD1XM0MgZGF0ZT0yMDIxLTAxLTIyCXRpbWU9MTE6MTA6NTAJYy1pcD01LjIuNjkuMTQJY3MtdXNlcm5hbWU9QVBJCXMtc2l0ZW5hbWU9WEJBTktTVkMJcy1jb21wdXRlcm5hbWU9ZXhjaGFuZ2UueGJhbmsuY29tCXMtaXA9MTkyLjE2OC4xLjEwCXMtcG9ydD0wCWNzLW1ldGhvZD1EQVRBCWNzLXVyaS1zdGVtPS0JY3MtdXJpLXF1ZXJ5PWRheWFuYTA4QGdtYWlsLmNvbQlzYy1zdGF0dXM9MjUwCXNjLXdpbjMyLXN0YXR1cz0wCXNjLWJ5dGVzPTEzMgljcy1ieXRlcz0yNDEzCXRpbWUtdGFrZW49NTMxCWNzLXZlcnNpb249U01UUAljcy1ob3N0PS0JY3MoVXNlci1BZ2VudCk9LQljcyhDb29raWUpPS0JY3MoUmVmZXJlcik9LQ=="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 7
+        }
+    ]
+}

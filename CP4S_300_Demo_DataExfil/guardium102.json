@@ -1,0 +1,134 @@
+{
+    "type": "bundle",
+    "id": "bundle--abe952aa-b943-4a9d-98d4-f5c073b4e8dc",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--f165428c-7b6a-4d77-89cc-33f56a10c541",
+            "name": "Guardium",
+            "identity_class": "events"
+        },            
+            {
+            "id": "observed-data--12afa14f-5463-4251-83ba-4af5261a5ea1",
+            "type": "observed-data",
+            "created_by_ref": "identity--1265428c-7b6a-4d77-89cc-33f56a10c541",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.114",
+                    "resolves_to_refs": "2"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 0,
+                    "dst_ref": "3",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "A5:DE:24:C1:47:21"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.114",
+                    "resolves_to_refs": "4"
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "A5:DE:24:C1:47:21"
+                },
+                "5": {
+                    "type": "user-account",
+                    "user_id": "DEAMONX"
+                },
+                "6": {
+                    "type": "file",
+                    "name": "HR_DATABASE"
+                },
+                "9": {
+                    "type": "domain",
+                    "path": "Guradium@chemicalX"
+                },
+                "10": {
+                    "type": "artifact",
+                    "payload_bin": "localhost:accountId:911534260404,accessKeyId:ASIA5IO5NAC2OIBXQ4NY,userName:DEAMONX,sessionContext:{attributes:{mfaAuthenticated:false,creationDate:2018-09-28T13:40:25Z}},invokedBy:Daniel},eventTime:2018-06-09T21:08:04Z,eventSource:Guradium@chemicalX,eventName:GetObject,awsRegion:us-west-2,sourceIPAddress:67.229.97.229,userAgent:[aws-cli/1.15.57 Python/2.7.14+ Linux/4.15.0-kali2-amd64 botocore/1.10.56],requestParameters:{X-Amz-Date:20180609T210803Z,bucketName:db_backups2032,response-content-disposition:inline,X-Amz-Algorithm:AWS4-HMAC-SHA256,X-Amz-SignedHeaders:host,X-Amz-Expires:300,key:fullDB_dump30102018.dump,responseElements:null,additionalEventData:{x-amz-id-2:aOFvDQjetBtTbrR6zfhmvFJEFS1dOdmSucSEVzd70yIwpLg6pSCalFewtoVchOzcSLKQswDjlAQ=},requestID:4D551A01693DE04D,eventID:73de1499-c6d0-4faa-84b3-f19f607a7a8d,readOnly:true,resources:[{type:AWS::S3::Object,ARN:arn:aws:s3:::mystorage2007/fullDB_dump30102018.dump},{accountId:911534260404,type:AWS::S3::Bucket,ARN:arn:aws:s3:::db_backups2032}],eventType:AwsApiCall,recipientAccountId:911534260404"
+                }
+            },
+            "x_com_ibm_ariel": {
+                "qid_name": "Object Downloaded",
+                "category_name": "guardium Message",
+                "log_source_name": "guardium"
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--81afa14f-5463-4251-83ba-4aac261a5ea1",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.114",
+                    "resolves_to_refs": "2"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 0,
+                    "dst_ref": "3",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "A5:DE:24:C1:47:21"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.114",
+                    "resolves_to_refs": "4"
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "A5:DE:24:C1:47:21"
+                },
+                "5": {
+                    "type": "user-account",
+                    "user_id": "Gil"
+                },
+                "6": {
+                    "type": "file",
+                    "name": "HR_DATABASE"
+                },
+                "9": {
+                    "type": "domain",
+                    "path": "Guradium@chemicalX"
+                },
+                "10": {
+                    "type": "artifact",
+                    "payload_bin": "localhost:accountId:911534260404,accessKeyId:ASIA5IO5NAC2OIBXQ4NY,userName:Gil,sessionContext:{attributes:{mfaAuthenticated:false,creationDate:2018-09-28T13:40:25Z}},invokedBy:Daniel},eventTime:2018-06-09T21:08:04Z,eventSource:Guradium@chemicalX,eventName:GetObject,awsRegion:us-west-2,sourceIPAddress:67.229.97.229,userAgent:[aws-cli/1.15.57 Python/2.7.14+ Linux/4.15.0-kali2-amd64 botocore/1.10.56],requestParameters:{X-Amz-Date:20180609T210803Z,bucketName:db_backups2032,response-content-disposition:inline,X-Amz-Algorithm:AWS4-HMAC-SHA256,X-Amz-SignedHeaders:host,X-Amz-Expires:300,key:fullDB_dump30102018.dump,responseElements:null,additionalEventData:{x-amz-id-2:aOFvDQjetBtTbrR6zfhmvFJEFS1dOdmSucSEVzd70yIwpLg6pSCalFewtoVchOzcSLKQswDjlAQ=},requestID:4D551A01693DE04D,eventID:73de1499-c6d0-4faa-84b3-f19f607a7a8d,readOnly:true,resources:[{type:AWS::S3::Object,ARN:arn:aws:s3:::mystorage2007/fullDB_dump30102018.dump},{accountId:911534260404,type:AWS::S3::Bucket,ARN:arn:aws:s3:::db_backups2032}],eventType:AwsApiCall,recipientAccountId:911534260404"
+                }
+            },
+            "x_com_ibm_ariel": {
+                "qid_name": "Object Downloaded",
+                "category_name": "guardium Message",
+                "log_source_name": "guardium"
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        }
+    ]
+}

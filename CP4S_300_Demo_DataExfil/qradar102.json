@@ -1,0 +1,261 @@
+{
+    "type": "bundle",
+    "id": "bundle--17647aa4-e54d-46b7-abd1-14d6ba6eb5b3",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+            "name": "QRadar",
+            "identity_class": "events"
+        },
+        {
+            "id": "observed-data--481c34fc-af91-4999-999c-f6b8b2d90816",
+            "type": "observed-data",
+            "created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-oca-event",
+                    "action": "Outbound Transfer of Sensitive Data (PII)",
+                    "outcome": "Data Loss Possible",
+                    "category": [
+                        "Risk"
+                    ],
+                    "provider": "Custom Rule Engine",
+                    "agent": "Custom Rule Engine-8 :: QRadarAIO",
+                    "created": "2031-08-27T15:49:50.000Z",
+                    "network_ref": "4",
+                    "host_ref": "5",
+                    "original_ref": "10"
+                },
+                "1": {
+                    "type": "x-qradar",
+                    "qid": 67502157,
+                    "category_id": 20013,
+                    "high_level_category_id": 20000,
+                    "log_source_id": 63,
+                    "device_type": 18,
+                    "direction": "L2R",
+                    "credibility": 10,
+                    "relevance": 10,
+                    "cre_event_list": [
+                        101460,
+                        100020,
+                        100211,
+                        100209,
+                        100205,
+                        100270,
+                        100255,
+                        100200
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "2": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "3",
+                    "dst_ip_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 10,
+                    "severity": 10,
+                    "src_geolocation": "other",
+                    "dst_geolocation": "Oceania.PapuaNewGuinea",
+                    "name": "Outbound Transfer of Sensitive Data (PII)",
+                    "description": "Outbound flow detected containing suspect conten: entity alert",
+                    "rule_names": [
+                        "ACME: Outbound Transfer of Sensitive Data (PII)",
+                        "BB:PortDefinition: Web Ports",
+                        "Source Asset Weight is Low",
+                        "Source Asset Exists",
+                        "Destination Asset Weight is Low",
+                        "BB:PortDefinition: Authorized L2R Ports",
+                        "Load Basic Building Blocks",
+                        "Context is Local to Remote"
+                    ]
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.114",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "4": {
+                    "type": "network-traffic",
+                    "src_ref": "3",
+                    "src_port": 20477,
+                    "dst_ref": "7",
+                    "dst_port": 80,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "5": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "3",
+                        "9"
+                    ],
+                    "mac_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "ipv4-addr",
+                    "value": "124.240.198.66",
+                    "resolves_to_refs": [
+                        "8"
+                    ]
+                },
+                "8": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "9": {
+                    "type": "ipv4-addr",
+                    "value": "0.0.0.0"
+                },
+                "10": {
+                    "type": "artifact",
+                    "payload_bin": "T3V0Ym91bmQgVHJhbnNmZXIgb2YgU2Vuc2l0aXZlIERhdGEgKFBJSSkJT3V0Ym91bmQgZmxvdyBkZXRlY3RlZCBjb250YWluaW5nIHN1c3BlY3QgY29udGVuOiBlbnRpdHkgYWxlcnQ="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--1e39942a-4ab7-4ef4-bc6c-a53691f78815",
+            "type": "observed-data",
+            "created_by_ref": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+            "created": "2031-08-27T15:49:50.000Z",
+            "modified": "2031-08-27T15:49:50.000Z",
+            "objects": {
+                "0": {
+                    "type": "x-oca-event",
+                    "action": "Outbound Transfer of Sensitive Data (PII)",
+                    "outcome": "Data Loss Possible",
+                    "category": [
+                        "Risk"
+                    ],
+                    "provider": "Custom Rule Engine",
+                    "agent": "Custom Rule Engine-8 :: QRadarAIO",
+                    "created": "2031-08-27T15:49:50.000Z",
+                    "network_ref": "4",
+                    "host_ref": "5",
+                    "original_ref": "10"
+                },
+                "1": {
+                    "type": "x-qradar",
+                    "qid": 67502157,
+                    "category_id": 20013,
+                    "high_level_category_id": 20000,
+                    "log_source_id": 63,
+                    "device_type": 18,
+                    "direction": "L2R",
+                    "credibility": 10,
+                    "relevance": 10,
+                    "cre_event_list": [
+                        101460,
+                        100020,
+                        100211,
+                        100209,
+                        100205,
+                        100270,
+                        100255,
+                        100200
+                    ],
+                    "domain_id": 0,
+                    "domain_name": "Default Domain"
+                },
+                "2": {
+                    "type": "x-ibm-finding",
+                    "start": "2031-08-27T15:49:50.000Z",
+                    "end": "2031-08-27T15:49:50.000Z",
+                    "src_ip_ref": "3",
+                    "dst_ip_ref": "7",
+                    "event_count": 1,
+                    "finding_type": "event",
+                    "magnitude": 10,
+                    "severity": 10,
+                    "src_geolocation": "other",
+                    "dst_geolocation": "Oceania.PapuaNewGuinea",
+                    "name": "Outbound Transfer of Sensitive Data (PII)",
+                    "description": "Outbound flow detected containing suspect conten: entity alert",
+                    "rule_names": [
+                        "ACME: Outbound Transfer of Sensitive Data (PII)",
+                        "BB:PortDefinition: Web Ports",
+                        "Source Asset Weight is Low",
+                        "Source Asset Exists",
+                        "Destination Asset Weight is Low",
+                        "BB:PortDefinition: Authorized L2R Ports",
+                        "Load Basic Building Blocks",
+                        "Context is Local to Remote"
+                    ]
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "192.168.1.114",
+                    "resolves_to_refs": [
+                        "6"
+                    ]
+                },
+                "4": {
+                    "type": "network-traffic",
+                    "src_ref": "3",
+                    "src_port": 20476,
+                    "dst_ref": "7",
+                    "dst_port": 80,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "5": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "3",
+                        "9"
+                    ],
+                    "mac_refs": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "7": {
+                    "type": "ipv4-addr",
+                    "value": "124.240.198.66",
+                    "resolves_to_refs": [
+                        "8"
+                    ]
+                },
+                "8": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "9": {
+                    "type": "ipv4-addr",
+                    "value": "0.0.0.0"
+                },
+                "10": {
+                    "type": "artifact",
+                    "payload_bin": "T3V0Ym91bmQgVHJhbnNmZXIgb2YgU2Vuc2l0aXZlIERhdGEgKFBJSSkJT3V0Ym91bmQgZmxvdyBkZXRlY3RlZCBjb250YWluaW5nIHN1c3BlY3QgY29udGVuOiBlbnRpdHkgYWxlcnQ="
+                }
+            },
+            "first_observed": "2031-08-27T15:49:50.000Z",
+            "last_observed": "2031-08-27T15:49:50.000Z",
+            "number_observed": 1
+        }
+    ]
+}
