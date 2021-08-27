@@ -6,8 +6,8 @@
         {
             "type": "identity",
             "id": "identity--33fa3e56-6511-40de-bc69-c5ffeb3838f9",
-            "created": "2031-08-27T15:49:50.000Z",
-            "modified": "2031-08-27T15:49:50.000Z",
+            "created": "2021-08-27T16:15:36.000Z",
+            "modified": "2021-08-27T16:15:36.000Z",
             "name": "threat demo",
             "identity_class": "program"
         },
@@ -15,9 +15,9 @@
             "type": "observed-data",
             "id": "observed-data--ed82dd61-cc41-485b-b608-d278469e6259",
             "created_by_ref": "identity--33fa3e56-6511-40de-bc69-c5ffeb3838f9",
-            "created": "2031-08-27T15:49:50.000Z",
-            "modified": "2031-08-27T15:49:50.000Z",
-            "first_observed": "2031-08-27T15:49:50.000Z",
+            "created": "2021-08-27T16:15:36.000Z",
+            "modified": "2021-08-27T16:15:36.000Z",
+            "first_observed": "2021-08-27T16:15:36.000Z",
             "last_observed": "2031-08-27T15:49:50.000Z",
             "number_observed": 1,
             "objects": {
@@ -35,8 +35,8 @@
                 },
                 "3": {
                     "type": "network-traffic",
-                    "start": "2031-08-27T15:49:50.000Z",
-                    "end": "2031-08-27T15:49:50.000Z",
+                    "start": "2021-08-27T16:15:36.000Z",
+                    "end": "2021-08-27T16:15:36.000Z",
                     "is_active": false,
                     "src_ref": "0",
                     "dst_ref": "1",
