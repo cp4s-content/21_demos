@@ -1,0 +1,184 @@
+{
+    "type": "bundle",
+    "id": "281fe97a-35d8-4b84-be2e-253047cc6274",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--bc031dc2-239b-4371-b7f6-66f634de9927",
+            "name": "shifter_proxy",
+            "identity_class": "events"
+        },
+        {
+            "id": "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b",
+            "type": "observed-data",
+            "created": "2021-09-09T04:13:20.874Z",
+            "objects": {
+                "0": {
+                    "id": "CIDD706957",
+                    "type": "x-mss-customer"
+                },
+                "1": {
+                    "id": "PR0000000037382",
+                    "ip": "198.23.124.4",
+                    "name": "xfr-us-pa1",
+                    "type": "x-mss-device",
+                    "vendor": "49",
+                    "version": "Palo Alto 9.1.8"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "6",
+                    "src_ref": "5",
+                    "dst_port": 80,
+                    "src_port": 49888,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "artifact",
+                    "payload_bin": "U2VwICA5IDA0OjI0OjEzIDE3Mi4xNi4xMDQuMSAgMSwyMDIxLzA5LzA5IDA0OjI0OjEyLDAwNzk1MTAwMDAzNTU5MixUUkFGRklDLGVuZCwyMzA1LDIwMjEvMDkvMDkgMDQ6MjQ6MTIsMTcyLjIwLjEzLjEwNCwxMjguMjEwLjE1Ny4yNTEsMC4wLjAuMCwwLjAuMC4wLFBBLXRvLUNQLXFveCwsLHdlYi1icm93c2luZyx2c3lzMSxQcml2YXRlLFZQTixldGhlcm5ldDEvMix0dW5uZWwuMixNU1MgTG9nIEZvcndhcmRpbmcsMjAyMS8wOS8wOSAwNDoyNDoxMiwyMTMzNTAsMSw0OTg4OCw4MCwwLDAsMHg3MCx0Y3AsYWxsb3csMzUzMiw3NTQsMjc3OCwxNCwyMDIxLzA5LzA5IDA0OjI0OjAwLDAscHJpdmF0ZS1pcC1hZGRyZXNzZXMsMCw4MjU2OTQ4MzE5LDB4MCwxNzIuMTYuMC4wLTE3Mi4zMS4yNTUuMjU1LDE3Mi4xNi4wLjAtMTcyLjMxLjI1NS4yNTUsMCw3LDcsdGNwLWZpbiwwLDAsMCwwLCx4ZnItdXMtcGExLGZyb20tcG9saWN5LCwsMCwsMCwsTi9BLDAsMCwwLDAsZDRjMzRmZGUtZTkwNy00NTg3LWIyZTctNzhmMDZiMjEwZDNjLDAsMCwsLCwsLCw="
+                },
+                "4": {
+                    "type": "x-oca-event",
+                    "action": "ACCEPT",
+                    "host_ref": "7",
+                    "ip_refs": [
+                        "5",
+                        "6"
+                    ],
+                    "network_ref": "2",
+                    "original_ref": "3"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.13.104"
+                },
+                "6": {
+                    "type": "ipv4-addr",
+                    "value": "128.210.157.251"
+                },
+                "7": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "5"
+                    ]
+                }
+            },
+            "modified": "2021-09-09T04:13:20.874Z",
+            "last_observed": "2021-09-09T04:13:20.874Z",
+            "created_by_ref": "identity--bc031dc2-239b-4371-b7f6-66f634de9927",
+            "first_observed": "2021-09-09T04:13:20.874Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c",
+            "created": "2021-09-09T04:20:03.830Z",
+            "created_by_ref": "identity--bc031dc2-239b-4371-b7f6-66f634de9927",
+            "first_observed": "2021-09-09T04:20:03.830Z",
+            "last_observed": "2021-09-09T04:20:03.830Z",
+            "modified": "2021-09-09T04:20:03.830Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "type": "user-account",
+                    "user_id": "dan"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.18.20"
+                },
+                "2": {
+                    "dst_port": 3306,
+                    "dst_ref": "1",
+                    "src_port": 44494,
+                    "src_ref": "3",
+                    "type": "network-traffic",
+                    "protocols": [
+                        "tcp",
+                        "ipv4"
+                    ]
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.13.104"
+                }
+            },
+            "type": "observed-data",
+            "x_com_guardium": {
+                "anomaly_score": 100,
+                "db_user": "dan",
+                "error_outlier": "false",
+                "high_volume_outlier": "true",
+                "new_outlier": "false",
+                "service_name": "172.20.18.20:5.6.27",
+                "source_program": "MYSQL CLIENT",
+                "temp_outlier": "false"
+            }
+        },
+        {
+            "id": "observed-data--89543845-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created_by_ref": "identity--bc031dc2-239b-4371-b7f6-66f634de9927",
+            "created": "2021-09-09T04:21:11.750Z",
+            "modified": "2021-09-09T04:21:11.750Z",
+            "objects": {
+                "0": {
+                    "type": "x-oca-event",
+                    "action": "Data exfiltration to unsanctioned apps",
+                    "outcome": "Success",
+                    "category": [
+                        "ThreatManagement"
+                    ],
+                    "provider": "SecurityComplianceCenter",
+                    "agent": "SecurityComplianceCenter",
+                    "created": "2021-09-09T04:21:11.750Z",
+                    "nt_ref": "2",
+                    "user_ref": "4",
+                    "host_ref": "3",
+                    "code": 1
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.18.20",
+                    "resolves_to_refs": [
+                        "5"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "src_ref": "1",
+                    "src_port": 127690,
+                    "dst_ref": "6",
+                    "dst_port": 443,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "hostname": "database.example.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "dan"
+                },
+                "5": {
+                    "type": "domain-name",
+                    "value": "database.example.com"
+                },
+                "6": {
+                    "type": "ipv4-addr",
+                    "value": "128.210.157.251"
+                }
+            },
+            "first_observed": "2021-09-09T04:21:11.750Z",
+            "last_observed": "2021-09-09T04:21:11.750Z",
+            "number_observed": 1
+        }
+    ]
+}
