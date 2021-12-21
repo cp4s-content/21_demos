@@ -1,0 +1,521 @@
+{
+    "type": "bundle",
+    "id": "281fe97a-35d8-4b84-be2e-253047cc6274",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
+            "name": "shifter_proxy",
+            "identity_class": "events"
+        },
+        {
+            "id": "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3",
+            "type": "observed-data",
+            "created": "2021-09-09T04:12:07.335Z",
+            "objects": {
+                "0": {
+                    "type": "x-crowdstrike",
+                    "machine_id": "6a813bbd845c2bf3115e24c40fd9a902a3047e8b"
+                },
+                "1": {
+                    "type": "domain-name",
+                    "value": "dan-pc.example.com"
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "199.36.158.100"
+                },
+                "3": {
+                    "type": "network-traffic",
+                    "dst_ref": "2",
+                    "src_ref": "5",
+                    "dst_port": 443,
+                    "src_port": 50990,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "4": {
+                    "type": "url",
+                    "value": "zoommeetinactivation.web.app"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.13.104"
+                },
+                "6": {
+                    "name": "svchost.exe",
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "f586835082f632dc8d9404d83bc16316",
+                        "SHA-1": "010db07461e45b41c886192df6fd425ba8d42d82",
+                        "SHA-256": "643ec58e82e0272c97c2a59f6020970d881af19c0ad5029db9c958c13b6558c7"
+                    },
+                    "parent_directory_ref": "8"
+                },
+                "7": {
+                    "pid": 1824,
+                    "name": "svchost.exe",
+                    "type": "process",
+                    "created": "2021-08-31T04:46:36.071Z",
+                    "binary_ref": "6",
+                    "parent_ref": "10",
+                    "command_line": "svchost.exe -k netsvcs -p -s BITS",
+                    "creator_user_ref": "11"
+                },
+                "8": {
+                    "path": "c:\\windows\\system32",
+                    "type": "directory"
+                },
+                "9": {
+                    "name": "services.exe",
+                    "type": "file"
+                },
+                "10": {
+                    "pid": 740,
+                    "name": "services.exe",
+                    "type": "process",
+                    "created": "2021-05-26T09:09:45.925Z",
+                    "binary_ref": "9"
+                },
+                "11": {
+                    "type": "user-account",
+                    "user_id": "dan",
+                    "account_login": "dan"
+                }
+            },
+            "modified": "2021-09-09T04:12:07.335Z",
+            "last_observed": "2021-09-09T04:12:07.335Z",
+            "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
+            "first_observed": "2021-09-09T04:12:07.335Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--48536613-242d-45df-bc66-ef524e9a3a20",
+            "type": "observed-data",
+            "created": "2021-09-09T04:12:11.000Z",
+            "objects": {
+                "0": {
+                    "id": "CIDD706957",
+                    "type": "x-mss-customer"
+                },
+                "1": {
+                    "id": "PR0000000044749",
+                    "ip": "10.1.34.5",
+                    "name": "Crowdstrike",
+                    "type": "x-mss-device",
+                    "vendor": "2188",
+                    "version": "Undefined"
+                },
+                "2": {
+                    "type": "artifact",
+                    "payload_bin": "eyJpZCI6ImVkNjM3NTgyOTQ4MTkzODM5Njg0XzEwNDI1NTE2MzYiLCJpbmNpZGVudElkIjoxNDIwLCJzZXZlcml0eSI6Ik1lZGl1bSIsInN0YXR1cyI6Ik5ldyIsImludmVzdGlnYXRpb25TdGF0ZSI6IlVuc3VwcG9ydGVkQWxlcnRUeXBlIiwiZGV0ZWN0aW9uU291cmNlIjoiQ3VzdG9tRGV0ZWN0aW9uIiwiZGV0ZWN0b3JJZCI6IjZhYmRiM2VjLWZkM2QtNDg0My1hZWU3LTk0ZDc2YTIwNDY2NCIsImNhdGVnb3J5IjoiU3VzcGljaW91c0FjdGl2aXR5IiwidGl0bGUiOiJUQTAwMDIgLSBXSU4gLSBDb21tYW5kIEludGVycHJldGVycyBTcGF3bmVkIEZyb20gV29yZCIsImRlc2NyaXB0aW9uIjoiUXVlcnkgaWRlbnRpZmllcyB3b3JkLmV4ZSBsYXVuY2hpbmcgYW55IGNvbW1hbmQgSW50ZXJwcmV0ZXJzLiBUaGlzIGlzIGluZGljYXRpdmUgb2YgYSBtYWxpY2lvdXMgZG9jdW1lbnQgYmVpbmcgZXhlY3V0ZWQuIiwiYWxlcnRDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA1OjI2OjU5LjMyMDgyOTdaIiwiZmlyc3RFdmVudFRpbWUiOiIyMDIxLTA5LTA5VDA0OjI0OjU1LjQ4NzExN1oiLCJsYXN0RXZlbnRUaW1lIjoiMjAyMS0wOS0wOVQwNDoyNDo1NS40ODcxMTdaIiwibGFzdFVwZGF0ZVRpbWUiOiIyMDIxLTA5LTA5VDA1OjI3OjAwLjM1MzMzMzNaIiwibWFjaGluZUlkIjoiNmE4MTNiYmQ4NDVjMmJmMzExNWUyNGM0MGZkOWE5MDJhMzA0N2U4YiIsImNvbXB1dGVyRG5zTmFtZSI6ImRhbi1wYy5leGFtcGxlLmNvbSIsInJiYWNHcm91cE5hbWUiOiJYRFIgVGVzdCBncm91cCIsImFhZFRlbmFudElkIjoiOTBkMDczMTMtMTczOS00MjgzLThhOTQtMWFkZDkzYmZkMGViIiwibWl0cmVUZWNobmlxdWVzIjpbXSwicmVsYXRlZFVzZXIiOnsidXNlck5hbWUiOiJkYW4iLCJkb21haW5OYW1lIjoiZXhhbXBsZS5jb20ifSwiY29tbWVudHMiOltdLCJldmlkZW5jZSI6W3siZW50aXR5VHlwZSI6IlByb2Nlc3MiLCJldmlkZW5jZUNyZWF0aW9uVGltZSI6IjIwMjEtMDktMDlUMDU6MjY6NTkuNjJaIiwic2hhMSI6IjU0NWVjMTFkZWU2NDJkZTYzM2ViMmM2ZjZmZmM5MGNjZTRkZWNmOGQiLCJzaGEyNTYiOiJjZTlmNzBlMTA0YzA3ZDkyZmMwNWZiZDYwMDA4MzlmZDZhODdmZjAxMGU3MDYzOTZmODdkZDY3OTI0NGVkOTdiIiwiZmlsZU5hbWUiOiJ3c2NyaXB0LmV4ZSIsImZpbGVQYXRoIjoiQzpcXFdpbmRvd3NcXFN5c3RlbTMyIiwicHJvY2Vzc0lkIjoxMDY4LCJwcm9jZXNzQ29tbWFuZExpbmUiOiJ3c2NyaXB0IC8vYiAvZTpqc2NyaXB0IEM6XFxVc2Vyc1xcQURNSU5JfjJcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxqc2ZpbGUuaW5pIDE3Mi4yMC4xMy4xMDQgODAiLCJwcm9jZXNzQ3JlYXRpb25UaW1lIjoiMjAyMS0wOS0wOVQwNDoyNDo1NVoiLCJwYXJlbnRQcm9jZXNzSWQiOjY4OTIsInBhcmVudFByb2Nlc3NDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA0OjI0OjUxWiIsInBhcmVudFByb2Nlc3NGaWxlTmFtZSI6IldJTldPUkQuRVhFIiwicGFyZW50UHJvY2Vzc0ZpbGVQYXRoIjoiYzpcXHByb2dyYW0gZmlsZXNcXG1pY3Jvc29mdCBvZmZpY2VcXHJvb3RcXG9mZmljZTE2IiwiYWNjb3VudE5hbWUiOiJkYW4iLCJkb21haW5OYW1lIjoiZXhhbXBsZS5jb20iLCJ1c2VyU2lkIjoiUy0xLTUtMjEtMTg4MTEzMTQ0NC0yNDczODkxMzM1LTM0NzAyNjYtNTAwIn0seyJlbnRpdHlUeXBlIjoiVXNlciIsImV2aWRlbmNlQ3JlYXRpb25UaW1lIjoiMjAyMS0wOS0wOVQwNToyNjo1OS42MloiLCJhY2NvdW50TmFtZSI6ImRhbiIsImRvbWFpbk5hbWUiOiJleGFtcGxlLmNvbSIsInVzZXJTaWQiOiJTLTEtNS0yMS0xODgxMTMxNDQ0LTI0NzM4OTEzMzUtMzQ3MDI2Ni01MDAifSx7ImVudGl0eVR5cGUiOiJQcm9jZXNzIiwiZXZpZGVuY2VDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA1OjI2OjU5LjYyWiIsInNoYTEiOiI2NzRiYmU0NWMzMDQ2NGY1MjQzZjQ2Yjk0ODQ2MGNiNTFkNmIzMGFhIiwic2hhMjU2IjoiYWJkYzJkZTRkNDA1NTA1MjkwZWI5MjBkYTliNjc4YmVhZGQxNjQxZThkMGJlOTA2M2E1N2Q1ZWM0N2ZjOWEzNiIsImZpbGVOYW1lIjoiV0lOV09SRC5FWEUiLCJmaWxlUGF0aCI6ImM6XFxwcm9ncmFtIGZpbGVzXFxtaWNyb3NvZnQgb2ZmaWNlXFxyb290XFxvZmZpY2UxNiIsInByb2Nlc3NJZCI6Njg5MiwicHJvY2Vzc0NvbW1hbmRMaW5lIjoiXCJXSU5XT1JELkVYRVwiIC9xIC90IFwiQzpcXFVzZXJzXFxBRE1JTkl+MlxcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGludm9pY2UuZG9jXCIiLCJwcm9jZXNzQ3JlYXRpb25UaW1lIjoiMjAyMS0wNi0wM1QwNDoyNDo1MVoiLCJwYXJlbnRQcm9jZXNzSWQiOjYyODgsInBhcmVudFByb2Nlc3NDcmVhdGlvblRpbWUiOiIyMDIxLTA2LTAzVDA0OjI0OjM2WiIsInBhcmVudFByb2Nlc3NGaWxlTmFtZSI6InNicy5leGUiLCJhY2NvdW50TmFtZSI6ImRhbiIsImRvbWFpbk5hbWUiOiJleGFtcGxlLmNvbSIsInVzZXJTaWQiOiJTLTEtNS0yMS0xODgxMTMxNDQ0LTI0NzM4OTEzMzUtMzQ3MDI2Ni01MDAifV0sIm1hY2hpbmVEYXRhIjoie1wiQG9kYXRhLmNvbnRleHRcIjpcImh0dHBzOi8vYXBpLnNlY3VyaXR5Y2VudGVyLndpbmRvd3MuY29tL2FwaS8kbWV0YWRhdGEjTWFjaGluZXMvJGVudGl0eVwiLFwiaWRcIjpcIjZhODEzYmJkODQ1YzJiZjMxMTVlMjRjNDBmZDlhOTAyYTMwNDdlOGJcIixcImNvbXB1dGVyRG5zTmFtZVwiOlwiZGFuLXBjLmV4YW1wbGUuY29tXCIsXCJmaXJzdFNlZW5cIjpcIjIwMjEtMDktMDlUMTU6NDU6MDEuNDgzNzA0NFpcIixcImxhc3RTZWVuXCI6XCIyMDIxLTA5LTA5VDEzOjE4OjQzLjEyNjgzNjNaXCIsXCJvc1BsYXRmb3JtXCI6XCJXaW5kb3dzMTBcIixcIm9zVmVyc2lvblwiOm51bGwsXCJvc1Byb2Nlc3NvclwiOlwieDY0XCIsXCJ2ZXJzaW9uXCI6XCIyMDA0XCIsXCJsYXN0SXBBZGRyZXNzXCI6XCIxNzIuMjAuMTMuMTA0XCIsXCJsYXN0RXh0ZXJuYWxJcEFkZHJlc3NcIjpcIjE3Mi4yMC4xMy4xMDRcIixcImFnZW50VmVyc2lvblwiOlwiMTAuNzc0MC4xOTA0MS45ODVcIixcIm9zQnVpbGRcIjoxOTA0MSxcImhlYWx0aFN0YXR1c1wiOlwiQWN0aXZlXCIsXCJkZXZpY2VWYWx1ZVwiOlwiTm9ybWFsXCIsXCJyYmFjR3JvdXBJZFwiOjE4NzIsXCJyYmFjR3JvdXBOYW1lXCI6XCJYRFIgVGVzdCBncm91cFwiLFwicmlza1Njb3JlXCI6XCJNZWRpdW1cIixcImV4cG9zdXJlTGV2ZWxcIjpcIk1lZGl1bVwiLFwiaXNBYWRKb2luZWRcIjpmYWxzZSxcImFhZERldmljZUlkXCI6bnVsbCxcIm1hY2hpbmVUYWdzXCI6W1wiTVNTIFFvWFwiXSxcImRlZmVuZGVyQXZTdGF0dXNcIjpcIlVwZGF0ZWRcIixcIm9uYm9hcmRpbmdTdGF0dXNcIjpcIk9uYm9hcmRlZFwiLFwib3NBcmNoaXRlY3R1cmVcIjpcIjY0LWJpdFwiLFwiaXBBZGRyZXNzZXNcIjpbe1wiaXBBZGRyZXNzXCI6XCIxNzIuMjAuMTMuMTA0XCIsXCJtYWNBZGRyZXNzXCI6XCIwMDBDMjk0MUQ0ODdcIixcInR5cGVcIjpcIkV0aGVybmV0XCIsXCJvcGVyYXRpb25hbFN0YXR1c1wiOlwiVXBcIn0se1wiaXBBZGRyZXNzXCI6XCJmZTgwOjozNGY0OmE5Nzg6MzQ4OTpjMjI2XCIsXCJtYWNBZGRyZXNzXCI6XCIwMDBDMjk0MUQ0ODdcIixcInR5cGVcIjpcIkV0aGVybmV0XCIsXCJvcGVyYXRpb25hbFN0YXR1c1wiOlwiVXBcIn1dLFwidm1NZXRhZGF0YVwiOm51bGx9In0="
+                },
+                "3": {
+                    "type": "x-oca-event",
+                    "action": "TA0002 - WIN - Command Interpreters Spawned From Word",
+                    "ip_refs": [
+                        "7"
+                    ],
+                    "file_ref": "4",
+                    "host_ref": "6",
+                    "user_ref": "5",
+                    "original_ref": "2"
+                },
+                "4": {
+                    "name": "wscript.exe",
+                    "type": "file",
+                    "hashes": {
+                        "SHA-256": "ce9f70e104c07d92fc05fbd6000839fd6a87ff010e706396f87dd679244ed97b"
+                    }
+                },
+                "5": {
+                    "type": "user-account",
+                    "user_id": "dan"
+                },
+                "6": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "7"
+                    ],
+                    "hostname": "dan-pc.example.com"
+                },
+                "7": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.13.104"
+                }
+            },
+            "modified": "2021-09-09T04:12:11.000Z",
+            "last_observed": "2021-09-09T04:12:11.000Z",
+            "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
+            "first_observed": "2021-09-09T04:12:11.000Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--287f2859-d67b-4c41-855c-5d07917c7972",
+            "type": "observed-data",
+            "created": "2021-09-09T04:12:50.857Z",
+            "objects": {
+                "0": {
+                    "id": "CIDD706957",
+                    "type": "x-mss"
+                },
+                "1": {
+                    "id": "PR0000000044749",
+                    "ip": "10.1.34.5",
+                    "name": "Crowdstrike",
+                    "type": "x-mss-device",
+                    "vendor": "2188",
+                    "version": "Undefined"
+                },
+                "2": {
+                    "type": "artifact",
+                    "payload_bin": "eyJpZCI6ImVkNjM3NTgyOTQ4MjIzOTY2MDIzXy0xNzA2Njg5NDE4IiwiaW5jaWRlbnRJZCI6MTQyMCwic2V2ZXJpdHkiOiJNZWRpdW0iLCJzdGF0dXMiOiJOZXciLCJpbnZlc3RpZ2F0aW9uU3RhdGUiOiJVbnN1cHBvcnRlZEFsZXJ0VHlwZSIsImRldGVjdGlvblNvdXJjZSI6IkN1c3RvbURldGVjdGlvbiIsImRldGVjdG9ySWQiOiJhNzA4OGUwMy1jMzY3LTRjYzItYmM1MC0yZWViMzJkYjczNmIiLCJjYXRlZ29yeSI6IlN1c3BpY2lvdXNBY3Rpdml0eSIsInRpdGxlIjoiVEEwMDA1IC0gV0lOIC0gU3ZjaG9zdCBFeGVjdXRpbmcgSmF2YXNjcmlwdCBPciBWYnNjcmlwdCIsImRlc2NyaXB0aW9uIjoiRGV0ZWN0cyBzdmNob3N0IGludGVycHJldGluZyBKYXZhc2NyaXB0IG9yIFZCU2NyaXB0LiBDb3VsZCBiZSBpbmRpY2F0aXZlIG9mIG1hbGljaW91cyBwZXJzaXN0ZW5jZSBtZWNoYW5pc21zLiIsImFsZXJ0Q3JlYXRpb25UaW1lIjoiMjAyMS0wOS0wOVQwNToyNzowMi4zNDY2Mjg4WiIsImZpcnN0RXZlbnRUaW1lIjoiMjAyMS0wOS0wOVQwNDoyNzo1Mi40NjY5NDE5WiIsImxhc3RFdmVudFRpbWUiOiIyMDIxLTA5LTA5VDA0OjI3OjUyLjQ2Njk0MTlaIiwibGFzdFVwZGF0ZVRpbWUiOiIyMDIxLTA5LTA5VDA1OjI3OjAzLjI0WiIsIm1hY2hpbmVJZCI6IjZhODEzYmJkODQ1YzJiZjMxMTVlMjRjNDBmZDlhOTAyYTMwNDdlOGIiLCJjb21wdXRlckRuc05hbWUiOiJkYW4tcGMuZXhhbXBsZS5vcmciLCJyYmFjR3JvdXBOYW1lIjoiWERSIFRlc3QgZ3JvdXAiLCJhYWRUZW5hbnRJZCI6IjkwZDA3MzEzLTE3MzktNDI4My04YTk0LTFhZGQ5M2JmZDBlYiIsIm1pdHJlVGVjaG5pcXVlcyI6W10sInJlbGF0ZWRVc2VyIjp7InVzZXJOYW1lIjoiZGFuIiwiZG9tYWluTmFtZSI6ImV4YW1wbGUuY29tIn0sImNvbW1lbnRzIjpbXSwiZXZpZGVuY2UiOlt7ImVudGl0eVR5cGUiOiJQcm9jZXNzIiwiZXZpZGVuY2VDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA1OjI3OjAyLjQ1WiIsInNoYTEiOiI1NDVlYzExZGVlNjQyZGU2MzNlYjJjNmY2ZmZjOTBjY2U0ZGVjZjhkIiwic2hhMjU2IjoiY2U5ZjcwZTEwNGMwN2Q5MmZjMDVmYmQ2MDAwODM5ZmQ2YTg3ZmYwMTBlNzA2Mzk2Zjg3ZGQ2NzkyNDRlZDk3YiIsImZpbGVOYW1lIjoid3NjcmlwdC5leGUiLCJmaWxlUGF0aCI6IkM6XFxXaW5kb3dzXFxTeXN0ZW0zMiIsInByb2Nlc3NJZCI6OTAyOCwicHJvY2Vzc0NvbW1hbmRMaW5lIjoid3NjcmlwdC5leGUgLy9iIC9lOmpzY3JpcHQgQzpcXFVzZXJzXFxBZG1pbmlzdHJhdG9yMVxcQXBwRGF0YVxcUm9hbWluZ1xcTWljcm9zb2Z0XFxXaW5kb3dzXFx7NWE3MzVlNTQtNjNlNC00YTU2LTY0YTItN2M3OTczNTc3ZTRifVxcY3Jhc2hwYWQubG9nIDEyOC4yMTAuMTU3LjI1MSA4MCIsInByb2Nlc3NDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA0OjI3OjUyWiIsInBhcmVudFByb2Nlc3NJZCI6MjE1NiwicGFyZW50UHJvY2Vzc0NyZWF0aW9uVGltZSI6IjIwMjEtMDktMDlUMDk6MTA6MjVaIiwicGFyZW50UHJvY2Vzc0ZpbGVOYW1lIjoic3ZjaG9zdC5leGUiLCJwYXJlbnRQcm9jZXNzRmlsZVBhdGgiOiJjOlxcd2luZG93c1xcc3lzdGVtMzIiLCJhY2NvdW50TmFtZSI6ImRhbiIsImRvbWFpbk5hbWUiOiJleGFtcGxlLmNvbSIsInVzZXJTaWQiOiJTLTEtNS0yMS0xODgxMTMxNDQ0LTI0NzM4OTEzMzUtMzQ3MDI2Ni01MDAifSx7ImVudGl0eVR5cGUiOiJVc2VyIiwiZXZpZGVuY2VDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA1OjI3OjAyLjQ1WiIsImFjY291bnROYW1lIjoiZGFuIiwiZG9tYWluTmFtZSI6ImV4YW1wbGUuY29tIiwidXNlclNpZCI6IlMtMS01LTIxLTE4ODExMzE0NDQtMjQ3Mzg5MTMzNS0zNDcwMjY2LTUwMCJ9LHsiZW50aXR5VHlwZSI6IlByb2Nlc3MiLCJldmlkZW5jZUNyZWF0aW9uVGltZSI6IjIwMjEtMDktMDlUMDU6Mjc6MDIuNDVaIiwic2hhMSI6IjAxMGRiMDc0NjFlNDViNDFjODg2MTkyZGY2ZmQ0MjViYThkNDJkODIiLCJzaGEyNTYiOiI2NDNlYzU4ZTgyZTAyNzJjOTdjMmE1OWY2MDIwOTcwZDg4MWFmMTljMGFkNTAyOWRiOWM5NThjMTNiNjU1OGM3IiwiZmlsZU5hbWUiOiJzdmNob3N0LmV4ZSIsImZpbGVQYXRoIjoiYzpcXHdpbmRvd3NcXHN5c3RlbTMyIiwicHJvY2Vzc0lkIjoyMTU2LCJwcm9jZXNzQ29tbWFuZExpbmUiOiJzdmNob3N0LmV4ZSAtayBuZXRzdmNzIC1wIC1zIFNjaGVkdWxlIiwicHJvY2Vzc0NyZWF0aW9uVGltZSI6IjIwMjEtMDktMDlUMDk6MTA6MjVaIiwicGFyZW50UHJvY2Vzc0lkIjo3NDAsInBhcmVudFByb2Nlc3NDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA5OjA5OjQ1WiIsInBhcmVudFByb2Nlc3NGaWxlTmFtZSI6InNlcnZpY2VzLmV4ZSIsImFjY291bnROYW1lIjoic3lzdGVtIiwiZG9tYWluTmFtZSI6Im50IGF1dGhvcml0eSIsInVzZXJTaWQiOiJTLTEtNS0xOCJ9XSwibWFjaGluZURhdGEiOiJ7XCJAb2RhdGEuY29udGV4dFwiOlwiaHR0cHM6Ly9hcGkuc2VjdXJpdHljZW50ZXIud2luZG93cy5jb20vYXBpLyRtZXRhZGF0YSNNYWNoaW5lcy8kZW50aXR5XCIsXCJpZFwiOlwiNmE4MTNiYmQ4NDVjMmJmMzExNWUyNGM0MGZkOWE5MDJhMzA0N2U4YlwiLFwiY29tcHV0ZXJEbnNOYW1lXCI6XCJkYW4tcGMuZXhhbXBsZS5jb21cIixcImZpcnN0U2VlblwiOlwiMjAyMS0wOS0wOVQxNTo0NTowMS40ODM3MDQ0WlwiLFwibGFzdFNlZW5cIjpcIjIwMjEtMDktMDlUMTM6MTg6NDMuMTI2ODM2M1pcIixcIm9zUGxhdGZvcm1cIjpcIldpbmRvd3MxMFwiLFwib3NWZXJzaW9uXCI6bnVsbCxcIm9zUHJvY2Vzc29yXCI6XCJ4NjRcIixcInZlcnNpb25cIjpcIjIwMDRcIixcImxhc3RJcEFkZHJlc3NcIjpcIjE3Mi4yMC4xMy4xMDRcIixcImxhc3RFeHRlcm5hbElwQWRkcmVzc1wiOlwiMTcyLjIwLjEyLjEwNFwiLFwiYWdlbnRWZXJzaW9uXCI6XCIxMC43NzQwLjE5MDQxLjk4NVwiLFwib3NCdWlsZFwiOjE5MDQxLFwiaGVhbHRoU3RhdHVzXCI6XCJBY3RpdmVcIixcImRldmljZVZhbHVlXCI6XCJOb3JtYWxcIixcInJiYWNHcm91cElkXCI6MTg3MixcInJiYWNHcm91cE5hbWVcIjpcIlhEUiBUZXN0IGdyb3VwXCIsXCJyaXNrU2NvcmVcIjpcIk1lZGl1bVwiLFwiZXhwb3N1cmVMZXZlbFwiOlwiTWVkaXVtXCIsXCJpc0FhZEpvaW5lZFwiOmZhbHNlLFwiYWFkRGV2aWNlSWRcIjpudWxsLFwibWFjaGluZVRhZ3NcIjpbXCJNU1MgUW9YXCJdLFwiZGVmZW5kZXJBdlN0YXR1c1wiOlwiVXBkYXRlZFwiLFwib25ib2FyZGluZ1N0YXR1c1wiOlwiT25ib2FyZGVkXCIsXCJvc0FyY2hpdGVjdHVyZVwiOlwiNjQtYml0XCIsXCJpcEFkZHJlc3Nlc1wiOlt7XCJpcEFkZHJlc3NcIjpcIjE3Mi4yMC4xMy4xMDRcIixcIm1hY0FkZHJlc3NcIjpcIjAwMEMyOTQxRDQ4N1wiLFwidHlwZVwiOlwiRXRoZXJuZXRcIixcIm9wZXJhdGlvbmFsU3RhdHVzXCI6XCJVcFwifSx7XCJpcEFkZHJlc3NcIjpcImZlODA6OjM0ZjQ6YTk3ODozNDg5OmMyMjZcIixcIm1hY0FkZHJlc3NcIjpcIjAwMEMyOTQxRDQ4N1wiLFwidHlwZVwiOlwiRXRoZXJuZXRcIixcIm9wZXJhdGlvbmFsU3RhdHVzXCI6XCJVcFwifV0sXCJ2bU1ldGFkYXRhXCI6bnVsbH0ifQ=="
+                },
+                "3": {
+                    "type": "x-oca-event",
+                    "action": "TA0005 - WIN - Svchost Executing Javascript Or Vbscript",
+                    "ip_refs": [
+                        "7"
+                    ],
+                    "file_ref": "4",
+                    "host_ref": "6",
+                    "user_ref": "5",
+                    "original_ref": "2"
+                },
+                "4": {
+                    "name": "wscript.exe",
+                    "type": "file",
+                    "hashes": {
+                        "SHA-256": "ce9f70e104c07d92fc05fbd6000839fd6a87ff010e706396f87dd679244ed97b"
+                    }
+                },
+                "5": {
+                    "type": "user-account",
+                    "user_id": "dan"
+                },
+                "6": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "7"
+                    ],
+                    "hostname": "dan-pc.example.com"
+                },
+                "7": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.13.104"
+                }
+            },
+            "modified": "2021-09-09T04:12:50.857Z",
+            "last_observed": "2021-09-09T04:12:50.857Z",
+            "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
+            "first_observed": "2021-09-09T04:12:50.857Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--4054384e-5f99-4bf0-acd4-8f746cbedcdd",
+            "type": "observed-data",
+            "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
+            "created": "2021-09-09T04:15:32.950Z",
+            "modified": "2021-09-09T04:15:32.950Z",
+            "objects": {
+                "0": {
+                    "type": "x-oca-event",
+                    "action": "Process Create",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "provider": "Microsoft Windows Security Event Log",
+                    "agent": "WindowsAuthServer @ dan-pc",
+                    "created": "2021-09-09T04:15:32.950Z",
+                    "user_ref": "3",
+                    "host_ref": "2",
+                    "original_ref": "5",
+                    "file_ref": "6",
+                    "code": "1121",
+                    "process_ref": "4",
+                    "parent_process_ref": "11"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.13.104",
+                    "resolves_to_refs": [
+                        "12"
+                    ]
+                },
+                "2": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "3": {
+                    "type": "user-account",
+                    "user_id": "dan"
+                },
+                "4": {
+                    "type": "process",
+                    "creator_user_ref": "3",
+                    "binary_ref": "7",
+                    "parent_ref": "11",
+                    "command_line": "\"C:\\WINDOWS\\SysWOW64\\lsass.exe\" /Processid:{776DBC8D-7347-478C-8D71-791E12EF49D8}",
+                    "name": "lsass.exe",
+                    "pid": 26324
+                },
+                "5": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPlNlcCAwOSAxNDozNDo0OCBkYW4tcGMgQWdlbnREZXZpY2U9V2luZG93c0xvZyAgIEFnZW50TG9nRmlsZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWwgICBQbHVnaW5WZXJzaW9uPTcuMi45LjcyICBTb3VyY2U9TWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uIENvbXB1dGVyPWRhbi1wYyBPcmlnaW5hdGluZ0NvbXB1dGVyPWRhbi1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9MTYxMDYyNzY4NiAgICBUaW1lV3JpdHRlbj0xNjEwNjI3Njg2ICBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMS0wOS0wOSAxMjozNDo0Ni4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbHNhc3MuZXhlIEZpbGVWZXJzaW9uOiAxMC4wLjE5MDQxLjU0NiAoV2luQnVpbGQuMTYwMTAxLjA4MDApIERlc2NyaXB0aW9uOiBDT00gU3Vycm9nYXRlIFByb2R1Y3Q6IE1pY3Jvc29mdMKuIFdpbmRvd3PCriBPcGVyYXRpbmcgU3lzdGVtIENvbXBhbnk6IE1pY3Jvc29mdCBDb3Jwb3JhdGlvbiBPcmlnaW5hbEZpbGVOYW1lOiBsc2Fzcy5leGUgQ29tbWFuZExpbmU6ICJDOlxXSU5ET1dTXFN5c1dPVzY0XGxzYXNzLmV4ZSIgL1Byb2Nlc3NpZDp7Nzc2REJDOEQtNzM0Ny00NzhDLThENzEtNzkxRTEyRUY0OUQ4fSBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXGRhbiBMb2dvbkd1aWQ6IHsyNTNhY2Y2Ny0zNWQ4LTVmZTgtMzRhYy02MjE4MDAwMDAwMDB9IExvZ29uSWQ6IDB4MTg2MkFDMzQgVGVybWluYWxTZXNzaW9uSWQ6IDIgSW50ZWdyaXR5TGV2ZWw6IE1lZGl1bSBIYXNoZXM6IE1ENT02RjNDOTQ4NUY4Rjk3QUMwNEM4RTQzRUY0NDYzQTY4QyxTSEEyNTY9M0VENjlDQUFCMDM1MjU4RTAwOEVGQkNGNDBEQjMwNTg5MUI0MEJBMDJDQTI3MzdFMjBERUZBN0MyRDRBRkFGNyxJTVBIQVNIPUI2QTZDNTI0N0VGQkQyNjEwRTNERUE0NDY0OUQ3MDQxIFBhcmVudFByb2Nlc3NHdWlkOiB7MjUzYWNmNjctMjA1OS01ZmU1LTBmMDAtMDAwMDAwMDAwYjAwfSBQYXJlbnRQcm9jZXNzSWQ6IDExNjQgUGFyZW50SW1hZ2U6IEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUgUGFyZW50Q29tbWFuZExpbmU6IEM6XFdJTkRPV1Ncc3lzdGVtMzJcc3ZjaG9zdC5leGUgLWsgRGNvbUxhdW5jaCAtcA=="
+                },
+                "6": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "6F3C9485F8F97AC04C8E43EF4463A68C"
+                    }
+                },
+                "7": {
+                    "type": "file",
+                    "name": "lsass.exe",
+                    "parent_directory_ref": "8"
+                },
+                "8": {
+                    "type": "directory",
+                    "path": "C:\\Windows\\SysWOW64"
+                },
+                "9": {
+                    "type": "file",
+                    "name": "svchost.exe",
+                    "parent_directory_ref": "10"
+                },
+                "10": {
+                    "type": "directory",
+                    "path": "C:\\Windows\\System32"
+                },
+                "11": {
+                    "type": "process",
+                    "binary_ref": "9",
+                    "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p",
+                    "pid": 1164
+                },
+                "12": {
+                    "type": "domain-name",
+                    "value": "dan-pc.example.com"
+                }
+            },
+            "first_observed": "2021-01-09T04:15:32.950Z",
+            "last_observed": "2021-01-09T04:15:32.950Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
+            "created": "2021-09-09T04:15:55.950Z",
+            "modified": "2021-09-09T04:15:55.950Z",
+            "objects": {
+                "0": {
+                    "type": "x-oca-event",
+                    "action": "Process Create",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "provider": "Microsoft Windows Security Event Log",
+                    "agent": "WindowsAuthServer @ dan-pc",
+                    "created": "2021-09-09T04:15:55.950Z",
+                    "user_ref": "3",
+                    "host_ref": "2",
+                    "original_ref": "5",
+                    "file_ref": "6",
+                    "code": 1,
+                    "process_ref": "4",
+                    "parent_process_ref": "11"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.13.104",
+                    "resolves_to_refs": [
+                        "12"
+                    ]
+                },
+                "2": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "3": {
+                    "type": "user-account",
+                    "user_id": "dan"
+                },
+                "4": {
+                    "type": "process",
+                    "creator_user_ref": "3",
+                    "binary_ref": "7",
+                    "parent_ref": "11",
+                    "command_line": "\"C:\\WINDOWS\\SysWOW64\\net.exe\" view",
+                    "name": "net.exe",
+                    "pid": 26326
+                },
+                "5": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPlNlcCAwOSAxNDozNDo0OCBkYW4tcGMgQWdlbnREZXZpY2U9V2luZG93c0xvZyAgIEFnZW50TG9nRmlsZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWwgICBQbHVnaW5WZXJzaW9uPTcuMi45LjcyICBTb3VyY2U9TWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uIENvbXB1dGVyPWRhbi1wYyBPcmlnaW5hdGluZ0NvbXB1dGVyPWRhbi1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9MTYxMDYyNzY4NiAgICBUaW1lV3JpdHRlbj0xNjEwNjI3Njg2ICBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMS0wOS0wOSAxMjozNDo0Ni4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTCriBXaW5kb3dzwq4gT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXGRhbiBMb2dvbkd1aWQ6IHsyNTNhY2Y2Ny0zNWQ4LTVmZTgtMzRhYy02MjE4MDAwMDAwMDB9IExvZ29uSWQ6IDB4MTg2MkFDMzQgVGVybWluYWxTZXNzaW9uSWQ6IDIgSW50ZWdyaXR5TGV2ZWw6IE1lZGl1bSBIYXNoZXM6IE1ENT02RjNDOTQ4NUY4Rjk3QUMwNEM4RTQzRUY0NDYzQTY4QyxTSEEyNTY9M0VENjlDQUFCMDM1MjU4RTAwOEVGQkNGNDBEQjMwNTg5MUI0MEJBMDJDQTI3MzdFMjBERUZBN0MyRDRBRkFGNyxJTVBIQVNIPUI2QTZDNTI0N0VGQkQyNjEwRTNERUE0NDY0OUQ3MDQxIFBhcmVudFByb2Nlc3NHdWlkOiB7MjUzYWNmNjctMjA1OS01ZmU1LTBmMDAtMDAwMDAwMDAwYjAwfSBQYXJlbnRQcm9jZXNzSWQ6IDExNjQgUGFyZW50SW1hZ2U6IEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUgUGFyZW50Q29tbWFuZExpbmU6IEM6XFdJTkRPV1Ncc3lzdGVtMzJcc3ZjaG9zdC5leGUgLWsgRGNvbUxhdW5jaCAtcA=="
+                },
+                "6": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "3F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "7": {
+                    "type": "file",
+                    "name": "net.exe",
+                    "parent_directory_ref": "8"
+                },
+                "8": {
+                    "type": "directory",
+                    "path": "C:\\Windows\\SysWOW64"
+                },
+                "9": {
+                    "type": "file",
+                    "name": "svchost.exe",
+                    "parent_directory_ref": "10"
+                },
+                "10": {
+                    "type": "directory",
+                    "path": "C:\\Windows\\System32"
+                },
+                "11": {
+                    "type": "process",
+                    "binary_ref": "9",
+                    "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p",
+                    "pid": 1164
+                },
+                "12": {
+                    "type": "domain-name",
+                    "value": "dan-pc.example.com"
+                }
+            },
+            "first_observed": "2021-09-09T04:15:55.950Z",
+            "last_observed": "2021-09-09T04:15:55.950Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
+            "created": "2021-09-09T04:17:10.940Z",
+            "modified": "2021-09-09T04:17:10.940Z",
+            "objects": {
+                "0": {
+                    "type": "x-oca-event",
+                    "action": "Process Create",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "provider": "Microsoft Windows Security Event Log",
+                    "agent": "WindowsAuthServer @ dan-pc",
+                    "created": "2021-09-09T04:17:10.940Z",
+                    "nt_ref": "2",
+                    "user_ref": "4",
+                    "host_ref": "3",
+                    "original_ref": "6",
+                    "file_ref": "7",
+                    "process_ref": "5",
+                    "parent_process_ref": "12",
+                    "code": 1
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.13.104",
+                    "resolves_to_refs": [
+                        "13"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "src_ref": "1",
+                    "src_port": 23178,
+                    "dst_ref": "14",
+                    "dst_port": 5985,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "dan"
+                },
+                "5": {
+                    "type": "process",
+                    "creator_user_ref": "4",
+                    "binary_ref": "8",
+                    "parent_ref": "12",
+                    "command_line": "\"C:\\WINDOWS\\SysWOW64\\wsmprovhost.exe\" connect database.example.com",
+                    "name": "wsmprovhost.exe",
+                    "pid": 26329
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPlNlcCAwOSAxNDozNDo0OCBkYW4tcGMgQWdlbnREZXZpY2U9V2luZG93c0xvZyAgIEFnZW50TG9nRmlsZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWwgICBQbHVnaW5WZXJzaW9uPTcuMi45LjcyICBTb3VyY2U9TWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uIENvbXB1dGVyPWRhbi1wYyBPcmlnaW5hdGluZ0NvbXB1dGVyPWRhbi1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9MTYxMDYyNzY4NiAgICBUaW1lV3JpdHRlbj0xNjEwNjI3Njg2ICBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMS0wOS0wOSAxMjozNDo0Ni4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTCriBXaW5kb3dzwq4gT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXGRhbiBMb2dvbkd1aWQ6IHsyNTNhY2Y2Ny0zNWQ4LTVmZTgtMzRhYy02MjE4MDAwMDAwMDB9IExvZ29uSWQ6IDB4MTg2MkFDMzQgVGVybWluYWxTZXNzaW9uSWQ6IDIgSW50ZWdyaXR5TGV2ZWw6IE1lZGl1bSBIYXNoZXM6IE1ENT02RjNDOTQ4NUY4Rjk3QUMwNEM4RTQzRUY0NDYzQTY4QyxTSEEyNTY9M0VENjlDQUFCMDM1MjU4RTAwOEVGQkNGNDBEQjMwNTg5MUI0MEJBMDJDQTI3MzdFMjBERUZBN0MyRDRBRkFGNyxJTVBIQVNIPUI2QTZDNTI0N0VGQkQyNjEwRTNERUE0NDY0OUQ3MDQxIFBhcmVudFByb2Nlc3NHdWlkOiB7MjUzYWNmNjctMjA1OS01ZmU1LTBmMDAtMDAwMDAwMDAwYjAwfSBQYXJlbnRQcm9jZXNzSWQ6IDExNjQgUGFyZW50SW1hZ2U6IEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUgUGFyZW50Q29tbWFuZExpbmU6IEM6XFdJTkRPV1Ncc3lzdGVtMzJcc3ZjaG9zdC5leGUgLWsgRGNvbUxhdW5jaCAtcA=="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "8": {
+                    "type": "file",
+                    "name": "wsmprovhost.exe",
+                    "parent_directory_ref": "9"
+                },
+                "9": {
+                    "type": "directory",
+                    "path": "C:\\Windows\\SysWOW64"
+                },
+                "10": {
+                    "type": "file",
+                    "name": "svchost.exe",
+                    "parent_directory_ref": "11"
+                },
+                "11": {
+                    "type": "directory",
+                    "path": "C:\\Windows\\System32"
+                },
+                "12": {
+                    "type": "process",
+                    "binary_ref": "9",
+                    "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p",
+                    "pid": 1164
+                },
+                "13": {
+                    "type": "domain-name",
+                    "value": "dan-pc.example.com"
+                },
+                "14": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.18.20",
+                    "resolves_to_refs": [
+                        "15"
+                    ]
+                },
+                "15": {
+                    "type": "domain-name",
+                    "value": "database.example.com"
+                }
+            },
+            "first_observed": "2021-09-09T04:17:10.940Z",
+            "last_observed": "2021-09-09T04:17:10.940Z",
+            "number_observed": 1
+        }
+    ]
+}
