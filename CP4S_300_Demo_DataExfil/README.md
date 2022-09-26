@@ -12,7 +12,7 @@ Outcome: Incident of data misuse clarified in detail. Actual cause uncovered, at
 
 ## 2 Assumptions, Requirements & Setup
 
--	Cloud Pak for Security (CP4S) version 1.6x on IBM ROKS instance is up and running
+-	Cloud Pak for Security (CP4S) version 1.10x on IBM ROKS instance is up and running
 -	QRadar Dashboard Populator System Connected in proxy mode, along with AppHost with Ansible app installed 
 -	Setup the required data sources with names of your choice using the STIX bundles:
      - qradar102.json 
