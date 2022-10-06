@@ -38,7 +38,7 @@
                 },
                 "4": {
                     "type": "url",
-                    "value": "zoommeetinactivation.web.app"
+                    "value": "http://zoommeetinactivation.web.app"
                 },
                 "5": {
                     "type": "ipv4-addr",
