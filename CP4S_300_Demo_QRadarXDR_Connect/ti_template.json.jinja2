@@ -1,0 +1,2855 @@
+{
+    "investigations": [
+        {
+            "case_id": "{{case_id}}",
+            "org_id": "{{org_id}}",
+            "status": "Completed",
+            "start_ms": {{create_date}},
+            "stop_ms": {{end_date}},
+            "attack_metadata": {
+                "name": "",
+                "first_finding_timestamp": {{create_date}},
+                "last_finding_timestamp": {{end_date}},
+                "total_findings_count": 8,
+                "mitre_tactics": [
+                    {
+                        "name": "Collection",
+                        "mitre_id": "TA0009",
+                        "confidence": 0.33
+                    },
+                    {
+                        "name": "Defense Evasion",
+                        "mitre_id": "TA0005",
+                        "confidence": 0.66
+                    },
+                    {
+                        "name": "Discovery",
+                        "mitre_id": "TA0007",
+                        "confidence": 0.66
+                    },
+                    {
+                        "name": "Execution",
+                        "mitre_id": "TA0002",
+                        "confidence": 1
+                    },
+                    {
+                        "name": "Exfiltration",
+                        "mitre_id": "TA0010",
+                        "confidence": 1
+                    },
+                    {
+                        "name": "Initial Access",
+                        "mitre_id": "TA0001",
+                        "confidence": 1
+                    },
+                    {
+                        "name": "Lateral Movement",
+                        "mitre_id": "TA0008",
+                        "confidence": 1
+                    },
+                    {
+                        "name": "Privilege Escalation",
+                        "mitre_id": "TA0004",
+                        "confidence": 0.66
+                    }
+                ],
+                "score": 0.9339341859440405,
+                "udi_data_sources": {
+                    "0de150ed-300f-49e8-b676-af1d0e4f3c8a": {
+                        "configuration_id": "0de150ed-300f-49e8-b676-af1d0e4f3c8a",
+                        "configuration_name": "DemoData",
+                        "connection_id": "0bb38748-fcd1-4140-a6e5-7f48436a4668",
+                        "connection_name": "AttackSimulation",
+                        "connection_type": "stix_bundle",
+                        "connection_class": "udi"
+                    },
+                    "3079a446-1a08-40d0-a1bb-e998f369b1e6": {
+                        "configuration_id": "3079a446-1a08-40d0-a1bb-e998f369b1e6",
+                        "configuration_name": "EDR",
+                        "connection_id": "1dccf359-a4b9-4235-8b1f-b13e4efad97b",
+                        "connection_name": "CrowdStrike",
+                        "connection_type": "stix_bundle",
+                        "connection_class": "udi"
+                    },
+                    "c8241623-3a47-4afc-80cb-36593f29642d": {
+                        "configuration_id": "c8241623-3a47-4afc-80cb-36593f29642d",
+                        "configuration_name": "SIEM",
+                        "connection_id": "380fa265-45b9-414d-84dc-18162c096699",
+                        "connection_name": "Splunk",
+                        "connection_type": "stix_bundle",
+                        "connection_class": "udi"
+                    }
+                },
+                "tis_analyzers": {
+                    "VirusTotal_GetReport_3_0": "VirusTotal",
+                    "IBMXForce_Lookup_1_0": "IBM X-Force",
+                    "OTXQuery_2_0": "AlienVault OTX",
+                    "DShield_lookup_1_0": "SANS ISC"
+                },
+                "related_ti": {
+                    "related_indicators": {
+                        "1": {
+                            "value": "https://zoommeetinactivation.web.app",
+                            "type": "Url",
+                            "stix_type": "url",
+                            "indicators": [
+                                {
+                                    "type": "ThreatActor",
+                                    "value": "FIN7",
+                                    "properties": [
+                                        {
+                                            "score": 0.8,
+                                            "reference": "https://www.trendmicro.com/en_us/research/21/d/carbanak-and-fin7-attack-techniques.html",
+                                            "source": "ukg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "MalwareFamily",
+                                    "value": "Carbanak",
+                                    "properties": [
+                                        {
+                                            "score": 0.4,
+                                            "reference": "https://www.trendmicro.com/en_us/research/21/d/carbanak-and-fin7-attack-techniques.html",
+                                            "source": "ukg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Reputation",
+                                    "value": "Phishing URLs",
+                                    "properties": [
+                                        {
+                                            "score": 0.9,
+                                            "reference": "https://exchange.xforce.ibmcloud.com/threats/guid:046af60d9880c665c57b0b89a3821662",
+                                            "source": "ukg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "2": {
+                            "value": "128.210.157.251",
+                            "type": "IpAddress",
+                            "stix_type": "ipv4-addr",
+                            "indicators": [
+                                {
+                                    "type": "ThreatActor",
+                                    "value": "FIN7",
+                                    "properties": [
+                                        {   
+                                            "score": 0.8,
+                                            "reference": "https://www.trendmicro.com/en_us/research/21/d/carbanak-and-fin7-attack-techniques.html",     
+                                            "source": "ukg"
+                                        }
+                                    ]
+                                },
+                                {   
+                                    "type": "Reputation",
+                                    "value": "Botnet Command and Control Server",
+                                    "properties": [
+                                        {   
+                                            "score": 0.7,
+                                            "reference": "https://exchange.xforce.ibmcloud.com/threats/guid:046af60d9880c665c57b0b89a3821662",          
+                                            "source": "ukg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "related_events": {
+                        "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3": ["1"],
+                        "observed-data--89543845-acd4-8f746cbedce2": ["2"],
+                        "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b": ["2"]
+                    }
+                },
+                "status": "Completed"
+            },
+            "assets": {
+                "internal": {
+                    "1000": {
+                        "asset_id": "1000",
+                        "hostname": "dan-pc.example.com",
+                        "ipaddress": [
+                            "172.20.13.104"
+                        ],
+                        "type": "UserWorkstation"
+                    },
+                    "1001": {
+                        "asset_id": "1001",
+                        "hostname": "database.example.com",
+                        "ipaddress": [
+                            "172.20.18.20"
+                        ],
+                        "type": "UserWorkstation"
+                    }
+                },
+                "external": {
+                    "1002": {
+                        "asset_id": "1002",
+                        "hostname": "199.36.158.100",
+                        "ipaddress": [
+                            "199.36.158.100"
+                        ],
+                        "type": "IpAddress"
+                    },
+                    "1003": {
+                        "asset_id": "1003",
+                        "hostname": "128.210.157.251",
+                        "ipaddress": [
+                            "128.210.157.251"
+                        ],
+                        "type": "IpAddress"
+                    }
+                }
+            },
+            "links": [
+                {
+                    "src": "1000",
+                    "dst": "1001",
+                    "findings": [
+                        {
+                            "id": "sigma-734f8d9b-42b8-41b2-bcf5-abaf49d5a3c8",
+                            "type": "symptom",
+                            "name": "Remote PowerShell Session Host Process (WinRM)",
+                            "description": "Detects remote PowerShell sections by monitoring for wsmprovhost (WinRM host process) as a parent or child process (sign of an active PowerShell remote session).",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Lateral Movement",
+                                    "mitre_id": "TA0008",
+                                    "confidence": 1
+                                },
+                                {
+                                    "name": "Execution",
+                                    "mitre_id": "TA0002",
+                                    "confidence": 0.66
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1021.006",
+                                    "name": "Windows Remote Management",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Lateral Movement",
+                                            "mitre_id": "TA0008",
+                                            "confidence": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1059.001",
+                                    "name": "PowerShell",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/windows/process_creation/win_remote_powershell_session_process.yml"
+                                }
+                            ],
+                            "timestamp": {{date_303605}},
+                            "related_event_ids": [
+                                "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "investigator-18",
+                            "type": "symptom",
+                            "name": "Abnormal queries to cloud data store",
+                            "description": "Queries which have not been used regularly are sent to cloud data store",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Collection",
+                                    "mitre_id": "TA0009",
+                                    "confidence": 0.33
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1530",
+                                    "name": "Data from Cloud Storage Object",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.33,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Collection",
+                                            "mitre_id": "TA0009",
+                                            "confidence": 0.33
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [],
+                            "timestamp": {{date_476495}},
+                            "related_event_ids": [
+                                "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c"
+                            ],
+                            "udi_data_sources": [
+                                "c8241623-3a47-4afc-80cb-36593f29642d"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "src": "1000",
+                    "dst": "1002",
+                    "findings": [
+                        {
+                            "id": "Investigator-investigation-trigger",
+                            "type": "symptom",
+                            "name": "Investigation trigger",
+                            "description": "Investigation was triggered by this finding",
+                            "mitre_tactics": [],
+                            "mitre_techniques": [],
+                            "sources": [],
+                            "timestamp": {{create_date}},
+                            "related_event_ids": [
+                                "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "sigma-00d0b5ab-1f55-4120-8e83-487c0a7baf19",
+                            "type": "symptom",
+                            "name": "Download from Suspicious TLD",
+                            "description": "Detects download of certain file types from hosts in suspicious TLDs",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Execution",
+                                    "mitre_id": "TA0002",
+                                    "confidence": 0.66
+                                },
+                                {
+                                    "name": "Initial Access",
+                                    "mitre_id": "TA0001",
+                                    "confidence": 1
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1203",
+                                    "name": "Exploitation for Client Execution",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1204",
+                                    "name": "User Execution",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1204.002",
+                                    "name": "Malicious File",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1566",
+                                    "name": "Phishing",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Initial Access",
+                                            "mitre_id": "TA0001",
+                                            "confidence": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/proxy/proxy_download_susp_tlds_blacklist.yml"
+                                }
+                            ],
+                            "timestamp": {{create_date}},
+                            "related_event_ids": [
+                                "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "tis-3aaeb374-1d15-42b1-b71c-a3af9369d595",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{create_date}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                                ],
+                                "type": "symptom",
+                                "symptom_id": "sigma-00d0b5ab-1f55-4120-8e83-487c0a7baf19"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "199.36.158.100"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.13.104:50990->199.36.158.100:443"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "tis-5d98d9b6-d064-45d6-84b1-6342709ea349",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{create_date}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                                ],
+                                "type": "symptom",
+                                "symptom_id": "Investigator-investigation-trigger"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "199.36.158.100"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.13.104:50990->199.36.158.100:443"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "src": "1000",
+                    "dst": "1003",
+                    "findings": [
+                        {
+                            "id": "tis-60082da8-954b-41e1-9554-1cfed36a3c44",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{date_73539}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b"
+                                ],
+                                "type": "event"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "128.210.157.251"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.13.104:49888->128.210.157.251:80"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "src": "1001",
+                    "dst": "1003",
+                    "findings": [
+                        {
+                            "id": "sigma-2b669496-d215-47d8-bd9a-f4a45bf07cda",
+                            "type": "symptom",
+                            "name": "Data Exfiltration to Unsanctioned Apps",
+                            "description": "Detects when a Microsoft Cloud App Security reported when a user or IP address uses an app that is not sanctioned to perform an activity that resembles an attempt to exfiltrate information from your organization.",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Exfiltration",
+                                    "mitre_id": "TA0010",
+                                    "confidence": 1
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1537",
+                                    "name": "Transfer Data to Cloud Account",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Exfiltration",
+                                            "mitre_id": "TA0010",
+                                            "confidence": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/cloud/m365/microsoft365_data_exfiltration_to_unsanctioned_app.yml"
+                                }
+                            ],
+                            "timestamp": {{end_date}},
+                            "related_event_ids": [
+                                "observed-data--89543845-acd4-8f746cbedce2"
+                            ],
+                            "udi_data_sources": [
+                                "c8241623-3a47-4afc-80cb-36593f29642d"
+                            ]
+                        },
+                        {
+                            "id": "tis-d3c79628-dced-4eb8-90b3-68126e4871fc",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{end_date}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--89543845-acd4-8f746cbedce2"
+                                ],
+                                "type": "symptom",
+                                "symptom_id": "sigma-2b669496-d215-47d8-bd9a-f4a45bf07cda"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "128.210.157.251"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.18.20:127690->128.210.157.251:443"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "attack_chain": [
+                {
+                    "asset_id": "1000",
+                    "score": 0,
+                    "profile": {
+                        "asset_id": "1000",
+                        "hostname": "dan-pc.example.com",
+                        "ipaddress": [
+                            "172.20.13.104"
+                        ],
+                        "type": "UserWorkstation"
+                    },
+                    "findings": [
+                        {
+                            "id": "Investigator-investigation-trigger",
+                            "type": "symptom",
+                            "name": "Investigation trigger",
+                            "description": "Investigation was triggered by this finding",
+                            "mitre_tactics": [],
+                            "mitre_techniques": [],
+                            "sources": [],
+                            "timestamp": {{create_date}},
+                            "related_event_ids": [
+                                "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "sigma-00d0b5ab-1f55-4120-8e83-487c0a7baf19",
+                            "type": "symptom",
+                            "name": "Download from Suspicious TLD",
+                            "description": "Detects download of certain file types from hosts in suspicious TLDs",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Execution",
+                                    "mitre_id": "TA0002",
+                                    "confidence": 0.66
+                                },
+                                {
+                                    "name": "Initial Access",
+                                    "mitre_id": "TA0001",
+                                    "confidence": 1
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1203",
+                                    "name": "Exploitation for Client Execution",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1204",
+                                    "name": "User Execution",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1204.002",
+                                    "name": "Malicious File",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1566",
+                                    "name": "Phishing",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Initial Access",
+                                            "mitre_id": "TA0001",
+                                            "confidence": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/proxy/proxy_download_susp_tlds_blacklist.yml"
+                                }
+                            ],
+                            "timestamp": {{create_date}},
+                            "related_event_ids": [
+                                "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "tis-3aaeb374-1d15-42b1-b71c-a3af9369d595",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{create_date}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                                ],
+                                "type": "symptom",
+                                "symptom_id": "sigma-00d0b5ab-1f55-4120-8e83-487c0a7baf19"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "199.36.158.100"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.13.104:50990->199.36.158.100:443"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "tis-5d98d9b6-d064-45d6-84b1-6342709ea349",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{create_date}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                                ],
+                                "type": "symptom",
+                                "symptom_id": "Investigator-investigation-trigger"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "199.36.158.100"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.13.104:50990->199.36.158.100:443"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FIN7-7",
+                            "type": "symptom",
+                            "name": "Command Interpreters Spawned From Word",
+                            "description": "Query identifies word.exe launching any command Interpreters. This is indicative of a malicious document being executed.",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Execution",
+                                    "mitre_id": "TA0002",
+                                    "confidence": 1
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1204.002",
+                                    "name": "Malicious File",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/windows/process_creation/win_office_shell.yml"
+                                }
+                            ],
+                            "timestamp": {{date_3665}},
+                            "related_event_ids": [
+                                "observed-data--48536613-242d-45df-bc66-ef524e9a3a20"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "FIN7-8",
+                            "type": "symptom",
+                            "name": "Svchost Executing Javascript Or Vbscript",
+                            "description": "Detects svchost interpreting Javascript or VBScript. Could be indicative of malicious persistence mechanisms.",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Defense Evasion",
+                                    "mitre_id": "TA0005",
+                                    "confidence": 0.66
+                                },
+                                {
+                                    "name": "Privilege Escalation",
+                                    "mitre_id": "TA0004",
+                                    "confidence": 0.66
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1134.004",
+                                    "name": "Parent PID Spoofing",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Defense Evasion",
+                                            "mitre_id": "TA0005",
+                                            "confidence": 0.66
+                                        },
+                                        {
+                                            "name": "Privilege Escalation",
+                                            "mitre_id": "TA0004",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/windows/image_load/sysmon_susp_office_dotnet_assembly_dll_load.yml"
+                                }
+                            ],
+                            "timestamp": {{date_43522}},
+                            "related_event_ids": [
+                                "observed-data--287f2859-d67b-4c41-855c-5d07917c7972"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "tis-60082da8-954b-41e1-9554-1cfed36a3c44",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{date_73539}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b"
+                                ],
+                                "type": "event"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "128.210.157.251"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.13.104:49888->128.210.157.251:80"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sigma-62510e69-616b-4078-b371-847da438cc03",
+                            "type": "symptom",
+                            "name": "Windows Network Enumeration",
+                            "description": "Identifies attempts to enumerate hosts in a network using the built-in Windows net.exe tool.",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Discovery",
+                                    "mitre_id": "TA0007",
+                                    "confidence": 0.66
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1018",
+                                    "name": "Remote System Discovery",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Discovery",
+                                            "mitre_id": "TA0007",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/windows/process_creation/win_net_enum.yml"
+                                }
+                            ],
+                            "timestamp": {{date_228615}},
+                            "related_event_ids": [
+                                "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "sigma-734f8d9b-42b8-41b2-bcf5-abaf49d5a3c8",
+                            "type": "symptom",
+                            "name": "Remote PowerShell Session Host Process (WinRM)",
+                            "description": "Detects remote PowerShell sections by monitoring for wsmprovhost (WinRM host process) as a parent or child process (sign of an active PowerShell remote session).",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Lateral Movement",
+                                    "mitre_id": "TA0008",
+                                    "confidence": 1
+                                },
+                                {
+                                    "name": "Execution",
+                                    "mitre_id": "TA0002",
+                                    "confidence": 0.66
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1021.006",
+                                    "name": "Windows Remote Management",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Lateral Movement",
+                                            "mitre_id": "TA0008",
+                                            "confidence": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1059.001",
+                                    "name": "PowerShell",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/windows/process_creation/win_remote_powershell_session_process.yml"
+                                }
+                            ],
+                            "timestamp": {{date_303605}},
+                            "related_event_ids": [
+                                "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "investigator-18",
+                            "type": "symptom",
+                            "name": "Abnormal queries to cloud data store",
+                            "description": "Queries which have not been used regularly are sent to cloud data store",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Collection",
+                                    "mitre_id": "TA0009",
+                                    "confidence": 0.33
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1530",
+                                    "name": "Data from Cloud Storage Object",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.33,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Collection",
+                                            "mitre_id": "TA0009",
+                                            "confidence": 0.33
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [],
+                            "timestamp": {{date_476495}},
+                            "related_event_ids": [
+                                "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c"
+                            ],
+                            "udi_data_sources": [
+                                "c8241623-3a47-4afc-80cb-36593f29642d"
+                            ]
+                        }
+                    ],
+                    "events": [
+                        {
+                            "id": "observed-data--48536613-242d-45df-bc66-ef524e9a3a20",
+                            "timestamp": {{date_3665}},
+                            "type": "event",
+                            "action": "TA0002 - WIN - Command Interpreters Spawned From Word",
+                            "target": "dan-pc.example.com",
+                            "udi_data_source": "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                        },
+                        {
+                            "id": "observed-data--287f2859-d67b-4c41-855c-5d07917c7972",
+                            "timestamp": {{date_43522}},
+                            "type": "event",
+                            "action": "TA0005 - WIN - Svchost Executing Javascript Or Vbscript",
+                            "target": "dan-pc.example.com",
+                            "udi_data_source": "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                        },
+                        {
+                            "id": "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b",
+                            "timestamp": {{date_73539}},
+                            "type": "event",
+                            "action": "ACCEPT",
+                            "target": "172.20.13.104",
+                            "udi_data_source": "c8241623-3a47-4afc-80cb-36593f29642d"
+                        },
+                        {
+                            "id": "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2",
+                            "timestamp": {{date_228615}},
+                            "type": "event",
+                            "action": "Process Create",
+                            "target": "172.20.13.104",
+                            "udi_data_source": "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                        },
+                        {
+                            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+                            "timestamp": {{date_303605}},
+                            "type": "event",
+                            "action": "Process Create",
+                            "target": "172.20.13.104",
+                            "udi_data_source": "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                        }
+                    ],
+                    "flows": [
+                        {
+                            "id": "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3",
+                            "timestamp": {{create_date}},
+                            "type": "flow",
+                            "src_ip": "172.20.13.104",
+                            "dst_ip": "199.36.158.100",
+                            "src_port": 50990,
+                            "dst_port": 443,
+                            "udi_data_source": "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                        },
+                        {
+                            "id": "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c",
+                            "timestamp": {{date_476495}},
+                            "type": "flow",
+                            "src_ip": "172.20.13.104",
+                            "dst_ip": "172.20.18.20",
+                            "src_port": 44494,
+                            "dst_port": 3306,
+                            "udi_data_source": "c8241623-3a47-4afc-80cb-36593f29642d"
+                        }
+                    ]
+                },
+                {
+                    "asset_id": "1001",
+                    "score": 0,
+                    "profile": {
+                        "asset_id": "1001",
+                        "hostname": "database.example.com",
+                        "ipaddress": [
+                            "172.20.18.20"
+                        ],
+                        "type": "UserWorkstation"
+                    },
+                    "findings": [
+                        {
+                            "id": "sigma-734f8d9b-42b8-41b2-bcf5-abaf49d5a3c8",
+                            "type": "symptom",
+                            "name": "Remote PowerShell Session Host Process (WinRM)",
+                            "description": "Detects remote PowerShell sections by monitoring for wsmprovhost (WinRM host process) as a parent or child process (sign of an active PowerShell remote session).",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Lateral Movement",
+                                    "mitre_id": "TA0008",
+                                    "confidence": 1
+                                },
+                                {
+                                    "name": "Execution",
+                                    "mitre_id": "TA0002",
+                                    "confidence": 0.66
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1021.006",
+                                    "name": "Windows Remote Management",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Lateral Movement",
+                                            "mitre_id": "TA0008",
+                                            "confidence": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1059.001",
+                                    "name": "PowerShell",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/windows/process_creation/win_remote_powershell_session_process.yml"
+                                }
+                            ],
+                            "timestamp": {{date_303605}},
+                            "related_event_ids": [
+                                "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "investigator-18",
+                            "type": "symptom",
+                            "name": "Abnormal queries to cloud data store",
+                            "description": "Queries which have not been used regularly are sent to cloud data store",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Collection",
+                                    "mitre_id": "TA0009",
+                                    "confidence": 0.33
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1530",
+                                    "name": "Data from Cloud Storage Object",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.33,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Collection",
+                                            "mitre_id": "TA0009",
+                                            "confidence": 0.33
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [],
+                            "timestamp": {{date_476495}},
+                            "related_event_ids": [
+                                "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c"
+                            ],
+                            "udi_data_sources": [
+                                "c8241623-3a47-4afc-80cb-36593f29642d"
+                            ]
+                        },
+                        {
+                            "id": "sigma-2b669496-d215-47d8-bd9a-f4a45bf07cda",
+                            "type": "symptom",
+                            "name": "Data Exfiltration to Unsanctioned Apps",
+                            "description": "Detects when a Microsoft Cloud App Security reported when a user or IP address uses an app that is not sanctioned to perform an activity that resembles an attempt to exfiltrate information from your organization.",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Exfiltration",
+                                    "mitre_id": "TA0010",
+                                    "confidence": 1
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1537",
+                                    "name": "Transfer Data to Cloud Account",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Exfiltration",
+                                            "mitre_id": "TA0010",
+                                            "confidence": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/cloud/m365/microsoft365_data_exfiltration_to_unsanctioned_app.yml"
+                                }
+                            ],
+                            "timestamp": {{end_date}},
+                            "related_event_ids": [
+                                "observed-data--89543845-acd4-8f746cbedce2"
+                            ],
+                            "udi_data_sources": [
+                                "c8241623-3a47-4afc-80cb-36593f29642d"
+                            ]
+                        },
+                        {
+                            "id": "tis-d3c79628-dced-4eb8-90b3-68126e4871fc",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{end_date}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--89543845-acd4-8f746cbedce2"
+                                ],
+                                "type": "symptom",
+                                "symptom_id": "sigma-2b669496-d215-47d8-bd9a-f4a45bf07cda"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "128.210.157.251"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.18.20:127690->128.210.157.251:443"
+                                }
+                            ]
+                        }
+                    ],
+                    "events": [
+                        {
+                            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+                            "timestamp": {{date_303605}},
+                            "type": "event",
+                            "action": "Process Create",
+                            "target": "172.20.13.104",
+                            "udi_data_source": "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                        },
+                        {
+                            "id": "observed-data--89543845-acd4-8f746cbedce2",
+                            "timestamp": {{end_date}},
+                            "type": "event",
+                            "action": "Data exfiltration to unsanctioned apps",
+                            "target": "database.example.com",
+                            "udi_data_source": "c8241623-3a47-4afc-80cb-36593f29642d"
+                        }
+                    ],
+                    "flows": [
+                        {
+                            "id": "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c",
+                            "timestamp": {{date_476495}},
+                            "type": "flow",
+                            "src_ip": "172.20.13.104",
+                            "dst_ip": "172.20.18.20",
+                            "src_port": 44494,
+                            "dst_port": 3306,
+                            "udi_data_source": "c8241623-3a47-4afc-80cb-36593f29642d"
+                        }
+                    ]
+                },
+                {
+                    "asset_id": "1002",
+                    "score": 0,
+                    "profile": {
+                        "asset_id": "1002",
+                        "hostname": "199.36.158.100",
+                        "ipaddress": [
+                            "199.36.158.100"
+                        ],
+                        "type": "IpAddress"
+                    },
+                    "findings": [
+                        {
+                            "id": "Investigator-investigation-trigger",
+                            "type": "symptom",
+                            "name": "Investigation trigger",
+                            "description": "Investigation was triggered by this finding",
+                            "mitre_tactics": [],
+                            "mitre_techniques": [],
+                            "sources": [],
+                            "timestamp": {{create_date}},
+                            "related_event_ids": [
+                                "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "sigma-00d0b5ab-1f55-4120-8e83-487c0a7baf19",
+                            "type": "symptom",
+                            "name": "Download from Suspicious TLD",
+                            "description": "Detects download of certain file types from hosts in suspicious TLDs",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Execution",
+                                    "mitre_id": "TA0002",
+                                    "confidence": 0.66
+                                },
+                                {
+                                    "name": "Initial Access",
+                                    "mitre_id": "TA0001",
+                                    "confidence": 1
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1203",
+                                    "name": "Exploitation for Client Execution",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1204",
+                                    "name": "User Execution",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1204.002",
+                                    "name": "Malicious File",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 0.66,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Execution",
+                                            "mitre_id": "TA0002",
+                                            "confidence": 0.66
+                                        }
+                                    ]
+                                },
+                                {
+                                    "mitre_id": "T1566",
+                                    "name": "Phishing",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Initial Access",
+                                            "mitre_id": "TA0001",
+                                            "confidence": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/proxy/proxy_download_susp_tlds_blacklist.yml"
+                                }
+                            ],
+                            "timestamp": {{create_date}},
+                            "related_event_ids": [
+                                "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                            ],
+                            "udi_data_sources": [
+                                "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                            ]
+                        },
+                        {
+                            "id": "tis-3aaeb374-1d15-42b1-b71c-a3af9369d595",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{create_date}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                                ],
+                                "type": "symptom",
+                                "symptom_id": "sigma-00d0b5ab-1f55-4120-8e83-487c0a7baf19"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "199.36.158.100"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.13.104:50990->199.36.158.100:443"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "tis-5d98d9b6-d064-45d6-84b1-6342709ea349",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{create_date}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3"
+                                ],
+                                "type": "symptom",
+                                "symptom_id": "Investigator-investigation-trigger"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "199.36.158.100"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.13.104:50990->199.36.158.100:443"
+                                }
+                            ]
+                        }
+                    ],
+                    "events": [],
+                    "flows": [
+                        {
+                            "id": "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3",
+                            "timestamp": {{create_date}},
+                            "type": "flow",
+                            "src_ip": "172.20.13.104",
+                            "dst_ip": "199.36.158.100",
+                            "src_port": 50990,
+                            "dst_port": 443,
+                            "udi_data_source": "3079a446-1a08-40d0-a1bb-e998f369b1e6"
+                        }
+                    ]
+                },
+                {
+                    "asset_id": "1003",
+                    "score": 0,
+                    "profile": {
+                        "asset_id": "1003",
+                        "hostname": "128.210.157.251",
+                        "ipaddress": [
+                            "128.210.157.251"
+                        ],
+                        "type": "IpAddress"
+                    },
+                    "findings": [
+                        {
+                            "id": "tis-60082da8-954b-41e1-9554-1cfed36a3c44",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{date_73539}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b"
+                                ],
+                                "type": "event"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "128.210.157.251"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.13.104:49888->128.210.157.251:80"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sigma-2b669496-d215-47d8-bd9a-f4a45bf07cda",
+                            "type": "symptom",
+                            "name": "Data Exfiltration to Unsanctioned Apps",
+                            "description": "Detects when a Microsoft Cloud App Security reported when a user or IP address uses an app that is not sanctioned to perform an activity that resembles an attempt to exfiltrate information from your organization.",
+                            "mitre_tactics": [
+                                {
+                                    "name": "Exfiltration",
+                                    "mitre_id": "TA0010",
+                                    "confidence": 1
+                                }
+                            ],
+                            "mitre_techniques": [
+                                {
+                                    "mitre_id": "T1537",
+                                    "name": "Transfer Data to Cloud Account",
+                                    "description": "",
+                                    "link": "",
+                                    "confidence": 1,
+                                    "mitre_tactics": [
+                                        {
+                                            "name": "Exfiltration",
+                                            "mitre_id": "TA0010",
+                                            "confidence": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sources": [
+                                {
+                                    "label": "Sigma",
+                                    "link": "https://github.com/Neo23x0/sigma/tree/master/rules/cloud/m365/microsoft365_data_exfiltration_to_unsanctioned_app.yml"
+                                }
+                            ],
+                            "timestamp": {{end_date}},
+                            "related_event_ids": [
+                                "observed-data--89543845-acd4-8f746cbedce2"
+                            ],
+                            "udi_data_sources": [
+                                "c8241623-3a47-4afc-80cb-36593f29642d"
+                            ]
+                        },
+                        {
+                            "id": "tis-d3c79628-dced-4eb8-90b3-68126e4871fc",
+                            "type": "tis_symptom",
+                            "name": "Threat Intel Symptom",
+                            "timestamp": {{end_date}},
+                            "related_to": {
+                                "event_ids": [
+                                    "observed-data--89543845-acd4-8f746cbedce2"
+                                ],
+                                "type": "symptom",
+                                "symptom_id": "sigma-2b669496-d215-47d8-bd9a-f4a45bf07cda"
+                            },
+                            "actions": [
+                                {
+                                    "malicious_sco": {
+                                        "type": "ipv4-addr",
+                                        "value": "128.210.157.251"
+                                    },
+                                    "tis_sources": [
+                                        {
+                                            "id": "OTXQuery_2_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "DShield_lookup_1_0",
+                                            "score": 0,
+                                            "level": "safe"
+                                        },
+                                        {
+                                            "id": "IBMXForce_Lookup_1_0",
+                                            "score": 0,
+                                            "level": "info"
+                                        },
+                                        {
+                                            "id": "VirusTotal_GetReport_3_0",
+                                            "score": 100,
+                                            "level": "malicious"
+                                        }
+                                    ],
+                                    "type": "IP_NET_DST",
+                                    "related_name": "172.20.18.20:127690->128.210.157.251:443"
+                                }
+                            ]
+                        }
+                    ],
+                    "events": [
+                        {
+                            "id": "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b",
+                            "timestamp": {{date_73539}},
+                            "type": "event",
+                            "action": "ACCEPT",
+                            "target": "172.20.13.104",
+                            "udi_data_source": "c8241623-3a47-4afc-80cb-36593f29642d"
+                        },
+                        {
+                            "id": "observed-data--89543845-acd4-8f746cbedce2",
+                            "timestamp": {{end_date}},
+                            "type": "event",
+                            "action": "Data exfiltration to unsanctioned apps",
+                            "target": "database.example.com",
+                            "udi_data_source": "c8241623-3a47-4afc-80cb-36593f29642d"
+                        }
+                    ],
+                    "flows": []
+                }
+            ],
+            "stix": {
+                "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2": {
+                    "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+                    "type": "observed-data",
+                    "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+                    "created": "2021-09-09T04:17:10.940Z",
+                    "modified": "2021-09-09T04:17:10.940Z",
+                    "objects": {
+                        "0": {
+                            "type": "x-oca-event",
+                            "action": "Process Create",
+                            "outcome": "Process Creation Success",
+                            "category": [
+                                "System"
+                            ],
+                            "provider": "Microsoft Windows Security Event Log",
+                            "agent": "WindowsAuthServer @ dan-pc",
+                            "created": "2021-09-09T04:17:10.940Z",
+                            "nt_ref": "2",
+                            "user_ref": "4",
+                            "host_ref": "3",
+                            "original_ref": "6",
+                            "file_ref": "7",
+                            "code": 1,
+                            "process_ref": "5",
+                            "parent_process_ref": "12"
+                        },
+                        "1": {
+                            "type": "ipv4-addr",
+                            "value": "172.20.13.104",
+                            "resolves_to_refs": [
+                                "13"
+                            ]
+                        },
+                        "2": {
+                            "type": "network-traffic",
+                            "src_ref": "1",
+                            "src_port": 23178,
+                            "dst_ref": "14",
+                            "dst_port": 5985,
+                            "protocols": [
+                                "tcp"
+                            ]
+                        },
+                        "3": {
+                            "type": "x-oca-asset",
+                            "ip_refs": [
+                                "1"
+                            ]
+                        },
+                        "4": {
+                            "type": "user-account",
+                            "user_id": "dan"
+                        },
+                        "5": {
+                            "type": "process",
+                            "creator_user_ref": "4",
+                            "binary_ref": "8",
+                            "parent_ref": "12",
+                            "command_line": "\"C:\\WINDOWS\\SysWOW64\\wsmprovhost.exe\" connect database.example.com",
+                            "name": "wsmprovhost.exe",
+                            "pid": 26329
+                        },
+                        "6": {
+                            "type": "artifact",
+                            "payload_bin": "PDEzPlNlcCAwOSAxNDozNDo0OCBkYW4tcGMgQWdlbnREZXZpY2U9V2luZG93c0xvZyAgIEFnZW50TG9nRmlsZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWwgICBQbHVnaW5WZXJzaW9uPTcuMi45LjcyICBTb3VyY2U9TWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uIENvbXB1dGVyPWRhbi1wYyBPcmlnaW5hdGluZ0NvbXB1dGVyPWRhbi1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9MTYxMDYyNzY4NiAgICBUaW1lV3JpdHRlbj0xNjEwNjI3Njg2ICBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMS0wOS0wOSAxMjozNDo0Ni4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTCriBXaW5kb3dzwq4gT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXGRhbiBMb2dvbkd1aWQ6IHsyNTNhY2Y2Ny0zNWQ4LTVmZTgtMzRhYy02MjE4MDAwMDAwMDB9IExvZ29uSWQ6IDB4MTg2MkFDMzQgVGVybWluYWxTZXNzaW9uSWQ6IDIgSW50ZWdyaXR5TGV2ZWw6IE1lZGl1bSBIYXNoZXM6IE1ENT02RjNDOTQ4NUY4Rjk3QUMwNEM4RTQzRUY0NDYzQTY4QyxTSEEyNTY9M0VENjlDQUFCMDM1MjU4RTAwOEVGQkNGNDBEQjMwNTg5MUI0MEJBMDJDQTI3MzdFMjBERUZBN0MyRDRBRkFGNyxJTVBIQVNIPUI2QTZDNTI0N0VGQkQyNjEwRTNERUE0NDY0OUQ3MDQxIFBhcmVudFByb2Nlc3NHdWlkOiB7MjUzYWNmNjctMjA1OS01ZmU1LTBmMDAtMDAwMDAwMDAwYjAwfSBQYXJlbnRQcm9jZXNzSWQ6IDExNjQgUGFyZW50SW1hZ2U6IEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUgUGFyZW50Q29tbWFuZExpbmU6IEM6XFdJTkRPV1Ncc3lzdGVtMzJcc3ZjaG9zdC5leGUgLWsgRGNvbUxhdW5jaCAtcA=="
+                        },
+                        "7": {
+                            "type": "file",
+                            "hashes": {
+                                "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                            }
+                        },
+                        "8": {
+                            "type": "file",
+                            "name": "wsmprovhost.exe",
+                            "parent_directory_ref": "9"
+                        },
+                        "9": {
+                            "type": "directory",
+                            "path": "C:\\Windows\\SysWOW64"
+                        },
+                        "10": {
+                            "type": "file",
+                            "name": "svchost.exe",
+                            "parent_directory_ref": "11"
+                        },
+                        "11": {
+                            "type": "directory",
+                            "path": "C:\\Windows\\System32"
+                        },
+                        "12": {
+                            "type": "process",
+                            "binary_ref": "9",
+                            "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p",
+                            "pid": 1164
+                        },
+                        "13": {
+                            "type": "domain-name",
+                            "value": "dan-pc.example.com"
+                        },
+                        "14": {
+                            "type": "ipv4-addr",
+                            "value": "172.20.18.20",
+                            "resolves_to_refs": [
+                                "15"
+                            ]
+                        },
+                        "15": {
+                            "type": "domain-name",
+                            "value": "database.example.com"
+                        }
+                    },
+                    "first_observed": "2021-09-09T04:17:10.940Z",
+                    "last_observed": "2021-09-09T04:17:10.940Z",
+                    "number_observed": 1
+                },
+                "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c": {
+                    "id": "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c",
+                    "created": "2021-09-09T04:20:03.830Z",
+                    "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
+                    "first_observed": "2021-09-09T04:20:03.830Z",
+                    "last_observed": "2021-09-09T04:20:03.830Z",
+                    "modified": "2021-09-09T04:20:03.830Z",
+                    "number_observed": 1,
+                    "objects": {
+                        "0": {
+                            "type": "user-account",
+                            "user_id": "dan"
+                        },
+                        "1": {
+                            "type": "ipv4-addr",
+                            "value": "172.20.18.20"
+                        },
+                        "2": {
+                            "dst_port": 3306,
+                            "dst_ref": "1",
+                            "src_port": 44494,
+                            "src_ref": "3",
+                            "type": "network-traffic",
+                            "protocols": [
+                                "tcp",
+                                "ipv4"
+                            ]
+                        },
+                        "3": {
+                            "type": "ipv4-addr",
+                            "value": "172.20.13.104"
+                        }
+                    },
+                    "type": "observed-data",
+                    "x_com_guardium": {
+                        "anomaly_score": 100,
+                        "db_user": "dan",
+                        "error_outlier": "false",
+                        "high_volume_outlier": "true",
+                        "new_outlier": "false",
+                        "service_name": "172.20.18.20:5.6.27",
+                        "source_program": "MYSQL CLIENT",
+                        "temp_outlier": "false"
+                    }
+                },
+                "observed-data--48536613-242d-45df-bc66-ef524e9a3a20": {
+                    "id": "observed-data--48536613-242d-45df-bc66-ef524e9a3a20",
+                    "type": "observed-data",
+                    "created": "2021-09-09T04:12:11.000Z",
+                    "objects": {
+                        "0": {
+                            "id": "CIDD706957",
+                            "type": "x-mss-customer"
+                        },
+                        "1": {
+                            "id": "PR0000000044749",
+                            "ip": "10.1.34.5",
+                            "name": "Crowdstrike",
+                            "type": "x-mss-device",
+                            "vendor": "2188",
+                            "version": "Undefined"
+                        },
+                        "2": {
+                            "type": "artifact",
+                            "payload_bin": "eyJpZCI6ImVkNjM3NTgyOTQ4MTkzODM5Njg0XzEwNDI1NTE2MzYiLCJpbmNpZGVudElkIjoxNDIwLCJzZXZlcml0eSI6Ik1lZGl1bSIsInN0YXR1cyI6Ik5ldyIsImludmVzdGlnYXRpb25TdGF0ZSI6IlVuc3VwcG9ydGVkQWxlcnRUeXBlIiwiZGV0ZWN0aW9uU291cmNlIjoiQ3VzdG9tRGV0ZWN0aW9uIiwiZGV0ZWN0b3JJZCI6IjZhYmRiM2VjLWZkM2QtNDg0My1hZWU3LTk0ZDc2YTIwNDY2NCIsImNhdGVnb3J5IjoiU3VzcGljaW91c0FjdGl2aXR5IiwidGl0bGUiOiJUQTAwMDIgLSBXSU4gLSBDb21tYW5kIEludGVycHJldGVycyBTcGF3bmVkIEZyb20gV29yZCIsImRlc2NyaXB0aW9uIjoiUXVlcnkgaWRlbnRpZmllcyB3b3JkLmV4ZSBsYXVuY2hpbmcgYW55IGNvbW1hbmQgSW50ZXJwcmV0ZXJzLiBUaGlzIGlzIGluZGljYXRpdmUgb2YgYSBtYWxpY2lvdXMgZG9jdW1lbnQgYmVpbmcgZXhlY3V0ZWQuIiwiYWxlcnRDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA1OjI2OjU5LjMyMDgyOTdaIiwiZmlyc3RFdmVudFRpbWUiOiIyMDIxLTA5LTA5VDA0OjI0OjU1LjQ4NzExN1oiLCJsYXN0RXZlbnRUaW1lIjoiMjAyMS0wOS0wOVQwNDoyNDo1NS40ODcxMTdaIiwibGFzdFVwZGF0ZVRpbWUiOiIyMDIxLTA5LTA5VDA1OjI3OjAwLjM1MzMzMzNaIiwibWFjaGluZUlkIjoiNmE4MTNiYmQ4NDVjMmJmMzExNWUyNGM0MGZkOWE5MDJhMzA0N2U4YiIsImNvbXB1dGVyRG5zTmFtZSI6ImRhbi1wYy5leGFtcGxlLmNvbSIsInJiYWNHcm91cE5hbWUiOiJYRFIgVGVzdCBncm91cCIsImFhZFRlbmFudElkIjoiOTBkMDczMTMtMTczOS00MjgzLThhOTQtMWFkZDkzYmZkMGViIiwibWl0cmVUZWNobmlxdWVzIjpbXSwicmVsYXRlZFVzZXIiOnsidXNlck5hbWUiOiJkYW4iLCJkb21haW5OYW1lIjoiZXhhbXBsZS5jb20ifSwiY29tbWVudHMiOltdLCJldmlkZW5jZSI6W3siZW50aXR5VHlwZSI6IlByb2Nlc3MiLCJldmlkZW5jZUNyZWF0aW9uVGltZSI6IjIwMjEtMDktMDlUMDU6MjY6NTkuNjJaIiwic2hhMSI6IjU0NWVjMTFkZWU2NDJkZTYzM2ViMmM2ZjZmZmM5MGNjZTRkZWNmOGQiLCJzaGEyNTYiOiJjZTlmNzBlMTA0YzA3ZDkyZmMwNWZiZDYwMDA4MzlmZDZhODdmZjAxMGU3MDYzOTZmODdkZDY3OTI0NGVkOTdiIiwiZmlsZU5hbWUiOiJ3c2NyaXB0LmV4ZSIsImZpbGVQYXRoIjoiQzpcXFdpbmRvd3NcXFN5c3RlbTMyIiwicHJvY2Vzc0lkIjoxMDY4LCJwcm9jZXNzQ29tbWFuZExpbmUiOiJ3c2NyaXB0IC8vYiAvZTpqc2NyaXB0IEM6XFxVc2Vyc1xcQURNSU5JfjJcXEFwcERhdGFcXExvY2FsXFxUZW1wXFxqc2ZpbGUuaW5pIDE3Mi4yMC4xMy4xMDQgODAiLCJwcm9jZXNzQ3JlYXRpb25UaW1lIjoiMjAyMS0wOS0wOVQwNDoyNDo1NVoiLCJwYXJlbnRQcm9jZXNzSWQiOjY4OTIsInBhcmVudFByb2Nlc3NDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA0OjI0OjUxWiIsInBhcmVudFByb2Nlc3NGaWxlTmFtZSI6IldJTldPUkQuRVhFIiwicGFyZW50UHJvY2Vzc0ZpbGVQYXRoIjoiYzpcXHByb2dyYW0gZmlsZXNcXG1pY3Jvc29mdCBvZmZpY2VcXHJvb3RcXG9mZmljZTE2IiwiYWNjb3VudE5hbWUiOiJkYW4iLCJkb21haW5OYW1lIjoiZXhhbXBsZS5jb20iLCJ1c2VyU2lkIjoiUy0xLTUtMjEtMTg4MTEzMTQ0NC0yNDczODkxMzM1LTM0NzAyNjYtNTAwIn0seyJlbnRpdHlUeXBlIjoiVXNlciIsImV2aWRlbmNlQ3JlYXRpb25UaW1lIjoiMjAyMS0wOS0wOVQwNToyNjo1OS42MloiLCJhY2NvdW50TmFtZSI6ImRhbiIsImRvbWFpbk5hbWUiOiJleGFtcGxlLmNvbSIsInVzZXJTaWQiOiJTLTEtNS0yMS0xODgxMTMxNDQ0LTI0NzM4OTEzMzUtMzQ3MDI2Ni01MDAifSx7ImVudGl0eVR5cGUiOiJQcm9jZXNzIiwiZXZpZGVuY2VDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA1OjI2OjU5LjYyWiIsInNoYTEiOiI2NzRiYmU0NWMzMDQ2NGY1MjQzZjQ2Yjk0ODQ2MGNiNTFkNmIzMGFhIiwic2hhMjU2IjoiYWJkYzJkZTRkNDA1NTA1MjkwZWI5MjBkYTliNjc4YmVhZGQxNjQxZThkMGJlOTA2M2E1N2Q1ZWM0N2ZjOWEzNiIsImZpbGVOYW1lIjoiV0lOV09SRC5FWEUiLCJmaWxlUGF0aCI6ImM6XFxwcm9ncmFtIGZpbGVzXFxtaWNyb3NvZnQgb2ZmaWNlXFxyb290XFxvZmZpY2UxNiIsInByb2Nlc3NJZCI6Njg5MiwicHJvY2Vzc0NvbW1hbmRMaW5lIjoiXCJXSU5XT1JELkVYRVwiIC9xIC90IFwiQzpcXFVzZXJzXFxBRE1JTkl+MlxcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXGludm9pY2UuZG9jXCIiLCJwcm9jZXNzQ3JlYXRpb25UaW1lIjoiMjAyMS0wNi0wM1QwNDoyNDo1MVoiLCJwYXJlbnRQcm9jZXNzSWQiOjYyODgsInBhcmVudFByb2Nlc3NDcmVhdGlvblRpbWUiOiIyMDIxLTA2LTAzVDA0OjI0OjM2WiIsInBhcmVudFByb2Nlc3NGaWxlTmFtZSI6InNicy5leGUiLCJhY2NvdW50TmFtZSI6ImRhbiIsImRvbWFpbk5hbWUiOiJleGFtcGxlLmNvbSIsInVzZXJTaWQiOiJTLTEtNS0yMS0xODgxMTMxNDQ0LTI0NzM4OTEzMzUtMzQ3MDI2Ni01MDAifV0sIm1hY2hpbmVEYXRhIjoie1wiQG9kYXRhLmNvbnRleHRcIjpcImh0dHBzOi8vYXBpLnNlY3VyaXR5Y2VudGVyLndpbmRvd3MuY29tL2FwaS8kbWV0YWRhdGEjTWFjaGluZXMvJGVudGl0eVwiLFwiaWRcIjpcIjZhODEzYmJkODQ1YzJiZjMxMTVlMjRjNDBmZDlhOTAyYTMwNDdlOGJcIixcImNvbXB1dGVyRG5zTmFtZVwiOlwiZGFuLXBjLmV4YW1wbGUuY29tXCIsXCJmaXJzdFNlZW5cIjpcIjIwMjEtMDktMDlUMTU6NDU6MDEuNDgzNzA0NFpcIixcImxhc3RTZWVuXCI6XCIyMDIxLTA5LTA5VDEzOjE4OjQzLjEyNjgzNjNaXCIsXCJvc1BsYXRmb3JtXCI6XCJXaW5kb3dzMTBcIixcIm9zVmVyc2lvblwiOm51bGwsXCJvc1Byb2Nlc3NvclwiOlwieDY0XCIsXCJ2ZXJzaW9uXCI6XCIyMDA0XCIsXCJsYXN0SXBBZGRyZXNzXCI6XCIxNzIuMjAuMTMuMTA0XCIsXCJsYXN0RXh0ZXJuYWxJcEFkZHJlc3NcIjpcIjE3Mi4yMC4xMy4xMDRcIixcImFnZW50VmVyc2lvblwiOlwiMTAuNzc0MC4xOTA0MS45ODVcIixcIm9zQnVpbGRcIjoxOTA0MSxcImhlYWx0aFN0YXR1c1wiOlwiQWN0aXZlXCIsXCJkZXZpY2VWYWx1ZVwiOlwiTm9ybWFsXCIsXCJyYmFjR3JvdXBJZFwiOjE4NzIsXCJyYmFjR3JvdXBOYW1lXCI6XCJYRFIgVGVzdCBncm91cFwiLFwicmlza1Njb3JlXCI6XCJNZWRpdW1cIixcImV4cG9zdXJlTGV2ZWxcIjpcIk1lZGl1bVwiLFwiaXNBYWRKb2luZWRcIjpmYWxzZSxcImFhZERldmljZUlkXCI6bnVsbCxcIm1hY2hpbmVUYWdzXCI6W1wiTVNTIFFvWFwiXSxcImRlZmVuZGVyQXZTdGF0dXNcIjpcIlVwZGF0ZWRcIixcIm9uYm9hcmRpbmdTdGF0dXNcIjpcIk9uYm9hcmRlZFwiLFwib3NBcmNoaXRlY3R1cmVcIjpcIjY0LWJpdFwiLFwiaXBBZGRyZXNzZXNcIjpbe1wiaXBBZGRyZXNzXCI6XCIxNzIuMjAuMTMuMTA0XCIsXCJtYWNBZGRyZXNzXCI6XCIwMDBDMjk0MUQ0ODdcIixcInR5cGVcIjpcIkV0aGVybmV0XCIsXCJvcGVyYXRpb25hbFN0YXR1c1wiOlwiVXBcIn0se1wiaXBBZGRyZXNzXCI6XCJmZTgwOjozNGY0OmE5Nzg6MzQ4OTpjMjI2XCIsXCJtYWNBZGRyZXNzXCI6XCIwMDBDMjk0MUQ0ODdcIixcInR5cGVcIjpcIkV0aGVybmV0XCIsXCJvcGVyYXRpb25hbFN0YXR1c1wiOlwiVXBcIn1dLFwidm1NZXRhZGF0YVwiOm51bGx9In0="
+                        },
+                        "3": {
+                            "type": "x-oca-event",
+                            "action": "TA0002 - WIN - Command Interpreters Spawned From Word",
+                            "ip_refs": [
+                                "7"
+                            ],
+                            "file_ref": "4",
+                            "host_ref": "6",
+                            "user_ref": "5",
+                            "original_ref": "2"
+                        },
+                        "4": {
+                            "name": "wscript.exe",
+                            "type": "file",
+                            "hashes": {
+                                "SHA-256": "ce9f70e104c07d92fc05fbd6000839fd6a87ff010e706396f87dd679244ed97b"
+                            }
+                        },
+                        "5": {
+                            "type": "user-account",
+                            "user_id": "dan"
+                        },
+                        "6": {
+                            "type": "x-oca-asset",
+                            "ip_refs": [
+                                "7"
+                            ],
+                            "hostname": "dan-pc.example.com"
+                        },
+                        "7": {
+                            "type": "ipv4-addr",
+                            "value": "172.20.13.104"
+                        }
+                    },
+                    "modified": "2021-09-09T04:12:11.000Z",
+                    "last_observed": "2021-09-09T04:12:11.000Z",
+                    "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+                    "first_observed": "2021-09-09T04:12:11.000Z",
+                    "number_observed": 1
+                },
+                "observed-data--89543845-acd4-8f746cbedce2": {
+                    "id": "observed-data--89543845-acd4-8f746cbedce2",
+                    "type": "observed-data",
+                    "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
+                    "created": "2021-09-09T04:21:11.750Z",
+                    "modified": "2021-09-09T04:21:11.750Z",
+                    "objects": {
+                        "0": {
+                            "type": "x-oca-event",
+                            "action": "Data exfiltration to unsanctioned apps",
+                            "outcome": "Success",
+                            "category": [
+                                "ThreatManagement"
+                            ],
+                            "provider": "SecurityComplianceCenter",
+                            "agent": "SecurityComplianceCenter",
+                            "created": "2021-09-09T04:21:11.750Z",
+                            "nt_ref": "2",
+                            "user_ref": "4",
+                            "host_ref": "3",
+                            "code": 1
+                        },
+                        "1": {
+                            "type": "ipv4-addr",
+                            "value": "172.20.18.20",
+                            "resolves_to_refs": [
+                                "5"
+                            ]
+                        },
+                        "2": {
+                            "type": "network-traffic",
+                            "src_ref": "1",
+                            "src_port": 127690,
+                            "dst_ref": "6",
+                            "dst_port": 443,
+                            "protocols": [
+                                "tcp"
+                            ]
+                        },
+                        "3": {
+                            "type": "x-oca-asset",
+                            "hostname": "database.example.com",
+                            "ip_refs": [
+                                "1"
+                            ]
+                        },
+                        "4": {
+                            "type": "user-account",
+                            "user_id": "dan"
+                        },
+                        "5": {
+                            "type": "domain-name",
+                            "value": "database.example.com"
+                        },
+                        "6": {
+                            "type": "ipv4-addr",
+                            "value": "128.210.157.251"
+                        }
+                    },
+                    "first_observed": "2021-09-09T04:21:11.750Z",
+                    "last_observed": "2021-09-09T04:21:11.750Z",
+                    "number_observed": 1
+                },
+                "observed-data--287f2859-d67b-4c41-855c-5d07917c7972": {
+                    "id": "observed-data--287f2859-d67b-4c41-855c-5d07917c7972",
+                    "type": "observed-data",
+                    "created": "2021-09-09T04:12:50.857Z",
+                    "objects": {
+                        "0": {
+                            "id": "CIDD706957",
+                            "type": "x-mss"
+                        },
+                        "1": {
+                            "id": "PR0000000044749",
+                            "ip": "10.1.34.5",
+                            "name": "Crowdstrike",
+                            "type": "x-mss-device",
+                            "vendor": "2188",
+                            "version": "Undefined"
+                        },
+                        "2": {
+                            "type": "artifact",
+                            "payload_bin": "eyJpZCI6ImVkNjM3NTgyOTQ4MjIzOTY2MDIzXy0xNzA2Njg5NDE4IiwiaW5jaWRlbnRJZCI6MTQyMCwic2V2ZXJpdHkiOiJNZWRpdW0iLCJzdGF0dXMiOiJOZXciLCJpbnZlc3RpZ2F0aW9uU3RhdGUiOiJVbnN1cHBvcnRlZEFsZXJ0VHlwZSIsImRldGVjdGlvblNvdXJjZSI6IkN1c3RvbURldGVjdGlvbiIsImRldGVjdG9ySWQiOiJhNzA4OGUwMy1jMzY3LTRjYzItYmM1MC0yZWViMzJkYjczNmIiLCJjYXRlZ29yeSI6IlN1c3BpY2lvdXNBY3Rpdml0eSIsInRpdGxlIjoiVEEwMDA1IC0gV0lOIC0gU3ZjaG9zdCBFeGVjdXRpbmcgSmF2YXNjcmlwdCBPciBWYnNjcmlwdCIsImRlc2NyaXB0aW9uIjoiRGV0ZWN0cyBzdmNob3N0IGludGVycHJldGluZyBKYXZhc2NyaXB0IG9yIFZCU2NyaXB0LiBDb3VsZCBiZSBpbmRpY2F0aXZlIG9mIG1hbGljaW91cyBwZXJzaXN0ZW5jZSBtZWNoYW5pc21zLiIsImFsZXJ0Q3JlYXRpb25UaW1lIjoiMjAyMS0wOS0wOVQwNToyNzowMi4zNDY2Mjg4WiIsImZpcnN0RXZlbnRUaW1lIjoiMjAyMS0wOS0wOVQwNDoyNzo1Mi40NjY5NDE5WiIsImxhc3RFdmVudFRpbWUiOiIyMDIxLTA5LTA5VDA0OjI3OjUyLjQ2Njk0MTlaIiwibGFzdFVwZGF0ZVRpbWUiOiIyMDIxLTA5LTA5VDA1OjI3OjAzLjI0WiIsIm1hY2hpbmVJZCI6IjZhODEzYmJkODQ1YzJiZjMxMTVlMjRjNDBmZDlhOTAyYTMwNDdlOGIiLCJjb21wdXRlckRuc05hbWUiOiJkYW4tcGMuZXhhbXBsZS5vcmciLCJyYmFjR3JvdXBOYW1lIjoiWERSIFRlc3QgZ3JvdXAiLCJhYWRUZW5hbnRJZCI6IjkwZDA3MzEzLTE3MzktNDI4My04YTk0LTFhZGQ5M2JmZDBlYiIsIm1pdHJlVGVjaG5pcXVlcyI6W10sInJlbGF0ZWRVc2VyIjp7InVzZXJOYW1lIjoiZGFuIiwiZG9tYWluTmFtZSI6ImV4YW1wbGUuY29tIn0sImNvbW1lbnRzIjpbXSwiZXZpZGVuY2UiOlt7ImVudGl0eVR5cGUiOiJQcm9jZXNzIiwiZXZpZGVuY2VDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA1OjI3OjAyLjQ1WiIsInNoYTEiOiI1NDVlYzExZGVlNjQyZGU2MzNlYjJjNmY2ZmZjOTBjY2U0ZGVjZjhkIiwic2hhMjU2IjoiY2U5ZjcwZTEwNGMwN2Q5MmZjMDVmYmQ2MDAwODM5ZmQ2YTg3ZmYwMTBlNzA2Mzk2Zjg3ZGQ2NzkyNDRlZDk3YiIsImZpbGVOYW1lIjoid3NjcmlwdC5leGUiLCJmaWxlUGF0aCI6IkM6XFxXaW5kb3dzXFxTeXN0ZW0zMiIsInByb2Nlc3NJZCI6OTAyOCwicHJvY2Vzc0NvbW1hbmRMaW5lIjoid3NjcmlwdC5leGUgLy9iIC9lOmpzY3JpcHQgQzpcXFVzZXJzXFxBZG1pbmlzdHJhdG9yMVxcQXBwRGF0YVxcUm9hbWluZ1xcTWljcm9zb2Z0XFxXaW5kb3dzXFx7NWE3MzVlNTQtNjNlNC00YTU2LTY0YTItN2M3OTczNTc3ZTRifVxcY3Jhc2hwYWQubG9nIDEyOC4yMTAuMTU3LjI1MSA4MCIsInByb2Nlc3NDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA0OjI3OjUyWiIsInBhcmVudFByb2Nlc3NJZCI6MjE1NiwicGFyZW50UHJvY2Vzc0NyZWF0aW9uVGltZSI6IjIwMjEtMDktMDlUMDk6MTA6MjVaIiwicGFyZW50UHJvY2Vzc0ZpbGVOYW1lIjoic3ZjaG9zdC5leGUiLCJwYXJlbnRQcm9jZXNzRmlsZVBhdGgiOiJjOlxcd2luZG93c1xcc3lzdGVtMzIiLCJhY2NvdW50TmFtZSI6ImRhbiIsImRvbWFpbk5hbWUiOiJleGFtcGxlLmNvbSIsInVzZXJTaWQiOiJTLTEtNS0yMS0xODgxMTMxNDQ0LTI0NzM4OTEzMzUtMzQ3MDI2Ni01MDAifSx7ImVudGl0eVR5cGUiOiJVc2VyIiwiZXZpZGVuY2VDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA1OjI3OjAyLjQ1WiIsImFjY291bnROYW1lIjoiZGFuIiwiZG9tYWluTmFtZSI6ImV4YW1wbGUuY29tIiwidXNlclNpZCI6IlMtMS01LTIxLTE4ODExMzE0NDQtMjQ3Mzg5MTMzNS0zNDcwMjY2LTUwMCJ9LHsiZW50aXR5VHlwZSI6IlByb2Nlc3MiLCJldmlkZW5jZUNyZWF0aW9uVGltZSI6IjIwMjEtMDktMDlUMDU6Mjc6MDIuNDVaIiwic2hhMSI6IjAxMGRiMDc0NjFlNDViNDFjODg2MTkyZGY2ZmQ0MjViYThkNDJkODIiLCJzaGEyNTYiOiI2NDNlYzU4ZTgyZTAyNzJjOTdjMmE1OWY2MDIwOTcwZDg4MWFmMTljMGFkNTAyOWRiOWM5NThjMTNiNjU1OGM3IiwiZmlsZU5hbWUiOiJzdmNob3N0LmV4ZSIsImZpbGVQYXRoIjoiYzpcXHdpbmRvd3NcXHN5c3RlbTMyIiwicHJvY2Vzc0lkIjoyMTU2LCJwcm9jZXNzQ29tbWFuZExpbmUiOiJzdmNob3N0LmV4ZSAtayBuZXRzdmNzIC1wIC1zIFNjaGVkdWxlIiwicHJvY2Vzc0NyZWF0aW9uVGltZSI6IjIwMjEtMDktMDlUMDk6MTA6MjVaIiwicGFyZW50UHJvY2Vzc0lkIjo3NDAsInBhcmVudFByb2Nlc3NDcmVhdGlvblRpbWUiOiIyMDIxLTA5LTA5VDA5OjA5OjQ1WiIsInBhcmVudFByb2Nlc3NGaWxlTmFtZSI6InNlcnZpY2VzLmV4ZSIsImFjY291bnROYW1lIjoic3lzdGVtIiwiZG9tYWluTmFtZSI6Im50IGF1dGhvcml0eSIsInVzZXJTaWQiOiJTLTEtNS0xOCJ9XSwibWFjaGluZURhdGEiOiJ7XCJAb2RhdGEuY29udGV4dFwiOlwiaHR0cHM6Ly9hcGkuc2VjdXJpdHljZW50ZXIud2luZG93cy5jb20vYXBpLyRtZXRhZGF0YSNNYWNoaW5lcy8kZW50aXR5XCIsXCJpZFwiOlwiNmE4MTNiYmQ4NDVjMmJmMzExNWUyNGM0MGZkOWE5MDJhMzA0N2U4YlwiLFwiY29tcHV0ZXJEbnNOYW1lXCI6XCJkYW4tcGMuZXhhbXBsZS5jb21cIixcImZpcnN0U2VlblwiOlwiMjAyMS0wOS0wOVQxNTo0NTowMS40ODM3MDQ0WlwiLFwibGFzdFNlZW5cIjpcIjIwMjEtMDktMDlUMTM6MTg6NDMuMTI2ODM2M1pcIixcIm9zUGxhdGZvcm1cIjpcIldpbmRvd3MxMFwiLFwib3NWZXJzaW9uXCI6bnVsbCxcIm9zUHJvY2Vzc29yXCI6XCJ4NjRcIixcInZlcnNpb25cIjpcIjIwMDRcIixcImxhc3RJcEFkZHJlc3NcIjpcIjE3Mi4yMC4xMy4xMDRcIixcImxhc3RFeHRlcm5hbElwQWRkcmVzc1wiOlwiMTcyLjIwLjEyLjEwNFwiLFwiYWdlbnRWZXJzaW9uXCI6XCIxMC43NzQwLjE5MDQxLjk4NVwiLFwib3NCdWlsZFwiOjE5MDQxLFwiaGVhbHRoU3RhdHVzXCI6XCJBY3RpdmVcIixcImRldmljZVZhbHVlXCI6XCJOb3JtYWxcIixcInJiYWNHcm91cElkXCI6MTg3MixcInJiYWNHcm91cE5hbWVcIjpcIlhEUiBUZXN0IGdyb3VwXCIsXCJyaXNrU2NvcmVcIjpcIk1lZGl1bVwiLFwiZXhwb3N1cmVMZXZlbFwiOlwiTWVkaXVtXCIsXCJpc0FhZEpvaW5lZFwiOmZhbHNlLFwiYWFkRGV2aWNlSWRcIjpudWxsLFwibWFjaGluZVRhZ3NcIjpbXCJNU1MgUW9YXCJdLFwiZGVmZW5kZXJBdlN0YXR1c1wiOlwiVXBkYXRlZFwiLFwib25ib2FyZGluZ1N0YXR1c1wiOlwiT25ib2FyZGVkXCIsXCJvc0FyY2hpdGVjdHVyZVwiOlwiNjQtYml0XCIsXCJpcEFkZHJlc3Nlc1wiOlt7XCJpcEFkZHJlc3NcIjpcIjE3Mi4yMC4xMy4xMDRcIixcIm1hY0FkZHJlc3NcIjpcIjAwMEMyOTQxRDQ4N1wiLFwidHlwZVwiOlwiRXRoZXJuZXRcIixcIm9wZXJhdGlvbmFsU3RhdHVzXCI6XCJVcFwifSx7XCJpcEFkZHJlc3NcIjpcImZlODA6OjM0ZjQ6YTk3ODozNDg5OmMyMjZcIixcIm1hY0FkZHJlc3NcIjpcIjAwMEMyOTQxRDQ4N1wiLFwidHlwZVwiOlwiRXRoZXJuZXRcIixcIm9wZXJhdGlvbmFsU3RhdHVzXCI6XCJVcFwifV0sXCJ2bU1ldGFkYXRhXCI6bnVsbH0ifQ=="
+                        },
+                        "3": {
+                            "type": "x-oca-event",
+                            "action": "TA0005 - WIN - Svchost Executing Javascript Or Vbscript",
+                            "ip_refs": [
+                                "7"
+                            ],
+                            "file_ref": "4",
+                            "host_ref": "6",
+                            "user_ref": "5",
+                            "original_ref": "2"
+                        },
+                        "4": {
+                            "name": "wscript.exe",
+                            "type": "file",
+                            "hashes": {
+                                "SHA-256": "ce9f70e104c07d92fc05fbd6000839fd6a87ff010e706396f87dd679244ed97b"
+                            }
+                        },
+                        "5": {
+                            "type": "user-account",
+                            "user_id": "dan"
+                        },
+                        "6": {
+                            "type": "x-oca-asset",
+                            "ip_refs": [
+                                "7"
+                            ],
+                            "hostname": "dan-pc.example.com"
+                        },
+                        "7": {
+                            "type": "ipv4-addr",
+                            "value": "172.20.13.104"
+                        }
+                    },
+                    "modified": "2021-09-09T04:12:50.857Z",
+                    "last_observed": "2021-09-09T04:12:50.857Z",
+                    "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+                    "first_observed": "2021-09-09T04:12:50.857Z",
+                    "number_observed": 1
+                },
+                "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2": {
+                    "id": "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2",
+                    "type": "observed-data",
+                    "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+                    "created": "2021-09-09T04:15:55.950Z",
+                    "modified": "2021-09-09T04:15:55.950Z",
+                    "objects": {
+                        "0": {
+                            "type": "x-oca-event",
+                            "action": "Process Create",
+                            "outcome": "Process Creation Success",
+                            "category": [
+                                "System"
+                            ],
+                            "provider": "Microsoft Windows Security Event Log",
+                            "agent": "WindowsAuthServer @ dan-pc",
+                            "created": "2021-09-09T04:15:55.950Z",
+                            "user_ref": "3",
+                            "host_ref": "2",
+                            "original_ref": "5",
+                            "file_ref": "6",
+                            "code": 1,
+                            "process_ref": "4",
+                            "parent_process_ref": "11"
+                        },
+                        "1": {
+                            "type": "ipv4-addr",
+                            "value": "172.20.13.104",
+                            "resolves_to_refs": [
+                                "12"
+                            ]
+                        },
+                        "2": {
+                            "type": "x-oca-asset",
+                            "ip_refs": [
+                                "1"
+                            ]
+                        },
+                        "3": {
+                            "type": "user-account",
+                            "user_id": "dan"
+                        },
+                        "4": {
+                            "type": "process",
+                            "creator_user_ref": "3",
+                            "binary_ref": "7",
+                            "parent_ref": "11",
+                            "command_line": "\"C:\\WINDOWS\\SysWOW64\\net.exe\" view",
+                            "name": "net.exe",
+                            "pid": 26326
+                        },
+                        "5": {
+                            "type": "artifact",
+                            "payload_bin": "PDEzPlNlcCAwOSAxNDozNDo0OCBkYW4tcGMgQWdlbnREZXZpY2U9V2luZG93c0xvZyAgIEFnZW50TG9nRmlsZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24vT3BlcmF0aW9uYWwgICBQbHVnaW5WZXJzaW9uPTcuMi45LjcyICBTb3VyY2U9TWljcm9zb2Z0LVdpbmRvd3MtU3lzbW9uIENvbXB1dGVyPWRhbi1wYyBPcmlnaW5hdGluZ0NvbXB1dGVyPWRhbi1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9MTYxMDYyNzY4NiAgICBUaW1lV3JpdHRlbj0xNjEwNjI3Njg2ICBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMS0wOS0wOSAxMjozNDo0Ni4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTCriBXaW5kb3dzwq4gT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXGRhbiBMb2dvbkd1aWQ6IHsyNTNhY2Y2Ny0zNWQ4LTVmZTgtMzRhYy02MjE4MDAwMDAwMDB9IExvZ29uSWQ6IDB4MTg2MkFDMzQgVGVybWluYWxTZXNzaW9uSWQ6IDIgSW50ZWdyaXR5TGV2ZWw6IE1lZGl1bSBIYXNoZXM6IE1ENT02RjNDOTQ4NUY4Rjk3QUMwNEM4RTQzRUY0NDYzQTY4QyxTSEEyNTY9M0VENjlDQUFCMDM1MjU4RTAwOEVGQkNGNDBEQjMwNTg5MUI0MEJBMDJDQTI3MzdFMjBERUZBN0MyRDRBRkFGNyxJTVBIQVNIPUI2QTZDNTI0N0VGQkQyNjEwRTNERUE0NDY0OUQ3MDQxIFBhcmVudFByb2Nlc3NHdWlkOiB7MjUzYWNmNjctMjA1OS01ZmU1LTBmMDAtMDAwMDAwMDAwYjAwfSBQYXJlbnRQcm9jZXNzSWQ6IDExNjQgUGFyZW50SW1hZ2U6IEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUgUGFyZW50Q29tbWFuZExpbmU6IEM6XFdJTkRPV1Ncc3lzdGVtMzJcc3ZjaG9zdC5leGUgLWsgRGNvbUxhdW5jaCAtcA=="
+                        },
+                        "6": {
+                            "type": "file",
+                            "hashes": {
+                                "MD5": "3F3C9485F8F97AC04C8E43EF4463A68D"
+                            }
+                        },
+                        "7": {
+                            "type": "file",
+                            "name": "net.exe",
+                            "parent_directory_ref": "8"
+                        },
+                        "8": {
+                            "type": "directory",
+                            "path": "C:\\Windows\\SysWOW64"
+                        },
+                        "9": {
+                            "type": "file",
+                            "name": "svchost.exe",
+                            "parent_directory_ref": "10"
+                        },
+                        "10": {
+                            "type": "directory",
+                            "path": "C:\\Windows\\System32"
+                        },
+                        "11": {
+                            "type": "process",
+                            "binary_ref": "9",
+                            "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p",
+                            "pid": 1164
+                        },
+                        "12": {
+                            "type": "domain-name",
+                            "value": "dan-pc.example.com"
+                        }
+                    },
+                    "first_observed": "2021-09-09T04:15:55.950Z",
+                    "last_observed": "2021-09-09T04:15:55.950Z",
+                    "number_observed": 1
+                },
+                "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b": {
+                    "id": "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b",
+                    "type": "observed-data",
+                    "created": "2021-09-09T04:13:20.874Z",
+                    "objects": {
+                        "0": {
+                            "id": "CIDD706957",
+                            "type": "x-mss-customer"
+                        },
+                        "1": {
+                            "id": "PR0000000037382",
+                            "ip": "198.23.124.4",
+                            "name": "xfr-us-pa1",
+                            "type": "x-mss-device",
+                            "vendor": "49",
+                            "version": "Palo Alto 9.1.8"
+                        },
+                        "2": {
+                            "type": "network-traffic",
+                            "dst_ref": "6",
+                            "src_ref": "5",
+                            "dst_port": 80,
+                            "src_port": 49888,
+                            "protocols": [
+                                "tcp"
+                            ]
+                        },
+                        "3": {
+                            "type": "artifact",
+                            "payload_bin": "U2VwICA5IDA0OjI0OjEzIDE3Mi4xNi4xMDQuMSAgMSwyMDIxLzA5LzA5IDA0OjI0OjEyLDAwNzk1MTAwMDAzNTU5MixUUkFGRklDLGVuZCwyMzA1LDIwMjEvMDkvMDkgMDQ6MjQ6MTIsMTcyLjIwLjEzLjEwNCwxMjguMjEwLjE1Ny4yNTEsMC4wLjAuMCwwLjAuMC4wLFBBLXRvLUNQLXFveCwsLHdlYi1icm93c2luZyx2c3lzMSxQcml2YXRlLFZQTixldGhlcm5ldDEvMix0dW5uZWwuMixNU1MgTG9nIEZvcndhcmRpbmcsMjAyMS8wOS8wOSAwNDoyNDoxMiwyMTMzNTAsMSw0OTg4OCw4MCwwLDAsMHg3MCx0Y3AsYWxsb3csMzUzMiw3NTQsMjc3OCwxNCwyMDIxLzA5LzA5IDA0OjI0OjAwLDAscHJpdmF0ZS1pcC1hZGRyZXNzZXMsMCw4MjU2OTQ4MzE5LDB4MCwxNzIuMTYuMC4wLTE3Mi4zMS4yNTUuMjU1LDE3Mi4xNi4wLjAtMTcyLjMxLjI1NS4yNTUsMCw3LDcsdGNwLWZpbiwwLDAsMCwwLCx4ZnItdXMtcGExLGZyb20tcG9saWN5LCwsMCwsMCwsTi9BLDAsMCwwLDAsZDRjMzRmZGUtZTkwNy00NTg3LWIyZTctNzhmMDZiMjEwZDNjLDAsMCwsLCwsLCw="
+                        },
+                        "4": {
+                            "type": "x-oca-event",
+                            "action": "ACCEPT",
+                            "host_ref": "7",
+                            "ip_refs": [
+                                "5",
+                                "6"
+                            ],
+                            "network_ref": "2",
+                            "original_ref": "3"
+                        },
+                        "5": {
+                            "type": "ipv4-addr",
+                            "value": "172.20.13.104"
+                        },
+                        "6": {
+                            "type": "ipv4-addr",
+                            "value": "128.210.157.251"
+                        },
+                        "7": {
+                            "type": "x-oca-asset",
+                            "ip_refs": [
+                                "5"
+                            ]
+                        }
+                    },
+                    "modified": "2021-09-09T04:13:20.874Z",
+                    "last_observed": "2021-09-09T04:13:20.874Z",
+                    "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
+                    "first_observed": "2021-09-09T04:13:20.874Z",
+                    "number_observed": 1
+                },
+                "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3": {
+                    "id": "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3",
+                    "type": "observed-data",
+                    "created": "2021-09-09T04:12:07.335Z",
+                    "objects": {
+                        "0": {
+                            "type": "x-crowdstrike",
+                            "machine_id": "6a813bbd845c2bf3115e24c40fd9a902a3047e8b"
+                        },
+                        "1": {
+                            "type": "domain-name",
+                            "value": "dan-pc.example.com"
+                        },
+                        "2": {
+                            "type": "ipv4-addr",
+                            "value": "199.36.158.100"
+                        },
+                        "3": {
+                            "type": "network-traffic",
+                            "dst_ref": "2",
+                            "src_ref": "5",
+                            "dst_port": 443,
+                            "src_port": 50990,
+                            "protocols": [
+                                "tcp"
+                            ]
+                        },
+                        "4": {
+                            "type": "url",
+                            "value": "zoommeetinactivation.web.app"
+                        },
+                        "5": {
+                            "type": "ipv4-addr",
+                            "value": "172.20.13.104"
+                        },
+                        "6": {
+                            "name": "svchost.exe",
+                            "type": "file",
+                            "hashes": {
+                                "MD5": "f586835082f632dc8d9404d83bc16316",
+                                "SHA-1": "010db07461e45b41c886192df6fd425ba8d42d82",
+                                "SHA-256": "643ec58e82e0272c97c2a59f6020970d881af19c0ad5029db9c958c13b6558c7"
+                            },
+                            "parent_directory_ref": "8"
+                        },
+                        "7": {
+                            "pid": 1824,
+                            "name": "svchost.exe",
+                            "type": "process",
+                            "created": "2021-08-31T04:46:36.071Z",
+                            "binary_ref": "6",
+                            "parent_ref": "10",
+                            "command_line": "svchost.exe -k netsvcs -p -s BITS",
+                            "creator_user_ref": "11"
+                        },
+                        "8": {
+                            "path": "c:\\windows\\system32",
+                            "type": "directory"
+                        },
+                        "9": {
+                            "name": "services.exe",
+                            "type": "file"
+                        },
+                        "10": {
+                            "pid": 740,
+                            "name": "services.exe",
+                            "type": "process",
+                            "created": "2021-05-26T09:09:45.925Z",
+                            "binary_ref": "9"
+                        },
+                        "11": {
+                            "type": "user-account",
+                            "user_id": "dan",
+                            "account_login": "dan"
+                        }
+                    },
+                    "modified": "2021-09-09T04:12:07.335Z",
+                    "last_observed": "2021-09-09T04:12:07.335Z",
+                    "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+                    "first_observed": "2021-09-09T04:12:07.335Z",
+                    "number_observed": 1
+                }
+            },
+            "investigation_stats": {
+                "start_time": "2021-09-10T19:31:00.946283Z",
+                "end_time": "2021-09-10T19:33:22.861592Z",
+                "investigation_config": {
+                    "STANDARD_LOGGER": false,
+                    "RAISE_EXCEPTIONS": false,
+                    "UDI_QUERY_MAX_RETRIES": 3,
+                    "UDI_QUERY_RESULTS_PAGE_MAX_RETRIES": 3,
+                    "UDI_RETRIEVE_QUERY_RESULTS_MAX_RETRIES": 24,
+                    "UDI_QUERY_RETRY_INTERVAL_SECS": 10,
+                    "UDI_CACHE_LOAD_LOCALLY": false,
+                    "UDI_CACHE_SAVE_LOCALLY": false,
+                    "UDI_CONCAT_QUERIES": false,
+                    "UDI_MAX_QUERIES_CONCAT": 25,
+                    "UDI_CACHE_DIR": "udi_cache",
+                    "UDI_CACHE_FILE_PREFIX": "cache_UDI",
+                    "UDI_DATA_SOURCES": [
+                        "3079a446-1a08-40d0-a1bb-e998f369b1e6",
+                        "c8241623-3a47-4afc-80cb-36593f29642d"
+                    ],
+                    "IGNORE_STIX_VALUES": "{'<unknown process>'}",
+                    "MAX_BATCH_SIZE": 0,
+                    "MAX_EVENTS_IN_MEMORY": 0,
+                    "MAX_RESULTS_PER_NODE": 0,
+                    "USE_CAR": true,
+                    "MAX_ITERATIONS_NUM": 100,
+                    "NODE_SCORE_THRESHOLD": 60,
+                    "NUM_NODES_TO_EXPAND_ABOVE_THRESHOLD": 25,
+                    "NUM_NODES_TO_EXPAND_BELOW_THRESHOLD": 5,
+                    "CONSEC_ITERS_NODES_BELOW_THRESHOLD_EXPANSION": 5,
+                    "EXPANSION_WL": [],
+                    "MAX_INVESTIGATION_TIME_MINUTES": 180,
+                    "MAX_GRAPH_SIZE_NODES": 30000,
+                    "MAX_EXPANSION_FACTOR": 4,
+                    "SCO_EXPANSION_HOURS": {
+                        "x-oca-asset": {
+                            "default": 0.25
+                        },
+                        "ipv4-addr": {
+                            "default": 0.25,
+                            "wide": 96
+                        },
+                        "ipv6-addr": {
+                            "default": 0.25,
+                            "wide": 96
+                        },
+                        "domain-name": {
+                            "default": 0.5,
+                            "wide": 48
+                        },
+                        "url": {
+                            "default": 0.5,
+                            "wide": 48
+                        },
+                        "user-account": {
+                            "default": 1
+                        },
+                        "process": {
+                            "default": 0.5
+                        },
+                        "file": {
+                            "default": 1,
+                            "wide": 72
+                        },
+                        "windows-registry-key": {
+                            "default": 1
+                        },
+                        "network-traffic": {
+                            "default": 0.25
+                        }
+                    },
+                    "NODE_RE_EXPAND_TIME_RATIO": 0.2,
+                    "BP_VS_MP": true,
+                    "MAX_BELIEF_PROPAGATION_ITERATIONS": 30,
+                    "BELIEF_PROPAGATION_CONVERGENCE_THRESHOLD": 0.01,
+                    "ITER_VS_SCHEDULED_BP": false,
+                    "W4CS_POLL_DELAY_RANGE": "0.5,1.5",
+                    "W4CS_BATCH_TIMEOUT_SECS": 300,
+                    "W4CS_MAX_QUERIES": 500,
+                    "W4CS_CACHE_ENABLED": true,
+                    "CP4S_FQDN": "cp4s.apps.104cp4s-threatinv.os.fyre.ibm.com",
+                    "CP4S_ACCOUNT": "5889abdc-c167-4eba-9e34-3cf04b282193",
+                    "TIS_BATCH_TIMEOUT_SECS": 300,
+                    "TIS_ENRICHMENT": true,
+                    "TIS_SAFE_SCORE": 0,
+                    "TIS_INFO_SCORE": 0,
+                    "TIS_SUSPICIOUS_SCORE": 75,
+                    "TIS_MALICIOUS_SCORE": 100,
+                    "TIS_POLL_DELAY_RANGE": "0.5,1.5",
+                    "TIS_QUERY_TRY_LIMIT": 10,
+                    "TIS_FORCE_MALICIOUS_VALUES": null,
+                    "TI_QUERYING_FREQUENCY": 1,
+                    "KB_ENRICHMENT": true,
+                    "KB_URL": "https://neurolabapi-igyuceer-dev1.mybluemix.net/symptoms/v1",
+                    "KB_CACHE_FILE": "kb.cache",
+                    "KB_CONFIDENCE_CONVERSION": {
+                        "low": 0.33,
+                        "medium": 0.66,
+                        "high": 1
+                    },
+                    "KB_PARALLEL": true,
+                    "SCO_AGGREGATION_FRAME_SECONDS": 60,
+                    "DISABLE_XEVENT_INVALIDATION": false,
+                    "FORCE_EXCEPTION_IN_INVESTIGATION_STEP": false,
+                    "BASE_URL": "https://cp4s.apps.104cp4s-threatinv.os.fyre.ibm.com",
+                    "CP4S_API_RETRY_CODES": "429,500,502,503,504",
+                    "CP4S_API_RETRY_COUNT": 5,
+                    "CP4S_API_RETRY_MAX_SECS": 30,
+                    "CP4S_API_RETRY_BACKOFF_FACTOR": 5,
+                    "LOGGING_LEVEL": "debug",
+                    "LOGGING_LEVELS": "",
+                    "OUT_DIR": "./output/cp4s104"
+                },
+                "data_sources": [
+                    {
+                        "configuration_id": "0de150ed-300f-49e8-b676-af1d0e4f3c8a",
+                        "configuration_name": "DemoData",
+                        "connection_id": "0bb38748-fcd1-4140-a6e5-7f48436a4668",
+                        "connection_name": "AttackSimulation",
+                        "connection_type": "stix_bundle",
+                        "connection_class": "udi"
+                    },
+                    {
+                        "configuration_id": "3079a446-1a08-40d0-a1bb-e998f369b1e6",
+                        "configuration_name": "EDR",
+                        "connection_id": "1dccf359-a4b9-4235-8b1f-b13e4efad97b",
+                        "connection_name": "CrowdStrike",
+                        "connection_type": "stix_bundle",
+                        "connection_class": "udi"
+                    },
+                    {
+                        "configuration_id": "c8241623-3a47-4afc-80cb-36593f29642d",
+                        "configuration_name": "SIEM",
+                        "connection_id": "380fa265-45b9-414d-84dc-18162c096699",
+                        "connection_name": "Splunk",
+                        "connection_type": "stix_bundle",
+                        "connection_class": "udi"
+                    }
+                ],
+                "default_time_window": {
+                    "start": "2021-09-09T04:12:00.000000Z",
+                    "end": "2021-09-09T04:42:00.000000Z"
+                },
+                "iterations": 3,
+                "iterations_info": {
+                    "0": {
+                        "times": {
+                            "kb_enrichment": 2.9239261150360107,
+                            "add_events": 1.589500904083252,
+                            "car_lookups": 0.9579541683197021,
+                            "threat_intelligence_tis": 76.57507395744324,
+                            "threat_intelligence_tis_symptoms": 0.0016329288482666016,
+                            "update_edges_jacard_score": 0.0004899501800537109,
+                            "update_identity_edges": 0.000225067138671875,
+                            "risk_score_propagation": 0.014690876007080078,
+                            "iteration_time": 82.06868314743042
+                        },
+                        "new_events": 7,
+                        "symptoms": 6,
+                        "new_nodes": 35,
+                        "new_edges": 58,
+                        "car_lookups.Host": 1,
+                        "car_lookups.IPBase": 4,
+                        "car_lookups.User": 1,
+                        "threat_intelligence_tis_risk_summary": {
+                            "100": 3,
+                            "0": 6
+                        },
+                        "threat_intelligence_tis_risky_nodes": [
+                            "zoommeetinactivation.web.app, score: None",
+                            "199.36.158.100, score: None",
+                            "128.210.157.251, score: None"
+                        ],
+                        "threat_intelligence_tis_symptoms_created": {
+                            "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3": [
+                                {
+                                    "tis_id": "tis-3aaeb374-1d15-42b1-b71c-a3af9369d595",
+                                    "symptom_id": "sigma-00d0b5ab-1f55-4120-8e83-487c0a7baf19",
+                                    "malicious_sco_count": 2,
+                                    "actions_count": 1
+                                },
+                                {
+                                    "tis_id": "tis-5d98d9b6-d064-45d6-84b1-6342709ea349",
+                                    "symptom_id": "Investigator-investigation-trigger",
+                                    "malicious_sco_count": 2,
+                                    "actions_count": 1
+                                }
+                            ]
+                        },
+                        "nodes_to_expand": 20
+                    },
+                    "1": {
+                        "times": {
+                            "post_udi_queries": 7.392746925354004,
+                            "get_udi_queries_results": 9.416255950927734,
+                            "kb_enrichment": 2.804429054260254,
+                            "add_events": 4.47993278503418,
+                            "car_lookups": 0.6973028182983398,
+                            "threat_intelligence_tis_symptoms": 0.0011539459228515625,
+                            "update_edges_jacard_score": 0.004505157470703125,
+                            "update_identity_edges": 0.0002586841583251953,
+                            "risk_score_propagation": 0.015172004699707031,
+                            "iteration_time": 22.011473178863525
+                        },
+                        "nodes_to_expand": 20,
+                        "udi_queries_sent": 20,
+                        "udi_queries_returned_results": 3,
+                        "udi_queries_summary": [
+                            {
+                                "query": "[domain-name:value = 'dan-pc.example.com'] START t'2021-09-09T03:12:07.000Z' STOP t'2021-09-09T05:17:10.000Z'",
+                                "pages": 1,
+                                "events": 3
+                            },
+                            {
+                                "query": "[network-traffic:src_ref.value = '172.20.13.104' AND network-traffic:dst_ref.value = '199.36.158.100'] START t'2021-09-09T03:42:07.000Z' STOP t'2021-09-09T04:42:07.000Z'",
+                                "pages": 1
+                            },
+                            {
+                                "query": "[url:value = 'zoommeetinactivation.web.app'] START t'2021-09-08T04:12:07.000Z' STOP t'2021-09-10T04:12:07.000Z'",
+                                "pages": 1
+                            },
+                            {
+                                "query": "[file:name = 'svchost.exe' OR file:hashes.'MD5'='f586835082f632dc8d9404d83bc16316' OR file:hashes.'SHA-1'='010db07461e45b41c886192df6fd425ba8d42d82' OR file:hashes.'SHA-256'='643ec58e82e0272c97c2a59f6020970d881af19c0ad5029db9c958c13b6558c7'] START t'2021-09-09T02:12:07.000Z' STOP t'2021-09-09T06:12:07.000Z'",
+                                "pages": 1
+                            },
+                            {
+                                "query": "[process:pid = '1824' OR process:name = 'svchost.exe'] START t'2021-09-09T03:12:07.000Z' STOP t'2021-09-09T05:12:07.000Z'",
+                                "pages": 1
+                            },
+                            {
+                                "query": "[file:name = 'services.exe'] START t'2021-09-09T02:12:07.000Z' STOP t'2021-09-09T06:12:07.000Z'",
+                                "pages": 1
+                            },
+                            {
+                                "query": "[process:pid = '740' OR process:name = 'services.exe'] START t'2021-09-09T03:12:07.000Z' STOP t'2021-09-09T05:12:07.000Z'",
+                                "pages": 1
+                            },
+                            {
+                                "query": "[user-account:user_id = 'dan' OR user-account:account_login = 'dan'] START t'2021-09-09T02:12:07.000Z' STOP t'2021-09-09T06:20:03.000Z'",
+                                "pages": 2,
+                                "events": 4
+                            },
+                            {
+                                "query": "[(file:name = 'wscript.exe' OR file:hashes.'SHA-256'='ce9f70e104c07d92fc05fbd6000839fd6a87ff010e706396f87dd679244ed97b') AND (x-oca-asset:hostname = 'dan-pc.example.com' OR ipv4-addr:value = '172.20.13.104')] START t'2021-09-09T02:12:11.000Z' STOP t'2021-09-09T06:12:50.000Z'"
+                            },
+                            {
+                                "query": "[(process:pid = '1164') AND (ipv4-addr:value = '172.20.13.104')] START t'2021-09-09T03:15:56.000Z' STOP t'2021-09-09T05:17:10.000Z'"
+                            },
+                            {
+                                "query": "[network-traffic:src_ref.value = '172.20.13.104' AND network-traffic:dst_ref.value = '172.20.18.20'] START t'2021-09-09T03:47:17.000Z' STOP t'2021-09-09T04:47:03.000Z'",
+                                "pages": 2
+                            },
+                            {
+                                "query": "[(process:pid = '26329' OR process:name = 'wsmprovhost.exe') AND (ipv4-addr:value = '172.20.13.104')] START t'2021-09-09T03:17:32.000Z' STOP t'2021-09-09T05:16:49.000Z'"
+                            },
+                            {
+                                "query": "[(process:pid = '26326' OR process:name = 'net.exe') AND (ipv4-addr:value = '172.20.13.104')] START t'2021-09-09T03:17:20.000Z' STOP t'2021-09-09T05:14:31.000Z'"
+                            },
+                            {
+                                "query": "[(file:name = 'svchost.exe') AND (ipv4-addr:value = '172.20.13.104')] START t'2021-09-09T02:19:14.000Z' STOP t'2021-09-09T06:13:52.000Z'"
+                            },
+                            {
+                                "query": "[(file:hashes.'MD5'='2F3C9485F8F97AC04C8E43EF4463A68D') AND (ipv4-addr:value = '172.20.13.104')] START t'2021-09-09T02:21:32.000Z' STOP t'2021-09-09T06:12:49.000Z'"
+                            },
+                            {
+                                "query": "[(file:name = 'wsmprovhost.exe') AND (ipv4-addr:value = '172.20.13.104')] START t'2021-09-09T02:24:13.000Z' STOP t'2021-09-09T06:10:08.000Z'"
+                            },
+                            {
+                                "query": "[(file:hashes.'MD5'='3F3C9485F8F97AC04C8E43EF4463A68D') AND (ipv4-addr:value = '172.20.13.104')] START t'2021-09-09T02:29:50.000Z' STOP t'2021-09-09T06:02:01.000Z'"
+                            },
+                            {
+                                "query": "[(file:name = 'net.exe') AND (ipv4-addr:value = '172.20.13.104')] START t'2021-09-09T02:33:00.000Z' STOP t'2021-09-09T05:58:51.000Z'"
+                            },
+                            {
+                                "query": "[domain-name:value = 'database.example.com'] START t'2021-09-09T03:28:31.000Z' STOP t'2021-09-09T05:05:49.000Z'",
+                                "pages": 2
+                            },
+                            {
+                                "query": "[network-traffic:src_ref.value = '172.20.13.104' AND network-traffic:dst_ref.value = '128.210.157.251'] START t'2021-09-09T03:49:15.000Z' STOP t'2021-09-09T04:37:26.000Z'",
+                                "pages": 1,
+                                "events": 1
+                            }
+                        ],
+                        "udi_events": 8,
+                        "new_events": 1,
+                        "symptoms": 1,
+                        "new_nodes": 4,
+                        "new_edges": 6,
+                        "car_lookups.Host": 1,
+                        "car_lookups.User": 1,
+                        "threat_intelligence_tis_symptoms_created": {
+                            "observed-data--89543845-acd4-8f746cbedce2": [
+                                {
+                                    "tis_id": "tis-d3c79628-dced-4eb8-90b3-68126e4871fc",
+                                    "symptom_id": "sigma-2b669496-d215-47d8-bd9a-f4a45bf07cda",
+                                    "malicious_sco_count": 1,
+                                    "actions_count": 1
+                                }
+                            ]
+                        }
+                    },
+                    "2": {
+                        "times": {
+                            "post_udi_queries": 1.0648257732391357,
+                            "get_udi_queries_results": 11.17125916481018,
+                            "add_events": 0.00084686279296875,
+                            "car_lookups": 0.0001780986785888672,
+                            "threat_intelligence_tis_symptoms": 9.799003601074219e-05,
+                            "update_edges_jacard_score": 0.004144906997680664,
+                            "update_identity_edges": 0.0002281665802001953,
+                            "risk_score_propagation": 0.011366844177246094,
+                            "iteration_time": 12.254851818084717
+                        },
+                        "nodes_to_expand": 3,
+                        "udi_queries_sent": 3,
+                        "udi_queries_returned_results": 0,
+                        "udi_queries_summary": [
+                            {
+                                "query": "[(user-account:user_id = 'dan') AND (x-oca-asset:hostname = 'dan-pc.example.com' OR ipv4-addr:value = '172.20.13.104')] START t'2021-09-09T02:12:11.000Z' STOP t'2021-09-09T06:17:10.000Z'"
+                            },
+                            {
+                                "query": "[network-traffic:src_ref.value = '172.20.18.20' AND network-traffic:dst_ref.value = '128.210.157.251'] START t'2021-09-09T03:51:35.000Z' STOP t'2021-09-09T04:50:48.000Z'",
+                                "pages": 1
+                            },
+                            {
+                                "query": "[(user-account:user_id = 'dan') AND (x-oca-asset:hostname = 'database.example.com' OR ipv4-addr:value = '172.20.18.20')] START t'2021-09-09T02:26:29.000Z' STOP t'2021-09-09T06:15:53.000Z'"
+                            }
+                        ],
+                        "udi_events": 0,
+                        "new_nodes": 0,
+                        "new_edges": 0,
+                        "threat_intelligence_tis_symptoms_created": {}
+                    },
+                    "3": {
+                        "times": {
+                            "post_udi_queries": 1.9881207942962646,
+                            "get_udi_queries_results": 14.031831979751587,
+                            "add_events": 0.0012540817260742188,
+                            "car_lookups": 0.0001461505889892578,
+                            "threat_intelligence_tis_symptoms": 6.794929504394531e-05,
+                            "update_edges_jacard_score": 0.005967140197753906,
+                            "update_identity_edges": 0.0002429485321044922,
+                            "risk_score_propagation": 0.014450788497924805,
+                            "iteration_time": 16.043656826019287,
+                            "threat_intelligence_event_only_tis_symptoms": 0.0004317760467529297
+                        },
+                        "nodes_to_expand": 6,
+                        "udi_queries_sent": 6,
+                        "udi_queries_returned_results": 0,
+                        "udi_queries_summary": [
+                            {
+                                "query": "[ipv4-addr:value = '199.36.158.100'] START t'2021-09-07T04:12:07.000Z' STOP t'2021-09-11T04:12:07.000Z'",
+                                "pages": 1
+                            },
+                            {
+                                "query": "[ipv4-addr:value = '172.20.13.104'] START t'2021-09-09T03:42:07.000Z' STOP t'2021-09-09T04:50:03.000Z'",
+                                "pages": 2
+                            },
+                            {
+                                "query": "[x-oca-asset:hostname = 'dan-pc.example.com' OR ipv4-addr:value = '172.20.13.104'] START t'2021-09-09T03:42:11.000Z' STOP t'2021-09-09T04:47:10.000Z'",
+                                "pages": 2
+                            },
+                            {
+                                "query": "[ipv4-addr:value = '128.210.157.251'] START t'2021-09-07T04:21:11.000Z' STOP t'2021-09-11T04:21:11.000Z'",
+                                "pages": 1
+                            },
+                            {
+                                "query": "[x-oca-asset:hostname = 'database.example.com' OR ipv4-addr:value = '172.20.18.20'] START t'2021-09-09T03:51:38.000Z' STOP t'2021-09-09T04:50:45.000Z'",
+                                "pages": 2
+                            },
+                            {
+                                "query": "[ipv4-addr:value = '172.20.18.20'] START t'2021-09-09T03:47:37.000Z' STOP t'2021-09-09T04:50:45.000Z'",
+                                "pages": 2
+                            }
+                        ],
+                        "udi_events": 0,
+                        "new_nodes": 0,
+                        "new_edges": 0,
+                        "threat_intelligence_tis_symptoms_created": {},
+                        "threat_intelligence_event_only_tis_symptoms_created": {
+                            "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b": {
+                                "tis_id": "tis-60082da8-954b-41e1-9554-1cfed36a3c44",
+                                "malicious_sco_count": 1,
+                                "actions_count": 1
+                            }
+                        }
+                    }
+                },
+                "iterations_summary": {
+                    "total_car_lookups.Host": 2,
+                    "total_car_lookups.IPBase": 4,
+                    "total_car_lookups.User": 2,
+                    "total_new_edges": 64,
+                    "total_new_events": 8,
+                    "total_new_nodes": 39,
+                    "total_nodes_to_expand": 49,
+                    "total_symptoms": 7,
+                    "total_times": {
+                        "add_events": 6.071534633636475,
+                        "car_lookups": 1.6555812358856201,
+                        "get_udi_queries_results": 34.6193470954895,
+                        "iteration_time": 132.37866497039795,
+                        "kb_enrichment": 5.728355169296265,
+                        "post_udi_queries": 10.445693492889404,
+                        "risk_score_propagation": 0.05568051338195801,
+                        "threat_intelligence_event_only_tis_symptoms": 0.0004317760467529297,
+                        "threat_intelligence_tis": 76.57507395744324,
+                        "threat_intelligence_tis_symptoms": 0.0029528141021728516,
+                        "update_edges_jacard_score": 0.015107154846191406,
+                        "update_identity_edges": 0.0009548664093017578
+                    },
+                    "total_udi_events": 8,
+                    "total_udi_queries_returned_results": 3,
+                    "total_udi_queries_sent": 29
+                },
+                "tis_analyzers": {
+                    "VirusTotal_GetReport_3_0": "VirusTotal",
+                    "IBMXForce_Lookup_1_0": "IBM X-Force",
+                    "OTXQuery_2_0": "AlienVault OTX",
+                    "DShield_lookup_1_0": "SANS ISC"
+                }
+            },
+            "classification_stats": {
+                "classification_config": {
+                    "strategy": "provenance-tracking",
+                    "terminal_threshold": 70,
+                    "max_terminal": 100
+                },
+                "scoring_config": {
+                    "findings_weight": 1,
+                    "symptoms_weight": 2,
+                    "tactics_weight": 3
+                },
+                "risk_score": 0.9339341859440405,
+                "findings_risk": 0.674389034116991,
+                "symptoms_risk": 0.9898252520964467,
+                "tactics_risk": 0.9831885257847864,
+                "classified_events_count": 8,
+                "classified_scos_count": 38,
+                "times": {}
+            }
+        }
+    ]
+}
