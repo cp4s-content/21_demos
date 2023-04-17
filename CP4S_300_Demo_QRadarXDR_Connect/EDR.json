@@ -12,7 +12,7 @@
         {
             "id": "observed-data--e2717c9d-4eb6-41fe-90b2-dead702e36d3",
             "type": "observed-data",
-            "created": "2021-09-09T04:12:07.335Z",
+            "created": "2023-04-16T04:12:07.335Z",
             "objects": {
                 "0": {
                     "type": "x-crowdstrike",
@@ -58,7 +58,7 @@
                     "pid": 1824,
                     "name": "svchost.exe",
                     "type": "process",
-                    "created": "2021-08-31T04:46:36.071Z",
+                    "created": "2023-04-16T04:12:07.335Z",
                     "binary_ref": "6",
                     "parent_ref": "10",
                     "command_line": "svchost.exe -k netsvcs -p -s BITS",
@@ -76,7 +76,7 @@
                     "pid": 740,
                     "name": "services.exe",
                     "type": "process",
-                    "created": "2021-05-26T09:09:45.925Z",
+                    "created": "2023-04-16T04:12:07.335Z",
                     "binary_ref": "9"
                 },
                 "11": {
@@ -85,16 +85,16 @@
                     "account_login": "dan"
                 }
             },
-            "modified": "2021-09-09T04:12:07.335Z",
-            "last_observed": "2021-09-09T04:12:07.335Z",
+            "modified": "2023-04-16T04:12:07.335Z",
+            "last_observed": "2023-04-16T04:12:07.335Z",
             "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
-            "first_observed": "2021-09-09T04:12:07.335Z",
+            "first_observed": "2023-04-16T04:12:07.335Z",
             "number_observed": 1
         },
         {
             "id": "observed-data--48536613-242d-45df-bc66-ef524e9a3a20",
             "type": "observed-data",
-            "created": "2021-09-09T04:12:11.000Z",
+            "created": "2023-04-16T04:12:07.335Z",
             "objects": {
                 "0": {
                     "id": "CIDD706957",
@@ -146,16 +146,16 @@
                     "value": "172.20.13.104"
                 }
             },
-            "modified": "2021-09-09T04:12:11.000Z",
-            "last_observed": "2021-09-09T04:12:11.000Z",
+            "modified": "2023-04-16T04:12:07.335Z",
+            "last_observed": "2023-04-16T04:12:07.335Z",
             "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
-            "first_observed": "2021-09-09T04:12:11.000Z",
+            "first_observed": "2023-04-16T04:12:07.335Z",
             "number_observed": 1
         },
         {
             "id": "observed-data--287f2859-d67b-4c41-855c-5d07917c7972",
             "type": "observed-data",
-            "created": "2021-09-09T04:12:50.857Z",
+            "created": "2023-04-16T04:12:07.335Z",
             "objects": {
                 "0": {
                     "id": "CIDD706957",
@@ -207,18 +207,18 @@
                     "value": "172.20.13.104"
                 }
             },
-            "modified": "2021-09-09T04:12:50.857Z",
-            "last_observed": "2021-09-09T04:12:50.857Z",
+            "modified": "2023-04-16T04:12:07.335Z",
+            "last_observed": "2023-04-16T04:12:07.335Z",
             "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
-            "first_observed": "2021-09-09T04:12:50.857Z",
+            "first_observed": "2023-04-16T04:12:07.335Z",
             "number_observed": 1
         },
         {
             "id": "observed-data--4054384e-5f99-4bf0-acd4-8f746cbedcdd",
             "type": "observed-data",
             "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
-            "created": "2021-09-09T04:15:32.950Z",
-            "modified": "2021-09-09T04:15:32.950Z",
+            "created": "2023-04-16T04:12:07.335Z",
+            "modified": "2023-04-16T04:12:07.335Z",
             "objects": {
                 "0": {
                     "type": "x-oca-event",
@@ -229,7 +229,7 @@
                     ],
                     "provider": "Microsoft Windows Security Event Log",
                     "agent": "WindowsAuthServer @ dan-pc",
-                    "created": "2021-09-09T04:15:32.950Z",
+                    "created": "2023-04-16T04:12:07.335Z",
                     "user_ref": "3",
                     "host_ref": "2",
                     "original_ref": "5",
@@ -303,16 +303,16 @@
                     "value": "dan-pc.example.com"
                 }
             },
-            "first_observed": "2021-01-09T04:15:32.950Z",
-            "last_observed": "2021-01-09T04:15:32.950Z",
+            "first_observed": "2023-04-16T04:12:07.335Z",
+            "last_observed": "2023-04-16T04:12:07.335Z",
             "number_observed": 1
         },
         {
             "id": "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2",
             "type": "observed-data",
             "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
-            "created": "2021-09-09T04:15:55.950Z",
-            "modified": "2021-09-09T04:15:55.950Z",
+            "created": "2023-04-16T04:12:07.335Z",
+            "modified": "2023-04-16T04:12:07.335Z",
             "objects": {
                 "0": {
                     "type": "x-oca-event",
@@ -323,7 +323,7 @@
                     ],
                     "provider": "Microsoft Windows Security Event Log",
                     "agent": "WindowsAuthServer @ dan-pc",
-                    "created": "2021-09-09T04:15:55.950Z",
+                    "created": "2023-04-16T04:12:07.335Z",
                     "user_ref": "3",
                     "host_ref": "2",
                     "original_ref": "5",
@@ -397,16 +397,16 @@
                     "value": "dan-pc.example.com"
                 }
             },
-            "first_observed": "2021-09-09T04:15:55.950Z",
-            "last_observed": "2021-09-09T04:15:55.950Z",
+            "first_observed": "2023-04-16T04:12:07.335Z",
+            "last_observed": "2023-04-16T04:12:07.335Z",
             "number_observed": 1
         },
         {
             "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
             "type": "observed-data",
             "created_by_ref": "identity--ab920cb1-239b-4371-b7f6-66f634de9927",
-            "created": "2021-09-09T04:17:10.940Z",
-            "modified": "2021-09-09T04:17:10.940Z",
+            "created": "2023-04-16T04:12:07.335Z",
+            "modified": "2023-04-16T04:12:07.335Z",
             "objects": {
                 "0": {
                     "type": "x-oca-event",
@@ -417,7 +417,7 @@
                     ],
                     "provider": "Microsoft Windows Security Event Log",
                     "agent": "WindowsAuthServer @ dan-pc",
-                    "created": "2021-09-09T04:17:10.940Z",
+                    "created": "2023-04-16T04:12:07.335Z",
                     "nt_ref": "2",
                     "user_ref": "4",
                     "host_ref": "3",
@@ -513,8 +513,8 @@
                     "value": "database.example.com"
                 }
             },
-            "first_observed": "2021-09-09T04:17:10.940Z",
-            "last_observed": "2021-09-09T04:17:10.940Z",
+            "first_observed": "2023-04-16T04:12:07.335Z",
+            "last_observed": "2023-04-16T04:12:07.335Z",
             "number_observed": 1
         }
     ]
